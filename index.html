@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TOEIC Study Deck</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17243a;
+      --muted: #68758a;
+      --paper: #ffffff;
+      --line: #dfe5ee;
+      --blue: #1769e0;
+      --blue-soft: #eaf2ff;
+      --green: #15805d;
+      --green-soft: #e5f7f0;
+      --red: #c83c4d;
+      --red-soft: #ffebee;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background: #f3f6fa;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+    button, select { font: inherit; }
+    .topbar {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      min-height: 70px;
+      padding: 12px clamp(18px, 4vw, 58px);
+      color: white;
+      background: linear-gradient(120deg, #087f8c, #1261a0);
+      box-shadow: 0 4px 18px rgba(8, 93, 122, .2);
+    }
+    .brand { margin-right: auto; font-size: 20px; font-weight: 800; letter-spacing: .02em; }
+    .score { display: flex; gap: 18px; font-size: 14px; }
+    .score strong { display: block; font-size: 19px; text-align: center; }
+    .shell { max-width: 1500px; margin: 0 auto; padding: 24px; }
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: end;
+      gap: 14px;
+      margin-bottom: 18px;
+      padding: 16px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+    }
+    label.small { display: grid; gap: 6px; color: var(--muted); font-size: 12px; font-weight: 700; }
+    select, .button {
+      min-height: 42px;
+      padding: 0 14px;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      background: white;
+      color: var(--ink);
+      cursor: pointer;
+    }
+    .button.primary { border-color: var(--blue); color: white; background: var(--blue); font-weight: 700; }
+    .button:disabled { cursor: not-allowed; opacity: .45; }
+    .counter { margin-left: auto; align-self: center; color: var(--muted); font-size: 14px; }
+    .workspace {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 330px;
+      gap: 18px;
+      align-items: start;
+    }
+    .image-card, .answer-card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(23, 36, 58, .06);
+    }
+    .image-card { padding: 16px; text-align: center; overflow: auto; }
+    .image-card img { display: block; max-width: 100%; height: auto; margin: auto; }
+    .answer-card { padding: 20px; position: sticky; top: 18px; }
+    h1 { margin: 0 0 5px; font-size: 19px; }
+    .question { padding: 12px 0; border-top: 1px solid var(--line); }
+    .question:first-of-type { border-top: 0; }
+    /* Each image contains at most five questions, so keep the actions aligned. */
+    .quiz-form { height: 420px; }
+    .question-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .question-title { font-weight: 800; }
+    .question-status { font-size: 12px; font-weight: 800; text-align: right; }
+    .question-status.correct { color: var(--green); }
+    .question-status.wrong { color: var(--red); }
+    .question-status.ungraded { color: var(--muted); }
+    .choices {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      width: 100%;
+      gap: 6px;
+    }
+    .choice {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      min-height: 32px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .choice input {
+      width: 16px;
+      height: 16px;
+      margin: 0;
+      accent-color: var(--blue);
+      cursor: pointer;
+    }
+    .choice.correct { color: var(--green); }
+    .choice.correct input { accent-color: var(--green); }
+    .choice.wrong { color: var(--red); }
+    .choice.wrong input { accent-color: var(--red); }
+    .question.ungraded { opacity: .72; }
+    .result { min-height: 22px; margin: 12px 0; font-size: 14px; font-weight: 700; }
+    .actions { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; }
+    .actions .primary { grid-column: 1 / -1; }
+    .empty { padding: 50px 20px; text-align: center; color: var(--muted); }
+    @media (max-width: 900px) {
+      .workspace { grid-template-columns: 1fr; }
+      .answer-card { position: static; }
+      .counter { width: 100%; margin-left: 0; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">TOEIC Study Deck</div>
+    <div class="score">
+      <span>Đúng<strong id="correctScore">0</strong></span>
+      <span>Sai<strong id="wrongScore">0</strong></span>
+      <span>Điểm<strong id="percentScore">0%</strong></span>
+    </div>
+  </header>
+  <main class="shell">
+    <section class="controls">
+      <label class="small">Chế độ
+        <select id="mode">
+          <option value="ordered">Theo thứ tự</option>
+          <option value="random">Ngẫu nhiên</option>
+          <option value="wrong">Ôn câu sai</option>
+        </select>
+      </label>
+      <label class="small">Sách
+        <select id="book"></select>
+      </label>
+      <label class="small">Test
+        <select id="test"></select>
+      </label>
+      <button class="button primary" id="startButton">Bắt đầu lượt mới</button>
+      <button class="button" id="resetButton">Xóa điểm</button>
+      <span class="counter" id="counter"></span>
+    </section>
+    <section class="workspace">
+      <div class="image-card" id="imagePanel"></div>
+      <aside class="answer-card" id="answerPanel"></aside>
+    </section>
+  </main>
+  <script>
+    const DATA = {"items":[{"id":"h3/test01/131_BCCB.png","folder":"h3/test01","book":"h3","bookLabel":"Hacker 3","test":"test01","testLabel":"Test 01","title":"Hacker 3 · Test 01 · Câu 131–134","questions":{"131":"B","132":"C","133":"C","134":"B"},"image":"data/h3/test01/131_BCCB.png"},{"id":"h3/test01/135_DBBB.png","folder":"h3/test01","book":"h3","bookLabel":"Hacker 3","test":"test01","testLabel":"Test 01","title":"Hacker 3 · Test 01 · Câu 135–138","questions":{"135":"D","136":"B","137":"B","138":"B"},"image":"data/h3/test01/135_DBBB.png"},{"id":"h3/test01/139_DBBA.png","folder":"h3/test01","book":"h3","bookLabel":"Hacker 3","test":"test01","testLabel":"Test 01","title":"Hacker 3 · Test 01 · Câu 139–142","questions":{"139":"D","140":"B","141":"B","142":"A"},"image":"data/h3/test01/139_DBBA.png"},{"id":"h3/test01/143_CDBB.png","folder":"h3/test01","book":"h3","bookLabel":"Hacker 3","test":"test01","testLabel":"Test 01","title":"Hacker 3 · Test 01 · Câu 143–146","questions":{"143":"C","144":"D","145":"B","146":"B"},"image":"data/h3/test01/143_CDBB.png"},{"id":"h3/test01/147_CA.png","folder":"h3/test01","book":"h3","bookLabel":"Hacker 3","test":"test01","testLabel":"Test 01","title":"Hacker 3 · Test 01 · Câu 147–148","questions":{"147":"C","148":"A"},"image":"data/h3/test01/147_CA.png"},{"id":"h3/test01/149_CB.png","folder":"h3/test01","book":"h3","bookLabel":"Hacker 3","test":"test01","testLabel":"Test 01","title":"Hacker 3 · Test 01 · Câu 149–150","questions":{"149":"C","150":"B"},"image":"data/h3/test01/149_CB.png"},{"id":"h3/test01/151_DA.png","folder":"h3/test01","book":"h3","bookLabel":"Hacker 3","test":"test01","testLabel":"Test 01","title":"Hacker 3 · Test 01 · Câu 151–152","questions":{"151":"D","152":"A"},"image":"data/h3/test01/151_DA.png"},{"id":"h3/test01/153_BC.png","folder":"h3/test01","book":"h3","bookLabel":"Hacker 3","test":"test01","testLabel":"Test 01","title":"Hacker 3 · Test 01 · Câu 153–154","questions":{"153":"B","154":"C"},"image":"data/h3/test01/153_BC.png"},{"id":"h3/test01/155_CAD.png","folder":"h3/test01","book":"h3","bookLabel":"Hacker 3","test":"test01","testLabel":"Test 01","title":"Hacker 3 · Test 01 · Câu 155–157","questions":{"155":"C","156":"A","157":"D"},"image":"data/h3/test01/155_CAD.png"},{"id":"h3/test01/158_DABC.png","folder":"h3/test01","book":"h3","bookLabel":"Hacker 3","test":"test01","testLabel":"Test 01","title":"Hacker 3 · Test 01 · Câu 158–161","questions":{"158":"D","159":"A","160":"B","161":"C"},"image":"data/h3/test01/158_DABC.png"},{"id":"h3/test01/162_AACD.png","folder":"h3/test01","book":"h3","bookLabel":"Hacker 3","test":"test01","testLabel":"Test 01","title":"Hacker 3 · Test 01 · Câu 162–165","questions":{"162":"A","163":"A","164":"C","165":"D"},"image":"data/h3/test01/162_AACD.png"},{"id":"h3/test01/166_ACC.png","folder":"h3/test01","book":"h3","bookLabel":"Hacker 3","test":"test01","testLabel":"Test 01","title":"Hacker 3 · Test 01 · Câu 166–168","questions":{"166":"A","167":"C","168":"C"},"image":"data/h3/test01/166_ACC.png"},{"id":"h3/test01/169_BDC.png","folder":"h3/test01","book":"h3","bookLabel":"Hacker 3","test":"test01","testLabel":"Test 01","title":"Hacker 3 · Test 01 · Câu 169–171","questions":{"169":"B","170":"D","171":"C"},"image":"data/h3/test01/169_BDC.png"},{"id":"h3/test01/172_DCBB.png","folder":"h3/test01","book":"h3","bookLabel":"Hacker 3","test":"test01","testLabel":"Test 01","title":"Hacker 3 · Test 01 · Câu 172–175","questions":{"172":"D","173":"C","174":"B","175":"B"},"image":"data/h3/test01/172_DCBB.png"},{"id":"h3/test01/176_DDCAA.png","folder":"h3/test01","book":"h3","bookLabel":"Hacker 3","test":"test01","testLabel":"Test 01","title":"Hacker 3 · Test 01 · Câu 176–180","questions":{"176":"D","177":"D","178":"C","179":"A","180":"A"},"image":"data/h3/test01/176_DDCAA.png"},{"id":"h3/test01/181_CACDC.png","folder":"h3/test01","book":"h3","bookLabel":"Hacker 3","test":"test01","testLabel":"Test 01","title":"Hacker 3 · Test 01 · Câu 181–185","questions":{"181":"C","182":"A","183":"C","184":"D","185":"C"},"image":"data/h3/test01/181_CACDC.png"},{"id":"h3/test01/186_CBCBB.png","folder":"h3/test01","book":"h3","bookLabel":"Hacker 3","test":"test01","testLabel":"Test 01","title":"Hacker 3 · Test 01 · Câu 186–190","questions":{"186":"C","187":"B","188":"C","189":"B","190":"B"},"image":"data/h3/test01/186_CBCBB.png"},{"id":"h3/test01/191_CABCB.png","folder":"h3/test01","book":"h3","bookLabel":"Hacker 3","test":"test01","testLabel":"Test 01","title":"Hacker 3 · Test 01 · Câu 191–195","questions":{"191":"C","192":"A","193":"B","194":"C","195":"B"},"image":"data/h3/test01/191_CABCB.png"},{"id":"h3/test01/196_CADAD.png","folder":"h3/test01","book":"h3","bookLabel":"Hacker 3","test":"test01","testLabel":"Test 01","title":"Hacker 3 · Test 01 · Câu 196–200","questions":{"196":"C","197":"A","198":"D","199":"A","200":"D"},"image":"data/h3/test01/196_CADAD.png"},{"id":"h3/test02/131_AADC.png","folder":"h3/test02","book":"h3","bookLabel":"Hacker 3","test":"test02","testLabel":"Test 02","title":"Hacker 3 · Test 02 · Câu 131–134","questions":{"131":"A","132":"A","133":"D","134":"C"},"image":"data/h3/test02/131_AADC.png"},{"id":"h3/test02/135_DBCC.png","folder":"h3/test02","book":"h3","bookLabel":"Hacker 3","test":"test02","testLabel":"Test 02","title":"Hacker 3 · Test 02 · Câu 135–138","questions":{"135":"D","136":"B","137":"C","138":"C"},"image":"data/h3/test02/135_DBCC.png"},{"id":"h3/test02/139_CBBD.png","folder":"h3/test02","book":"h3","bookLabel":"Hacker 3","test":"test02","testLabel":"Test 02","title":"Hacker 3 · Test 02 · Câu 139–142","questions":{"139":"C","140":"B","141":"B","142":"D"},"image":"data/h3/test02/139_CBBD.png"},{"id":"h3/test02/143_BACD.png","folder":"h3/test02","book":"h3","bookLabel":"Hacker 3","test":"test02","testLabel":"Test 02","title":"Hacker 3 · Test 02 · Câu 143–146","questions":{"143":"B","144":"A","145":"C","146":"D"},"image":"data/h3/test02/143_BACD.png"},{"id":"h3/test02/147_BD.png","folder":"h3/test02","book":"h3","bookLabel":"Hacker 3","test":"test02","testLabel":"Test 02","title":"Hacker 3 · Test 02 · Câu 147–148","questions":{"147":"B","148":"D"},"image":"data/h3/test02/147_BD.png"},{"id":"h3/test02/149_DC.png","folder":"h3/test02","book":"h3","bookLabel":"Hacker 3","test":"test02","testLabel":"Test 02","title":"Hacker 3 · Test 02 · Câu 149–150","questions":{"149":"D","150":"C"},"image":"data/h3/test02/149_DC.png"},{"id":"h3/test02/151_BA.png","folder":"h3/test02","book":"h3","bookLabel":"Hacker 3","test":"test02","testLabel":"Test 02","title":"Hacker 3 · Test 02 · Câu 151–152","questions":{"151":"B","152":"A"},"image":"data/h3/test02/151_BA.png"},{"id":"h3/test02/153_CD.png","folder":"h3/test02","book":"h3","bookLabel":"Hacker 3","test":"test02","testLabel":"Test 02","title":"Hacker 3 · Test 02 · Câu 153–154","questions":{"153":"C","154":"D"},"image":"data/h3/test02/153_CD.png"},{"id":"h3/test02/155_CDB.png","folder":"h3/test02","book":"h3","bookLabel":"Hacker 3","test":"test02","testLabel":"Test 02","title":"Hacker 3 · Test 02 · Câu 155–157","questions":{"155":"C","156":"D","157":"B"},"image":"data/h3/test02/155_CDB.png"},{"id":"h3/test02/158_BAC.png","folder":"h3/test02","book":"h3","bookLabel":"Hacker 3","test":"test02","testLabel":"Test 02","title":"Hacker 3 · Test 02 · Câu 158–160","questions":{"158":"B","159":"A","160":"C"},"image":"data/h3/test02/158_BAC.png"},{"id":"h3/test02/161_CDC.png","folder":"h3/test02","book":"h3","bookLabel":"Hacker 3","test":"test02","testLabel":"Test 02","title":"Hacker 3 · Test 02 · Câu 161–163","questions":{"161":"C","162":"D","163":"C"},"image":"data/h3/test02/161_CDC.png"},{"id":"h3/test02/164_DDCB.png","folder":"h3/test02","book":"h3","bookLabel":"Hacker 3","test":"test02","testLabel":"Test 02","title":"Hacker 3 · Test 02 · Câu 164–167","questions":{"164":"D","165":"D","166":"C","167":"B"},"image":"data/h3/test02/164_DDCB.png"},{"id":"h3/test02/168_CBBA.png","folder":"h3/test02","book":"h3","bookLabel":"Hacker 3","test":"test02","testLabel":"Test 02","title":"Hacker 3 · Test 02 · Câu 168–171","questions":{"168":"C","169":"B","170":"B","171":"A"},"image":"data/h3/test02/168_CBBA.png"},{"id":"h3/test02/172_CDAC.png","folder":"h3/test02","book":"h3","bookLabel":"Hacker 3","test":"test02","testLabel":"Test 02","title":"Hacker 3 · Test 02 · Câu 172–175","questions":{"172":"C","173":"D","174":"A","175":"C"},"image":"data/h3/test02/172_CDAC.png"},{"id":"h3/test02/176_ADBCA.png","folder":"h3/test02","book":"h3","bookLabel":"Hacker 3","test":"test02","testLabel":"Test 02","title":"Hacker 3 · Test 02 · Câu 176–180","questions":{"176":"A","177":"D","178":"B","179":"C","180":"A"},"image":"data/h3/test02/176_ADBCA.png"},{"id":"h3/test02/181_ABBDD.png","folder":"h3/test02","book":"h3","bookLabel":"Hacker 3","test":"test02","testLabel":"Test 02","title":"Hacker 3 · Test 02 · Câu 181–185","questions":{"181":"A","182":"B","183":"B","184":"D","185":"D"},"image":"data/h3/test02/181_ABBDD.png"},{"id":"h3/test02/186_CBDBD.png","folder":"h3/test02","book":"h3","bookLabel":"Hacker 3","test":"test02","testLabel":"Test 02","title":"Hacker 3 · Test 02 · Câu 186–190","questions":{"186":"C","187":"B","188":"D","189":"B","190":"D"},"image":"data/h3/test02/186_CBDBD.png"},{"id":"h3/test02/191_BBBDA.png","folder":"h3/test02","book":"h3","bookLabel":"Hacker 3","test":"test02","testLabel":"Test 02","title":"Hacker 3 · Test 02 · Câu 191–195","questions":{"191":"B","192":"B","193":"B","194":"D","195":"A"},"image":"data/h3/test02/191_BBBDA.png"},{"id":"h3/test02/196_BABBD.png","folder":"h3/test02","book":"h3","bookLabel":"Hacker 3","test":"test02","testLabel":"Test 02","title":"Hacker 3 · Test 02 · Câu 196–200","questions":{"196":"B","197":"A","198":"B","199":"B","200":"D"},"image":"data/h3/test02/196_BABBD.png"},{"id":"h3/test03/131_CBBC.png","folder":"h3/test03","book":"h3","bookLabel":"Hacker 3","test":"test03","testLabel":"Test 03","title":"Hacker 3 · Test 03 · Câu 131–134","questions":{"131":"C","132":"B","133":"B","134":"C"},"image":"data/h3/test03/131_CBBC.png"},{"id":"h3/test03/135_CDBC.png","folder":"h3/test03","book":"h3","bookLabel":"Hacker 3","test":"test03","testLabel":"Test 03","title":"Hacker 3 · Test 03 · Câu 135–138","questions":{"135":"C","136":"D","137":"B","138":"C"},"image":"data/h3/test03/135_CDBC.png"},{"id":"h3/test03/139_BDCB.png","folder":"h3/test03","book":"h3","bookLabel":"Hacker 3","test":"test03","testLabel":"Test 03","title":"Hacker 3 · Test 03 · Câu 139–142","questions":{"139":"B","140":"D","141":"C","142":"B"},"image":"data/h3/test03/139_BDCB.png"},{"id":"h3/test03/143_DACD.png","folder":"h3/test03","book":"h3","bookLabel":"Hacker 3","test":"test03","testLabel":"Test 03","title":"Hacker 3 · Test 03 · Câu 143–146","questions":{"143":"D","144":"A","145":"C","146":"D"},"image":"data/h3/test03/143_DACD.png"},{"id":"h3/test03/147_CA.png","folder":"h3/test03","book":"h3","bookLabel":"Hacker 3","test":"test03","testLabel":"Test 03","title":"Hacker 3 · Test 03 · Câu 147–148","questions":{"147":"C","148":"A"},"image":"data/h3/test03/147_CA.png"},{"id":"h3/test03/149_BB.png","folder":"h3/test03","book":"h3","bookLabel":"Hacker 3","test":"test03","testLabel":"Test 03","title":"Hacker 3 · Test 03 · Câu 149–150","questions":{"149":"B","150":"B"},"image":"data/h3/test03/149_BB.png"},{"id":"h3/test03/151_AD.png","folder":"h3/test03","book":"h3","bookLabel":"Hacker 3","test":"test03","testLabel":"Test 03","title":"Hacker 3 · Test 03 · Câu 151–152","questions":{"151":"A","152":"D"},"image":"data/h3/test03/151_AD.png"},{"id":"h3/test03/153_CCB.png","folder":"h3/test03","book":"h3","bookLabel":"Hacker 3","test":"test03","testLabel":"Test 03","title":"Hacker 3 · Test 03 · Câu 153–155","questions":{"153":"C","154":"C","155":"B"},"image":"data/h3/test03/153_CCB.png"},{"id":"h3/test03/156_CB.png","folder":"h3/test03","book":"h3","bookLabel":"Hacker 3","test":"test03","testLabel":"Test 03","title":"Hacker 3 · Test 03 · Câu 156–157","questions":{"156":"C","157":"B"},"image":"data/h3/test03/156_CB.png"},{"id":"h3/test03/158_ACD.png","folder":"h3/test03","book":"h3","bookLabel":"Hacker 3","test":"test03","testLabel":"Test 03","title":"Hacker 3 · Test 03 · Câu 158–160","questions":{"158":"A","159":"C","160":"D"},"image":"data/h3/test03/158_ACD.png"},{"id":"h3/test03/161_DCBB.png","folder":"h3/test03","book":"h3","bookLabel":"Hacker 3","test":"test03","testLabel":"Test 03","title":"Hacker 3 · Test 03 · Câu 161–164","questions":{"161":"D","162":"C","163":"B","164":"B"},"image":"data/h3/test03/161_DCBB.png"},{"id":"h3/test03/165_ADAD.png","folder":"h3/test03","book":"h3","bookLabel":"Hacker 3","test":"test03","testLabel":"Test 03","title":"Hacker 3 · Test 03 · Câu 165–168","questions":{"165":"A","166":"D","167":"A","168":"D"},"image":"data/h3/test03/165_ADAD.png"},{"id":"h3/test03/169_BDB.png","folder":"h3/test03","book":"h3","bookLabel":"Hacker 3","test":"test03","testLabel":"Test 03","title":"Hacker 3 · Test 03 · Câu 169–171","questions":{"169":"B","170":"D","171":"B"},"image":"data/h3/test03/169_BDB.png"},{"id":"h3/test03/172_CCCB.png","folder":"h3/test03","book":"h3","bookLabel":"Hacker 3","test":"test03","testLabel":"Test 03","title":"Hacker 3 · Test 03 · Câu 172–175","questions":{"172":"C","173":"C","174":"C","175":"B"},"image":"data/h3/test03/172_CCCB.png"},{"id":"h3/test03/176_DBBBD.png","folder":"h3/test03","book":"h3","bookLabel":"Hacker 3","test":"test03","testLabel":"Test 03","title":"Hacker 3 · Test 03 · Câu 176–180","questions":{"176":"D","177":"B","178":"B","179":"B","180":"D"},"image":"data/h3/test03/176_DBBBD.png"},{"id":"h3/test03/181_CACBB.png","folder":"h3/test03","book":"h3","bookLabel":"Hacker 3","test":"test03","testLabel":"Test 03","title":"Hacker 3 · Test 03 · Câu 181–185","questions":{"181":"C","182":"A","183":"C","184":"B","185":"B"},"image":"data/h3/test03/181_CACBB.png"},{"id":"h3/test03/186_DCDCB.png","folder":"h3/test03","book":"h3","bookLabel":"Hacker 3","test":"test03","testLabel":"Test 03","title":"Hacker 3 · Test 03 · Câu 186–190","questions":{"186":"D","187":"C","188":"D","189":"C","190":"B"},"image":"data/h3/test03/186_DCDCB.png"},{"id":"h3/test03/191_ABBDC.png","folder":"h3/test03","book":"h3","bookLabel":"Hacker 3","test":"test03","testLabel":"Test 03","title":"Hacker 3 · Test 03 · Câu 191–195","questions":{"191":"A","192":"B","193":"B","194":"D","195":"C"},"image":"data/h3/test03/191_ABBDC.png"},{"id":"h3/test03/196_BDAAD.png","folder":"h3/test03","book":"h3","bookLabel":"Hacker 3","test":"test03","testLabel":"Test 03","title":"Hacker 3 · Test 03 · Câu 196–200","questions":{"196":"B","197":"D","198":"A","199":"A","200":"D"},"image":"data/h3/test03/196_BDAAD.png"},{"id":"h3/test04/131_BCAB.png","folder":"h3/test04","book":"h3","bookLabel":"Hacker 3","test":"test04","testLabel":"Test 04","title":"Hacker 3 · Test 04 · Câu 131–134","questions":{"131":"B","132":"C","133":"A","134":"B"},"image":"data/h3/test04/131_BCAB.png"},{"id":"h3/test04/135_BBDC.png","folder":"h3/test04","book":"h3","bookLabel":"Hacker 3","test":"test04","testLabel":"Test 04","title":"Hacker 3 · Test 04 · Câu 135–138","questions":{"135":"B","136":"B","137":"D","138":"C"},"image":"data/h3/test04/135_BBDC.png"},{"id":"h3/test04/139_DABD.png","folder":"h3/test04","book":"h3","bookLabel":"Hacker 3","test":"test04","testLabel":"Test 04","title":"Hacker 3 · Test 04 · Câu 139–142","questions":{"139":"D","140":"A","141":"B","142":"D"},"image":"data/h3/test04/139_DABD.png"},{"id":"h3/test04/143_CAAD.png","folder":"h3/test04","book":"h3","bookLabel":"Hacker 3","test":"test04","testLabel":"Test 04","title":"Hacker 3 · Test 04 · Câu 143–146","questions":{"143":"C","144":"A","145":"A","146":"D"},"image":"data/h3/test04/143_CAAD.png"},{"id":"h3/test04/147_DA.png","folder":"h3/test04","book":"h3","bookLabel":"Hacker 3","test":"test04","testLabel":"Test 04","title":"Hacker 3 · Test 04 · Câu 147–148","questions":{"147":"D","148":"A"},"image":"data/h3/test04/147_DA.png"},{"id":"h3/test04/149_BC.png","folder":"h3/test04","book":"h3","bookLabel":"Hacker 3","test":"test04","testLabel":"Test 04","title":"Hacker 3 · Test 04 · Câu 149–150","questions":{"149":"B","150":"C"},"image":"data/h3/test04/149_BC.png"},{"id":"h3/test04/151_DC.png","folder":"h3/test04","book":"h3","bookLabel":"Hacker 3","test":"test04","testLabel":"Test 04","title":"Hacker 3 · Test 04 · Câu 151–152","questions":{"151":"D","152":"C"},"image":"data/h3/test04/151_DC.png"},{"id":"h3/test04/153_ACD.png","folder":"h3/test04","book":"h3","bookLabel":"Hacker 3","test":"test04","testLabel":"Test 04","title":"Hacker 3 · Test 04 · Câu 153–155","questions":{"153":"A","154":"C","155":"D"},"image":"data/h3/test04/153_ACD.png"},{"id":"h3/test04/156_CC.png","folder":"h3/test04","book":"h3","bookLabel":"Hacker 3","test":"test04","testLabel":"Test 04","title":"Hacker 3 · Test 04 · Câu 156–157","questions":{"156":"C","157":"C"},"image":"data/h3/test04/156_CC.png"},{"id":"h3/test04/158_BAD.png","folder":"h3/test04","book":"h3","bookLabel":"Hacker 3","test":"test04","testLabel":"Test 04","title":"Hacker 3 · Test 04 · Câu 158–160","questions":{"158":"B","159":"A","160":"D"},"image":"data/h3/test04/158_BAD.png"},{"id":"h3/test04/161_DDB.png","folder":"h3/test04","book":"h3","bookLabel":"Hacker 3","test":"test04","testLabel":"Test 04","title":"Hacker 3 · Test 04 · Câu 161–163","questions":{"161":"D","162":"D","163":"B"},"image":"data/h3/test04/161_DDB.png"},{"id":"h3/test04/164_DCBB.png","folder":"h3/test04","book":"h3","bookLabel":"Hacker 3","test":"test04","testLabel":"Test 04","title":"Hacker 3 · Test 04 · Câu 164–167","questions":{"164":"D","165":"C","166":"B","167":"B"},"image":"data/h3/test04/164_DCBB.png"},{"id":"h3/test04/168_DBBC.png","folder":"h3/test04","book":"h3","bookLabel":"Hacker 3","test":"test04","testLabel":"Test 04","title":"Hacker 3 · Test 04 · Câu 168–171","questions":{"168":"D","169":"B","170":"B","171":"C"},"image":"data/h3/test04/168_DBBC.png"},{"id":"h3/test04/172_DBBA.png","folder":"h3/test04","book":"h3","bookLabel":"Hacker 3","test":"test04","testLabel":"Test 04","title":"Hacker 3 · Test 04 · Câu 172–175","questions":{"172":"D","173":"B","174":"B","175":"A"},"image":"data/h3/test04/172_DBBA.png"},{"id":"h3/test04/176_BCBDD.png","folder":"h3/test04","book":"h3","bookLabel":"Hacker 3","test":"test04","testLabel":"Test 04","title":"Hacker 3 · Test 04 · Câu 176–180","questions":{"176":"B","177":"C","178":"B","179":"D","180":"D"},"image":"data/h3/test04/176_BCBDD.png"},{"id":"h3/test04/181_BBADB.png","folder":"h3/test04","book":"h3","bookLabel":"Hacker 3","test":"test04","testLabel":"Test 04","title":"Hacker 3 · Test 04 · Câu 181–185","questions":{"181":"B","182":"B","183":"A","184":"D","185":"B"},"image":"data/h3/test04/181_BBADB.png"},{"id":"h3/test04/186_CBBAC.png","folder":"h3/test04","book":"h3","bookLabel":"Hacker 3","test":"test04","testLabel":"Test 04","title":"Hacker 3 · Test 04 · Câu 186–190","questions":{"186":"C","187":"B","188":"B","189":"A","190":"C"},"image":"data/h3/test04/186_CBBAC.png"},{"id":"h3/test04/191_ACDDB.png","folder":"h3/test04","book":"h3","bookLabel":"Hacker 3","test":"test04","testLabel":"Test 04","title":"Hacker 3 · Test 04 · Câu 191–195","questions":{"191":"A","192":"C","193":"D","194":"D","195":"B"},"image":"data/h3/test04/191_ACDDB.png"},{"id":"h3/test04/196_CBACB.png","folder":"h3/test04","book":"h3","bookLabel":"Hacker 3","test":"test04","testLabel":"Test 04","title":"Hacker 3 · Test 04 · Câu 196–200","questions":{"196":"C","197":"B","198":"A","199":"C","200":"B"},"image":"data/h3/test04/196_CBACB.png"},{"id":"h3/test05/131_BADC.png","folder":"h3/test05","book":"h3","bookLabel":"Hacker 3","test":"test05","testLabel":"Test 05","title":"Hacker 3 · Test 05 · Câu 131–134","questions":{"131":"B","132":"A","133":"D","134":"C"},"image":"data/h3/test05/131_BADC.png"},{"id":"h3/test05/135_DCCB.png","folder":"h3/test05","book":"h3","bookLabel":"Hacker 3","test":"test05","testLabel":"Test 05","title":"Hacker 3 · Test 05 · Câu 135–138","questions":{"135":"D","136":"C","137":"C","138":"B"},"image":"data/h3/test05/135_DCCB.png"},{"id":"h3/test05/139_BCDA.png","folder":"h3/test05","book":"h3","bookLabel":"Hacker 3","test":"test05","testLabel":"Test 05","title":"Hacker 3 · Test 05 · Câu 139–142","questions":{"139":"B","140":"C","141":"D","142":"A"},"image":"data/h3/test05/139_BCDA.png"},{"id":"h3/test05/143_BDCB.png","folder":"h3/test05","book":"h3","bookLabel":"Hacker 3","test":"test05","testLabel":"Test 05","title":"Hacker 3 · Test 05 · Câu 143–146","questions":{"143":"B","144":"D","145":"C","146":"B"},"image":"data/h3/test05/143_BDCB.png"},{"id":"h3/test05/147_BA.png","folder":"h3/test05","book":"h3","bookLabel":"Hacker 3","test":"test05","testLabel":"Test 05","title":"Hacker 3 · Test 05 · Câu 147–148","questions":{"147":"B","148":"A"},"image":"data/h3/test05/147_BA.png"},{"id":"h3/test05/149_BD.png","folder":"h3/test05","book":"h3","bookLabel":"Hacker 3","test":"test05","testLabel":"Test 05","title":"Hacker 3 · Test 05 · Câu 149–150","questions":{"149":"B","150":"D"},"image":"data/h3/test05/149_BD.png"},{"id":"h3/test05/151_DB.png","folder":"h3/test05","book":"h3","bookLabel":"Hacker 3","test":"test05","testLabel":"Test 05","title":"Hacker 3 · Test 05 · Câu 151–152","questions":{"151":"D","152":"B"},"image":"data/h3/test05/151_DB.png"},{"id":"h3/test05/153_AD.png","folder":"h3/test05","book":"h3","bookLabel":"Hacker 3","test":"test05","testLabel":"Test 05","title":"Hacker 3 · Test 05 · Câu 153–154","questions":{"153":"A","154":"D"},"image":"data/h3/test05/153_AD.png"},{"id":"h3/test05/155_ADB.png","folder":"h3/test05","book":"h3","bookLabel":"Hacker 3","test":"test05","testLabel":"Test 05","title":"Hacker 3 · Test 05 · Câu 155–157","questions":{"155":"A","156":"D","157":"B"},"image":"data/h3/test05/155_ADB.png"},{"id":"h3/test05/158_CBD.png","folder":"h3/test05","book":"h3","bookLabel":"Hacker 3","test":"test05","testLabel":"Test 05","title":"Hacker 3 · Test 05 · Câu 158–160","questions":{"158":"C","159":"B","160":"D"},"image":"data/h3/test05/158_CBD.png"},{"id":"h3/test05/161_BDC.png","folder":"h3/test05","book":"h3","bookLabel":"Hacker 3","test":"test05","testLabel":"Test 05","title":"Hacker 3 · Test 05 · Câu 161–163","questions":{"161":"B","162":"D","163":"C"},"image":"data/h3/test05/161_BDC.png"},{"id":"h3/test05/164_CDAD.png","folder":"h3/test05","book":"h3","bookLabel":"Hacker 3","test":"test05","testLabel":"Test 05","title":"Hacker 3 · Test 05 · Câu 164–167","questions":{"164":"C","165":"D","166":"A","167":"D"},"image":"data/h3/test05/164_CDAD.png"},{"id":"h3/test05/168_ABBB.png","folder":"h3/test05","book":"h3","bookLabel":"Hacker 3","test":"test05","testLabel":"Test 05","title":"Hacker 3 · Test 05 · Câu 168–171","questions":{"168":"A","169":"B","170":"B","171":"B"},"image":"data/h3/test05/168_ABBB.png"},{"id":"h3/test05/172_CBAD.png","folder":"h3/test05","book":"h3","bookLabel":"Hacker 3","test":"test05","testLabel":"Test 05","title":"Hacker 3 · Test 05 · Câu 172–175","questions":{"172":"C","173":"B","174":"A","175":"D"},"image":"data/h3/test05/172_CBAD.png"},{"id":"h3/test05/176_BCABB.png","folder":"h3/test05","book":"h3","bookLabel":"Hacker 3","test":"test05","testLabel":"Test 05","title":"Hacker 3 · Test 05 · Câu 176–180","questions":{"176":"B","177":"C","178":"A","179":"B","180":"B"},"image":"data/h3/test05/176_BCABB.png"},{"id":"h3/test05/181_DACBB.png","folder":"h3/test05","book":"h3","bookLabel":"Hacker 3","test":"test05","testLabel":"Test 05","title":"Hacker 3 · Test 05 · Câu 181–185","questions":{"181":"D","182":"A","183":"C","184":"B","185":"B"},"image":"data/h3/test05/181_DACBB.png"},{"id":"h3/test05/186_DBBAB.png","folder":"h3/test05","book":"h3","bookLabel":"Hacker 3","test":"test05","testLabel":"Test 05","title":"Hacker 3 · Test 05 · Câu 186–190","questions":{"186":"D","187":"B","188":"B","189":"A","190":"B"},"image":"data/h3/test05/186_DBBAB.png"},{"id":"h3/test05/191_CCDAC.png","folder":"h3/test05","book":"h3","bookLabel":"Hacker 3","test":"test05","testLabel":"Test 05","title":"Hacker 3 · Test 05 · Câu 191–195","questions":{"191":"C","192":"C","193":"D","194":"A","195":"C"},"image":"data/h3/test05/191_CCDAC.png"},{"id":"h3/test05/196_ABADD.png","folder":"h3/test05","book":"h3","bookLabel":"Hacker 3","test":"test05","testLabel":"Test 05","title":"Hacker 3 · Test 05 · Câu 196–200","questions":{"196":"A","197":"B","198":"A","199":"D","200":"D"},"image":"data/h3/test05/196_ABADD.png"},{"id":"h3/test06/131_DCBA.png","folder":"h3/test06","book":"h3","bookLabel":"Hacker 3","test":"test06","testLabel":"Test 06","title":"Hacker 3 · Test 06 · Câu 131–134","questions":{"131":"D","132":"C","133":"B","134":"A"},"image":"data/h3/test06/131_DCBA.png"},{"id":"h3/test06/135_CDCB.png","folder":"h3/test06","book":"h3","bookLabel":"Hacker 3","test":"test06","testLabel":"Test 06","title":"Hacker 3 · Test 06 · Câu 135–138","questions":{"135":"C","136":"D","137":"C","138":"B"},"image":"data/h3/test06/135_CDCB.png"},{"id":"h3/test06/139_BDCC.png","folder":"h3/test06","book":"h3","bookLabel":"Hacker 3","test":"test06","testLabel":"Test 06","title":"Hacker 3 · Test 06 · Câu 139–142","questions":{"139":"B","140":"D","141":"C","142":"C"},"image":"data/h3/test06/139_BDCC.png"},{"id":"h3/test06/143_BABA.png","folder":"h3/test06","book":"h3","bookLabel":"Hacker 3","test":"test06","testLabel":"Test 06","title":"Hacker 3 · Test 06 · Câu 143–146","questions":{"143":"B","144":"A","145":"B","146":"A"},"image":"data/h3/test06/143_BABA.png"},{"id":"h3/test06/147_CA.png","folder":"h3/test06","book":"h3","bookLabel":"Hacker 3","test":"test06","testLabel":"Test 06","title":"Hacker 3 · Test 06 · Câu 147–148","questions":{"147":"C","148":"A"},"image":"data/h3/test06/147_CA.png"},{"id":"h3/test06/149_DC.png","folder":"h3/test06","book":"h3","bookLabel":"Hacker 3","test":"test06","testLabel":"Test 06","title":"Hacker 3 · Test 06 · Câu 149–150","questions":{"149":"D","150":"C"},"image":"data/h3/test06/149_DC.png"},{"id":"h3/test06/151_CB.png","folder":"h3/test06","book":"h3","bookLabel":"Hacker 3","test":"test06","testLabel":"Test 06","title":"Hacker 3 · Test 06 · Câu 151–152","questions":{"151":"C","152":"B"},"image":"data/h3/test06/151_CB.png"},{"id":"h3/test06/153_ABD.png","folder":"h3/test06","book":"h3","bookLabel":"Hacker 3","test":"test06","testLabel":"Test 06","title":"Hacker 3 · Test 06 · Câu 153–155","questions":{"153":"A","154":"B","155":"D"},"image":"data/h3/test06/153_ABD.png"},{"id":"h3/test06/156_BB.png","folder":"h3/test06","book":"h3","bookLabel":"Hacker 3","test":"test06","testLabel":"Test 06","title":"Hacker 3 · Test 06 · Câu 156–157","questions":{"156":"B","157":"B"},"image":"data/h3/test06/156_BB.png"},{"id":"h3/test06/158_CCA.png","folder":"h3/test06","book":"h3","bookLabel":"Hacker 3","test":"test06","testLabel":"Test 06","title":"Hacker 3 · Test 06 · Câu 158–160","questions":{"158":"C","159":"C","160":"A"},"image":"data/h3/test06/158_CCA.png"},{"id":"h3/test06/161_CCA.png","folder":"h3/test06","book":"h3","bookLabel":"Hacker 3","test":"test06","testLabel":"Test 06","title":"Hacker 3 · Test 06 · Câu 161–163","questions":{"161":"C","162":"C","163":"A"},"image":"data/h3/test06/161_CCA.png"},{"id":"h3/test06/164_ACDA.png","folder":"h3/test06","book":"h3","bookLabel":"Hacker 3","test":"test06","testLabel":"Test 06","title":"Hacker 3 · Test 06 · Câu 164–167","questions":{"164":"A","165":"C","166":"D","167":"A"},"image":"data/h3/test06/164_ACDA.png"},{"id":"h3/test06/168_CDCB.png","folder":"h3/test06","book":"h3","bookLabel":"Hacker 3","test":"test06","testLabel":"Test 06","title":"Hacker 3 · Test 06 · Câu 168–171","questions":{"168":"C","169":"D","170":"C","171":"B"},"image":"data/h3/test06/168_CDCB.png"},{"id":"h3/test06/172_CCBB.png","folder":"h3/test06","book":"h3","bookLabel":"Hacker 3","test":"test06","testLabel":"Test 06","title":"Hacker 3 · Test 06 · Câu 172–175","questions":{"172":"C","173":"C","174":"B","175":"B"},"image":"data/h3/test06/172_CCBB.png"},{"id":"h3/test06/176_BACAD.png","folder":"h3/test06","book":"h3","bookLabel":"Hacker 3","test":"test06","testLabel":"Test 06","title":"Hacker 3 · Test 06 · Câu 176–180","questions":{"176":"B","177":"A","178":"C","179":"A","180":"D"},"image":"data/h3/test06/176_BACAD.png"},{"id":"h3/test06/181_CBCDB.png","folder":"h3/test06","book":"h3","bookLabel":"Hacker 3","test":"test06","testLabel":"Test 06","title":"Hacker 3 · Test 06 · Câu 181–185","questions":{"181":"C","182":"B","183":"C","184":"D","185":"B"},"image":"data/h3/test06/181_CBCDB.png"},{"id":"h3/test06/186_CCBAB.png","folder":"h3/test06","book":"h3","bookLabel":"Hacker 3","test":"test06","testLabel":"Test 06","title":"Hacker 3 · Test 06 · Câu 186–190","questions":{"186":"C","187":"C","188":"B","189":"A","190":"B"},"image":"data/h3/test06/186_CCBAB.png"},{"id":"h3/test06/191_CBACD.png","folder":"h3/test06","book":"h3","bookLabel":"Hacker 3","test":"test06","testLabel":"Test 06","title":"Hacker 3 · Test 06 · Câu 191–195","questions":{"191":"C","192":"B","193":"A","194":"C","195":"D"},"image":"data/h3/test06/191_CBACD.png"},{"id":"h3/test06/196_BDDDA.png","folder":"h3/test06","book":"h3","bookLabel":"Hacker 3","test":"test06","testLabel":"Test 06","title":"Hacker 3 · Test 06 · Câu 196–200","questions":{"196":"B","197":"D","198":"D","199":"D","200":"A"},"image":"data/h3/test06/196_BDDDA.png"},{"id":"h3/test07/131_CBCD.png","folder":"h3/test07","book":"h3","bookLabel":"Hacker 3","test":"test07","testLabel":"Test 07","title":"Hacker 3 · Test 07 · Câu 131–134","questions":{"131":"C","132":"B","133":"C","134":"D"},"image":"data/h3/test07/131_CBCD.png"},{"id":"h3/test07/135_CBCA.png","folder":"h3/test07","book":"h3","bookLabel":"Hacker 3","test":"test07","testLabel":"Test 07","title":"Hacker 3 · Test 07 · Câu 135–138","questions":{"135":"C","136":"B","137":"C","138":"A"},"image":"data/h3/test07/135_CBCA.png"},{"id":"h3/test07/139_DBCC.png","folder":"h3/test07","book":"h3","bookLabel":"Hacker 3","test":"test07","testLabel":"Test 07","title":"Hacker 3 · Test 07 · Câu 139–142","questions":{"139":"D","140":"B","141":"C","142":"C"},"image":"data/h3/test07/139_DBCC.png"},{"id":"h3/test07/143_BACB.png","folder":"h3/test07","book":"h3","bookLabel":"Hacker 3","test":"test07","testLabel":"Test 07","title":"Hacker 3 · Test 07 · Câu 143–146","questions":{"143":"B","144":"A","145":"C","146":"B"},"image":"data/h3/test07/143_BACB.png"},{"id":"h3/test07/147_DB.png","folder":"h3/test07","book":"h3","bookLabel":"Hacker 3","test":"test07","testLabel":"Test 07","title":"Hacker 3 · Test 07 · Câu 147–148","questions":{"147":"D","148":"B"},"image":"data/h3/test07/147_DB.png"},{"id":"h3/test07/149_CD.png","folder":"h3/test07","book":"h3","bookLabel":"Hacker 3","test":"test07","testLabel":"Test 07","title":"Hacker 3 · Test 07 · Câu 149–150","questions":{"149":"C","150":"D"},"image":"data/h3/test07/149_CD.png"},{"id":"h3/test07/151_DA.png","folder":"h3/test07","book":"h3","bookLabel":"Hacker 3","test":"test07","testLabel":"Test 07","title":"Hacker 3 · Test 07 · Câu 151–152","questions":{"151":"D","152":"A"},"image":"data/h3/test07/151_DA.png"},{"id":"h3/test07/153_BDB.png","folder":"h3/test07","book":"h3","bookLabel":"Hacker 3","test":"test07","testLabel":"Test 07","title":"Hacker 3 · Test 07 · Câu 153–155","questions":{"153":"B","154":"D","155":"B"},"image":"data/h3/test07/153_BDB.png"},{"id":"h3/test07/156_DCCC.png","folder":"h3/test07","book":"h3","bookLabel":"Hacker 3","test":"test07","testLabel":"Test 07","title":"Hacker 3 · Test 07 · Câu 156–159","questions":{"156":"D","157":"C","158":"C","159":"C"},"image":"data/h3/test07/156_DCCC.png"},{"id":"h3/test07/160_BCD.png","folder":"h3/test07","book":"h3","bookLabel":"Hacker 3","test":"test07","testLabel":"Test 07","title":"Hacker 3 · Test 07 · Câu 160–162","questions":{"160":"B","161":"C","162":"D"},"image":"data/h3/test07/160_BCD.png"},{"id":"h3/test07/163_ABDB.png","folder":"h3/test07","book":"h3","bookLabel":"Hacker 3","test":"test07","testLabel":"Test 07","title":"Hacker 3 · Test 07 · Câu 163–166","questions":{"163":"A","164":"B","165":"D","166":"B"},"image":"data/h3/test07/163_ABDB.png"},{"id":"h3/test07/167_BCC.png","folder":"h3/test07","book":"h3","bookLabel":"Hacker 3","test":"test07","testLabel":"Test 07","title":"Hacker 3 · Test 07 · Câu 167–169","questions":{"167":"B","168":"C","169":"C"},"image":"data/h3/test07/167_BCC.png"},{"id":"h3/test07/170_CADD.png","folder":"h3/test07","book":"h3","bookLabel":"Hacker 3","test":"test07","testLabel":"Test 07","title":"Hacker 3 · Test 07 · Câu 170–173","questions":{"170":"C","171":"A","172":"D","173":"D"},"image":"data/h3/test07/170_CADD.png"},{"id":"h3/test07/174_CD.png","folder":"h3/test07","book":"h3","bookLabel":"Hacker 3","test":"test07","testLabel":"Test 07","title":"Hacker 3 · Test 07 · Câu 174–175","questions":{"174":"C","175":"D"},"image":"data/h3/test07/174_CD.png"},{"id":"h3/test07/176_CCCDA.png","folder":"h3/test07","book":"h3","bookLabel":"Hacker 3","test":"test07","testLabel":"Test 07","title":"Hacker 3 · Test 07 · Câu 176–180","questions":{"176":"C","177":"C","178":"C","179":"D","180":"A"},"image":"data/h3/test07/176_CCCDA.png"},{"id":"h3/test07/181_CDCBB.png","folder":"h3/test07","book":"h3","bookLabel":"Hacker 3","test":"test07","testLabel":"Test 07","title":"Hacker 3 · Test 07 · Câu 181–185","questions":{"181":"C","182":"D","183":"C","184":"B","185":"B"},"image":"data/h3/test07/181_CDCBB.png"},{"id":"h3/test07/186_BADCB.png","folder":"h3/test07","book":"h3","bookLabel":"Hacker 3","test":"test07","testLabel":"Test 07","title":"Hacker 3 · Test 07 · Câu 186–190","questions":{"186":"B","187":"A","188":"D","189":"C","190":"B"},"image":"data/h3/test07/186_BADCB.png"},{"id":"h3/test07/191_ACDBC.png","folder":"h3/test07","book":"h3","bookLabel":"Hacker 3","test":"test07","testLabel":"Test 07","title":"Hacker 3 · Test 07 · Câu 191–195","questions":{"191":"A","192":"C","193":"D","194":"B","195":"C"},"image":"data/h3/test07/191_ACDBC.png"},{"id":"h3/test07/196_DABCD.png","folder":"h3/test07","book":"h3","bookLabel":"Hacker 3","test":"test07","testLabel":"Test 07","title":"Hacker 3 · Test 07 · Câu 196–200","questions":{"196":"D","197":"A","198":"B","199":"C","200":"D"},"image":"data/h3/test07/196_DABCD.png"},{"id":"h3/test08/131_BCDC.png","folder":"h3/test08","book":"h3","bookLabel":"Hacker 3","test":"test08","testLabel":"Test 08","title":"Hacker 3 · Test 08 · Câu 131–134","questions":{"131":"B","132":"C","133":"D","134":"C"},"image":"data/h3/test08/131_BCDC.png"},{"id":"h3/test08/135_BBAA.png","folder":"h3/test08","book":"h3","bookLabel":"Hacker 3","test":"test08","testLabel":"Test 08","title":"Hacker 3 · Test 08 · Câu 135–138","questions":{"135":"B","136":"B","137":"A","138":"A"},"image":"data/h3/test08/135_BBAA.png"},{"id":"h3/test08/139_CCDB.png","folder":"h3/test08","book":"h3","bookLabel":"Hacker 3","test":"test08","testLabel":"Test 08","title":"Hacker 3 · Test 08 · Câu 139–142","questions":{"139":"C","140":"C","141":"D","142":"B"},"image":"data/h3/test08/139_CCDB.png"},{"id":"h3/test08/143_BADC.png","folder":"h3/test08","book":"h3","bookLabel":"Hacker 3","test":"test08","testLabel":"Test 08","title":"Hacker 3 · Test 08 · Câu 143–146","questions":{"143":"B","144":"A","145":"D","146":"C"},"image":"data/h3/test08/143_BADC.png"},{"id":"h3/test08/147_CD.png","folder":"h3/test08","book":"h3","bookLabel":"Hacker 3","test":"test08","testLabel":"Test 08","title":"Hacker 3 · Test 08 · Câu 147–148","questions":{"147":"C","148":"D"},"image":"data/h3/test08/147_CD.png"},{"id":"h3/test08/149_AC.png","folder":"h3/test08","book":"h3","bookLabel":"Hacker 3","test":"test08","testLabel":"Test 08","title":"Hacker 3 · Test 08 · Câu 149–150","questions":{"149":"A","150":"C"},"image":"data/h3/test08/149_AC.png"},{"id":"h3/test08/151_CB.png","folder":"h3/test08","book":"h3","bookLabel":"Hacker 3","test":"test08","testLabel":"Test 08","title":"Hacker 3 · Test 08 · Câu 151–152","questions":{"151":"C","152":"B"},"image":"data/h3/test08/151_CB.png"},{"id":"h3/test08/153_DB.png","folder":"h3/test08","book":"h3","bookLabel":"Hacker 3","test":"test08","testLabel":"Test 08","title":"Hacker 3 · Test 08 · Câu 153–154","questions":{"153":"D","154":"B"},"image":"data/h3/test08/153_DB.png"},{"id":"h3/test08/155_ACA.png","folder":"h3/test08","book":"h3","bookLabel":"Hacker 3","test":"test08","testLabel":"Test 08","title":"Hacker 3 · Test 08 · Câu 155–157","questions":{"155":"A","156":"C","157":"A"},"image":"data/h3/test08/155_ACA.png"},{"id":"h3/test08/158_ABCB.png","folder":"h3/test08","book":"h3","bookLabel":"Hacker 3","test":"test08","testLabel":"Test 08","title":"Hacker 3 · Test 08 · Câu 158–161","questions":{"158":"A","159":"B","160":"C","161":"B"},"image":"data/h3/test08/158_ABCB.png"},{"id":"h3/test08/162_BDB.png","folder":"h3/test08","book":"h3","bookLabel":"Hacker 3","test":"test08","testLabel":"Test 08","title":"Hacker 3 · Test 08 · Câu 162–164","questions":{"162":"B","163":"D","164":"B"},"image":"data/h3/test08/162_BDB.png"},{"id":"h3/test08/165_CCA.png","folder":"h3/test08","book":"h3","bookLabel":"Hacker 3","test":"test08","testLabel":"Test 08","title":"Hacker 3 · Test 08 · Câu 165–167","questions":{"165":"C","166":"C","167":"A"},"image":"data/h3/test08/165_CCA.png"},{"id":"h3/test08/168_CABB.png","folder":"h3/test08","book":"h3","bookLabel":"Hacker 3","test":"test08","testLabel":"Test 08","title":"Hacker 3 · Test 08 · Câu 168–171","questions":{"168":"C","169":"A","170":"B","171":"B"},"image":"data/h3/test08/168_CABB.png"},{"id":"h3/test08/172_DACB.png","folder":"h3/test08","book":"h3","bookLabel":"Hacker 3","test":"test08","testLabel":"Test 08","title":"Hacker 3 · Test 08 · Câu 172–175","questions":{"172":"D","173":"A","174":"C","175":"B"},"image":"data/h3/test08/172_DACB.png"},{"id":"h3/test08/176_ADDAB.png","folder":"h3/test08","book":"h3","bookLabel":"Hacker 3","test":"test08","testLabel":"Test 08","title":"Hacker 3 · Test 08 · Câu 176–180","questions":{"176":"A","177":"D","178":"D","179":"A","180":"B"},"image":"data/h3/test08/176_ADDAB.png"},{"id":"h3/test08/181_CCBCA.png","folder":"h3/test08","book":"h3","bookLabel":"Hacker 3","test":"test08","testLabel":"Test 08","title":"Hacker 3 · Test 08 · Câu 181–185","questions":{"181":"C","182":"C","183":"B","184":"C","185":"A"},"image":"data/h3/test08/181_CCBCA.png"},{"id":"h3/test08/186_DDCAC.png","folder":"h3/test08","book":"h3","bookLabel":"Hacker 3","test":"test08","testLabel":"Test 08","title":"Hacker 3 · Test 08 · Câu 186–190","questions":{"186":"D","187":"D","188":"C","189":"A","190":"C"},"image":"data/h3/test08/186_DDCAC.png"},{"id":"h3/test08/191_BADCC.png","folder":"h3/test08","book":"h3","bookLabel":"Hacker 3","test":"test08","testLabel":"Test 08","title":"Hacker 3 · Test 08 · Câu 191–195","questions":{"191":"B","192":"A","193":"D","194":"C","195":"C"},"image":"data/h3/test08/191_BADCC.png"},{"id":"h3/test08/196_DBBCC.png","folder":"h3/test08","book":"h3","bookLabel":"Hacker 3","test":"test08","testLabel":"Test 08","title":"Hacker 3 · Test 08 · Câu 196–200","questions":{"196":"D","197":"B","198":"B","199":"C","200":"C"},"image":"data/h3/test08/196_DBBCC.png"},{"id":"h3/test09/131_DCAB.png","folder":"h3/test09","book":"h3","bookLabel":"Hacker 3","test":"test09","testLabel":"Test 09","title":"Hacker 3 · Test 09 · Câu 131–134","questions":{"131":"D","132":"C","133":"A","134":"B"},"image":"data/h3/test09/131_DCAB.png"},{"id":"h3/test09/135_CDBD.png","folder":"h3/test09","book":"h3","bookLabel":"Hacker 3","test":"test09","testLabel":"Test 09","title":"Hacker 3 · Test 09 · Câu 135–138","questions":{"135":"C","136":"D","137":"B","138":"D"},"image":"data/h3/test09/135_CDBD.png"},{"id":"h3/test09/139_DABC.png","folder":"h3/test09","book":"h3","bookLabel":"Hacker 3","test":"test09","testLabel":"Test 09","title":"Hacker 3 · Test 09 · Câu 139–142","questions":{"139":"D","140":"A","141":"B","142":"C"},"image":"data/h3/test09/139_DABC.png"},{"id":"h3/test09/143_DADB.png","folder":"h3/test09","book":"h3","bookLabel":"Hacker 3","test":"test09","testLabel":"Test 09","title":"Hacker 3 · Test 09 · Câu 143–146","questions":{"143":"D","144":"A","145":"D","146":"B"},"image":"data/h3/test09/143_DADB.png"},{"id":"h3/test09/147_CC.png","folder":"h3/test09","book":"h3","bookLabel":"Hacker 3","test":"test09","testLabel":"Test 09","title":"Hacker 3 · Test 09 · Câu 147–148","questions":{"147":"C","148":"C"},"image":"data/h3/test09/147_CC.png"},{"id":"h3/test09/149_DAC.png","folder":"h3/test09","book":"h3","bookLabel":"Hacker 3","test":"test09","testLabel":"Test 09","title":"Hacker 3 · Test 09 · Câu 149–151","questions":{"149":"D","150":"A","151":"C"},"image":"data/h3/test09/149_DAC.png"},{"id":"h3/test09/152_BD.png","folder":"h3/test09","book":"h3","bookLabel":"Hacker 3","test":"test09","testLabel":"Test 09","title":"Hacker 3 · Test 09 · Câu 152–153","questions":{"152":"B","153":"D"},"image":"data/h3/test09/152_BD.png"},{"id":"h3/test09/154_BD.png","folder":"h3/test09","book":"h3","bookLabel":"Hacker 3","test":"test09","testLabel":"Test 09","title":"Hacker 3 · Test 09 · Câu 154–155","questions":{"154":"B","155":"D"},"image":"data/h3/test09/154_BD.png"},{"id":"h3/test09/156_CB.png","folder":"h3/test09","book":"h3","bookLabel":"Hacker 3","test":"test09","testLabel":"Test 09","title":"Hacker 3 · Test 09 · Câu 156–157","questions":{"156":"C","157":"B"},"image":"data/h3/test09/156_CB.png"},{"id":"h3/test09/158_BCBA.png","folder":"h3/test09","book":"h3","bookLabel":"Hacker 3","test":"test09","testLabel":"Test 09","title":"Hacker 3 · Test 09 · Câu 158–161","questions":{"158":"B","159":"C","160":"B","161":"A"},"image":"data/h3/test09/158_BCBA.png"},{"id":"h3/test09/162_BAC.png","folder":"h3/test09","book":"h3","bookLabel":"Hacker 3","test":"test09","testLabel":"Test 09","title":"Hacker 3 · Test 09 · Câu 162–164","questions":{"162":"B","163":"A","164":"C"},"image":"data/h3/test09/162_BAC.png"},{"id":"h3/test09/165_ABD.png","folder":"h3/test09","book":"h3","bookLabel":"Hacker 3","test":"test09","testLabel":"Test 09","title":"Hacker 3 · Test 09 · Câu 165–167","questions":{"165":"A","166":"B","167":"D"},"image":"data/h3/test09/165_ABD.png"},{"id":"h3/test09/168_BCDA.png","folder":"h3/test09","book":"h3","bookLabel":"Hacker 3","test":"test09","testLabel":"Test 09","title":"Hacker 3 · Test 09 · Câu 168–171","questions":{"168":"B","169":"C","170":"D","171":"A"},"image":"data/h3/test09/168_BCDA.png"},{"id":"h3/test09/172_CCDB.png","folder":"h3/test09","book":"h3","bookLabel":"Hacker 3","test":"test09","testLabel":"Test 09","title":"Hacker 3 · Test 09 · Câu 172–175","questions":{"172":"C","173":"C","174":"D","175":"B"},"image":"data/h3/test09/172_CCDB.png"},{"id":"h3/test09/176_CDDAB.png","folder":"h3/test09","book":"h3","bookLabel":"Hacker 3","test":"test09","testLabel":"Test 09","title":"Hacker 3 · Test 09 · Câu 176–180","questions":{"176":"C","177":"D","178":"D","179":"A","180":"B"},"image":"data/h3/test09/176_CDDAB.png"},{"id":"h3/test09/181_CABCB.png","folder":"h3/test09","book":"h3","bookLabel":"Hacker 3","test":"test09","testLabel":"Test 09","title":"Hacker 3 · Test 09 · Câu 181–185","questions":{"181":"C","182":"A","183":"B","184":"C","185":"B"},"image":"data/h3/test09/181_CABCB.png"},{"id":"h3/test09/186_CBABC.png","folder":"h3/test09","book":"h3","bookLabel":"Hacker 3","test":"test09","testLabel":"Test 09","title":"Hacker 3 · Test 09 · Câu 186–190","questions":{"186":"C","187":"B","188":"A","189":"B","190":"C"},"image":"data/h3/test09/186_CBABC.png"},{"id":"h3/test09/191_CBBDC.png","folder":"h3/test09","book":"h3","bookLabel":"Hacker 3","test":"test09","testLabel":"Test 09","title":"Hacker 3 · Test 09 · Câu 191–195","questions":{"191":"C","192":"B","193":"B","194":"D","195":"C"},"image":"data/h3/test09/191_CBBDC.png"},{"id":"h3/test09/196_BCDCB.png","folder":"h3/test09","book":"h3","bookLabel":"Hacker 3","test":"test09","testLabel":"Test 09","title":"Hacker 3 · Test 09 · Câu 196–200","questions":{"196":"B","197":"C","198":"D","199":"C","200":"B"},"image":"data/h3/test09/196_BCDCB.png"},{"id":"h3/test10/131_BCCD.png","folder":"h3/test10","book":"h3","bookLabel":"Hacker 3","test":"test10","testLabel":"Test 10","title":"Hacker 3 · Test 10 · Câu 131–134","questions":{"131":"B","132":"C","133":"C","134":"D"},"image":"data/h3/test10/131_BCCD.png"},{"id":"h3/test10/135_ABDC.png","folder":"h3/test10","book":"h3","bookLabel":"Hacker 3","test":"test10","testLabel":"Test 10","title":"Hacker 3 · Test 10 · Câu 135–138","questions":{"135":"A","136":"B","137":"D","138":"C"},"image":"data/h3/test10/135_ABDC.png"},{"id":"h3/test10/139_CBDD.png","folder":"h3/test10","book":"h3","bookLabel":"Hacker 3","test":"test10","testLabel":"Test 10","title":"Hacker 3 · Test 10 · Câu 139–142","questions":{"139":"C","140":"B","141":"D","142":"D"},"image":"data/h3/test10/139_CBDD.png"},{"id":"h3/test10/143_DBAC.png","folder":"h3/test10","book":"h3","bookLabel":"Hacker 3","test":"test10","testLabel":"Test 10","title":"Hacker 3 · Test 10 · Câu 143–146","questions":{"143":"D","144":"B","145":"A","146":"C"},"image":"data/h3/test10/143_DBAC.png"},{"id":"h3/test10/147_DB.png","folder":"h3/test10","book":"h3","bookLabel":"Hacker 3","test":"test10","testLabel":"Test 10","title":"Hacker 3 · Test 10 · Câu 147–148","questions":{"147":"D","148":"B"},"image":"data/h3/test10/147_DB.png"},{"id":"h3/test10/149_AB.png","folder":"h3/test10","book":"h3","bookLabel":"Hacker 3","test":"test10","testLabel":"Test 10","title":"Hacker 3 · Test 10 · Câu 149–150","questions":{"149":"A","150":"B"},"image":"data/h3/test10/149_AB.png"},{"id":"h3/test10/151_BB.png","folder":"h3/test10","book":"h3","bookLabel":"Hacker 3","test":"test10","testLabel":"Test 10","title":"Hacker 3 · Test 10 · Câu 151–152","questions":{"151":"B","152":"B"},"image":"data/h3/test10/151_BB.png"},{"id":"h3/test10/153_BACC.png","folder":"h3/test10","book":"h3","bookLabel":"Hacker 3","test":"test10","testLabel":"Test 10","title":"Hacker 3 · Test 10 · Câu 153–156","questions":{"153":"B","154":"A","155":"C","156":"C"},"image":"data/h3/test10/153_BACC.png"},{"id":"h3/test10/157_CCA.png","folder":"h3/test10","book":"h3","bookLabel":"Hacker 3","test":"test10","testLabel":"Test 10","title":"Hacker 3 · Test 10 · Câu 157–159","questions":{"157":"C","158":"C","159":"A"},"image":"data/h3/test10/157_CCA.png"},{"id":"h3/test10/160_BAB.png","folder":"h3/test10","book":"h3","bookLabel":"Hacker 3","test":"test10","testLabel":"Test 10","title":"Hacker 3 · Test 10 · Câu 160–162","questions":{"160":"B","161":"A","162":"B"},"image":"data/h3/test10/160_BAB.png"},{"id":"h3/test10/163_BB.png","folder":"h3/test10","book":"h3","bookLabel":"Hacker 3","test":"test10","testLabel":"Test 10","title":"Hacker 3 · Test 10 · Câu 163–164","questions":{"163":"B","164":"B"},"image":"data/h3/test10/163_BB.png"},{"id":"h3/test10/165_DBD.png","folder":"h3/test10","book":"h3","bookLabel":"Hacker 3","test":"test10","testLabel":"Test 10","title":"Hacker 3 · Test 10 · Câu 165–167","questions":{"165":"D","166":"B","167":"D"},"image":"data/h3/test10/165_DBD.png"},{"id":"h3/test10/168_ABCD.png","folder":"h3/test10","book":"h3","bookLabel":"Hacker 3","test":"test10","testLabel":"Test 10","title":"Hacker 3 · Test 10 · Câu 168–171","questions":{"168":"A","169":"B","170":"C","171":"D"},"image":"data/h3/test10/168_ABCD.png"},{"id":"h3/test10/172_CBCD.png","folder":"h3/test10","book":"h3","bookLabel":"Hacker 3","test":"test10","testLabel":"Test 10","title":"Hacker 3 · Test 10 · Câu 172–175","questions":{"172":"C","173":"B","174":"C","175":"D"},"image":"data/h3/test10/172_CBCD.png"},{"id":"h3/test10/176_BBCDC.png","folder":"h3/test10","book":"h3","bookLabel":"Hacker 3","test":"test10","testLabel":"Test 10","title":"Hacker 3 · Test 10 · Câu 176–180","questions":{"176":"B","177":"B","178":"C","179":"D","180":"C"},"image":"data/h3/test10/176_BBCDC.png"},{"id":"h3/test10/181_ABDDC.png","folder":"h3/test10","book":"h3","bookLabel":"Hacker 3","test":"test10","testLabel":"Test 10","title":"Hacker 3 · Test 10 · Câu 181–185","questions":{"181":"A","182":"B","183":"D","184":"D","185":"C"},"image":"data/h3/test10/181_ABDDC.png"},{"id":"h3/test10/186_CBBAD.png","folder":"h3/test10","book":"h3","bookLabel":"Hacker 3","test":"test10","testLabel":"Test 10","title":"Hacker 3 · Test 10 · Câu 186–190","questions":{"186":"C","187":"B","188":"B","189":"A","190":"D"},"image":"data/h3/test10/186_CBBAD.png"},{"id":"h3/test10/191_ACCBD.png","folder":"h3/test10","book":"h3","bookLabel":"Hacker 3","test":"test10","testLabel":"Test 10","title":"Hacker 3 · Test 10 · Câu 191–195","questions":{"191":"A","192":"C","193":"C","194":"B","195":"D"},"image":"data/h3/test10/191_ACCBD.png"},{"id":"h3/test10/196_BACBC.png","folder":"h3/test10","book":"h3","bookLabel":"Hacker 3","test":"test10","testLabel":"Test 10","title":"Hacker 3 · Test 10 · Câu 196–200","questions":{"196":"B","197":"A","198":"C","199":"B","200":"C"},"image":"data/h3/test10/196_BACBC.png"}]};
+    const state = {
+      deck: [], index: 0, checked: false,
+      correct: 0, wrong: 0, wrongIds: new Set()
+    };
+    const $ = (id) => document.getElementById(id);
+    const shuffle = (items) => {
+      const copy = [...items];
+      for (let i = copy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+      }
+      return copy;
+    };
+    function setupFilters() {
+      const books = [...new Map(
+        DATA.items.map(item => [item.book, item.bookLabel])
+      ).entries()].sort((a, b) => a[1].localeCompare(b[1], undefined, {numeric: true}));
+      $("book").innerHTML = '<option value="*">Tất cả sách</option>' +
+        books.map(([value, label]) =>
+          `<option value="${escapeHtml(value)}">${escapeHtml(label)}</option>`
+        ).join("");
+      $("book").onchange = () => {
+        setupTests();
+        start();
+      };
+      $("test").onchange = start;
+      setupTests();
+    }
+    function setupTests() {
+      const selectedBook = $("book").value;
+      const tests = [...new Map(
+        DATA.items
+          .filter(item => selectedBook === "*" || item.book === selectedBook)
+          .map(item => [item.test, item.testLabel])
+      ).entries()].sort((a, b) => a[1].localeCompare(b[1], undefined, {numeric: true}));
+      $("test").innerHTML = '<option value="*">Tất cả test</option>' +
+        tests.map(([value, label]) =>
+          `<option value="${escapeHtml(value)}">${escapeHtml(label)}</option>`
+        ).join("");
+    }
+    function escapeHtml(value) {
+      return String(value).replace(/[&<>"']/g, char => (
+        {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[char]
+      ));
+    }
+    function start() {
+      const book = $("book").value;
+      const test = $("test").value;
+      const mode = $("mode").value;
+      let deck = DATA.items.filter(item =>
+        (book === "*" || item.book === book) &&
+        (test === "*" || item.test === test)
+      );
+      if (mode === "wrong") deck = deck.filter(item => state.wrongIds.has(item.id));
+      if (mode === "random") deck = shuffle(deck);
+      state.deck = deck;
+      state.index = 0;
+      state.checked = false;
+      render();
+    }
+    function render() {
+      const item = state.deck[state.index];
+      $("counter").textContent = item ? `Bộ ${state.index + 1} / ${state.deck.length}` : "Không có bài phù hợp";
+      if (!item) {
+        $("imagePanel").innerHTML = '<div class="empty">Hãy chọn folder hoặc làm sai một bài để dùng chế độ “Ôn câu sai”.</div>';
+        $("answerPanel").innerHTML = '<div class="empty">Chưa có câu hỏi.</div>';
+        return;
+      }
+      $("imagePanel").innerHTML = `<img src="${item.image}" alt="${escapeHtml(item.title)}">`;
+      const questions = Object.keys(item.questions).sort((a, b) =>
+        a.localeCompare(b, undefined, {numeric: true})
+      );
+      $("answerPanel").innerHTML = `
+        <h1>${escapeHtml(item.title)}</h1>
+        <form id="quizForm" class="quiz-form">
+          ${questions.map(number => `
+            <div class="question" data-question="${escapeHtml(number)}">
+              <div class="question-head">
+                <div class="question-title">Câu ${escapeHtml(number)}</div>
+                <div class="question-status" aria-live="polite"></div>
+              </div>
+              <div class="choices">
+                ${["A","B","C","D"].map(choice => `
+                  <label class="choice" data-choice="${choice}">
+                    <input type="radio" name="q-${escapeHtml(number)}" value="${choice}">
+                    <span>${choice}</span>
+                  </label>`).join("")}
+              </div>
+            </div>`).join("")}
+        </form>
+        <div class="result" id="result"></div>
+        <div class="actions">
+          <button class="button" id="prevButton">← Trước</button>
+          <button class="button" id="nextButton">Tiếp →</button>
+          <button class="button primary" id="checkButton">Chấm đáp án</button>
+        </div>`;
+      $("prevButton").disabled = state.index === 0;
+      $("nextButton").disabled = state.index === state.deck.length - 1;
+      $("prevButton").onclick = () => navigate(-1);
+      $("nextButton").onclick = () => navigate(1);
+      $("checkButton").onclick = checkAnswers;
+    }
+    function navigate(offset) {
+      state.index += offset;
+      state.checked = false;
+      render();
+      window.scrollTo({top: 0, behavior: "smooth"});
+    }
+    function checkAnswers() {
+      if (state.checked) return;
+      const item = state.deck[state.index];
+      let missingGraded = 0;
+      const results = [];
+      for (const [number, correctAnswer] of Object.entries(item.questions)) {
+        const selected = document.querySelector(`input[name="q-${CSS.escape(number)}"]:checked`);
+        if (!selected && correctAnswer !== "X") missingGraded++;
+        results.push({number, selected: selected?.value, correctAnswer});
+      }
+      if (missingGraded) {
+        $("result").textContent = `Bạn còn ${missingGraded} câu có đáp án chưa chọn.`;
+        return;
+      }
+      state.checked = true;
+      let itemHasError = false;
+      let gradedCount = 0;
+      let ungradedCount = 0;
+      for (const result of results) {
+        const row = document.querySelector(`[data-question="${CSS.escape(result.number)}"]`);
+        const status = row.querySelector(".question-status");
+        if (result.correctAnswer === "X") {
+          ungradedCount++;
+          row.classList.add("ungraded");
+          status.classList.add("ungraded");
+          status.textContent = "— Không tính điểm";
+          row.querySelectorAll("input").forEach(input => input.disabled = true);
+          continue;
+        }
+        gradedCount++;
+        if (result.selected === result.correctAnswer) {
+          state.correct++;
+          row.querySelector(`[data-choice="${result.correctAnswer}"]`).classList.add("correct");
+          status.classList.add("correct");
+          status.textContent = "✓ Đúng";
+        } else {
+          state.wrong++;
+          itemHasError = true;
+          row.querySelector(`[data-choice="${result.selected}"]`).classList.add("wrong");
+          row.querySelector(`[data-choice="${result.correctAnswer}"]`).classList.add("correct");
+          status.classList.add("wrong");
+          status.textContent = `✕ Sai · Đáp án ${result.correctAnswer}`;
+        }
+        row.querySelectorAll("input").forEach(input => input.disabled = true);
+      }
+      if (itemHasError) state.wrongIds.add(item.id);
+      else state.wrongIds.delete(item.id);
+      const suffix = ungradedCount ? ` ${ungradedCount} câu X không tính điểm.` : "";
+      if (!gradedCount) {
+        $("result").textContent = `Bộ này chưa có đáp án chính thức.${suffix}`;
+      } else {
+        $("result").textContent = (
+          itemHasError
+            ? "Có câu chưa đúng — đáp án đúng đã được tô xanh."
+            : "Chính xác tất cả!"
+        ) + suffix;
+      }
+      updateScore();
+    }
+    function updateScore() {
+      const total = state.correct + state.wrong;
+      $("correctScore").textContent = state.correct;
+      $("wrongScore").textContent = state.wrong;
+      $("percentScore").textContent = total ? `${Math.round(state.correct / total * 100)}%` : "0%";
+    }
+    $("startButton").onclick = start;
+    $("resetButton").onclick = () => {
+      state.correct = 0;
+      state.wrong = 0;
+      state.wrongIds.clear();
+      updateScore();
+      start();
+    };
+    setupFilters();
+    start();
+  </script>
+</body>
+</html>
