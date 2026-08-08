@@ -67,7 +67,7 @@
     .counter { margin-left: auto; align-self: center; color: var(--muted); font-size: 14px; }
     .workspace {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) 330px;
+      grid-template-columns: minmax(0, 1fr) 290px;
       gap: 18px;
       align-items: start;
     }
@@ -79,7 +79,7 @@
     }
     .image-card { padding: 16px; text-align: center; overflow: auto; }
     .image-card img { display: block; max-width: 100%; height: auto; margin: auto; }
-    .answer-card { padding: 20px; position: sticky; top: 18px; }
+    .answer-card { padding: 16px; position: sticky; top: 18px; }
     h1 { margin: 0 0 5px; font-size: 19px; }
     .question { padding: 12px 0; border-top: 1px solid var(--line); }
     .question:first-of-type { border-top: 0; }
@@ -152,6 +152,7 @@
           <option value="ordered">Theo thứ tự</option>
           <option value="random">Ngẫu nhiên</option>
           <option value="wrong">Ôn câu sai</option>
+          <option value="answers">Hiện đáp án ngay</option>
         </select>
       </label>
       <label class="small">Sách
@@ -197,6 +198,14 @@
         start();
       };
       $("test").onchange = start;
+      $("mode").onchange = () => {
+        if ($("mode").value === "answers" && state.deck.length) {
+          state.checked = false;
+          render();
+          return;
+        }
+        start();
+      };
       setupTests();
     }
     function setupTests() {
@@ -272,12 +281,41 @@
       $("prevButton").onclick = () => navigate(-1);
       $("nextButton").onclick = () => navigate(1);
       $("checkButton").onclick = checkAnswers;
+      if ($("mode").value === "answers") revealAnswers(item);
     }
     function navigate(offset) {
       state.index += offset;
       state.checked = false;
       render();
       window.scrollTo({top: 0, behavior: "smooth"});
+    }
+    function revealAnswers(item) {
+      let gradedCount = 0;
+      let ungradedCount = 0;
+      for (const [number, correctAnswer] of Object.entries(item.questions)) {
+        const row = document.querySelector(`[data-question="${CSS.escape(number)}"]`);
+        const status = row.querySelector(".question-status");
+        if (correctAnswer === "X") {
+          ungradedCount++;
+          row.classList.add("ungraded");
+          status.classList.add("ungraded");
+          status.textContent = "— Chưa có đáp án";
+        } else {
+          gradedCount++;
+          const correctChoice = row.querySelector(`[data-choice="${correctAnswer}"]`);
+          correctChoice.classList.add("correct");
+          correctChoice.querySelector("input").checked = true;
+          status.classList.add("correct");
+          status.textContent = `Đáp án ${correctAnswer}`;
+        }
+        row.querySelectorAll("input").forEach(input => input.disabled = true);
+      }
+      $("checkButton").disabled = true;
+      $("checkButton").textContent = "Đang hiện đáp án";
+      const suffix = ungradedCount ? ` ${ungradedCount} câu chưa có đáp án chính thức.` : "";
+      $("result").textContent = gradedCount
+        ? `Đáp án đúng được tô xanh.${suffix}`
+        : `Bộ này chưa có đáp án chính thức.${suffix}`;
     }
     function checkAnswers() {
       if (state.checked) return;

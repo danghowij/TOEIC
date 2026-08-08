@@ -139,6 +139,8 @@ builder để tạo `index.html` mới.
 - Học theo thứ tự.
 - Xáo trộn ảnh ngẫu nhiên.
 - Ôn lại các ảnh có câu trả lời sai trong phiên hiện tại.
+- Chọn “Hiện đáp án ngay” để xem đáp án đúng khi mở từng bộ; chế độ này không
+  tính điểm và không phải chế độ mặc định.
 
 ### Làm và chấm bài
 
