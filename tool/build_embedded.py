@@ -12,6 +12,7 @@ from pathlib import Path
 
 PROJECT_DIR = Path(__file__).resolve().parent.parent
 DEFAULT_DATA_DIR = PROJECT_DIR / "data"
+DEFAULT_MARKED_DIR = PROJECT_DIR / "marked"
 DEFAULT_TEMPLATE = Path(__file__).resolve().parent / "template.html"
 DEFAULT_OUTPUT = PROJECT_DIR / "index.html"
 SUPPORTED_EXTENSIONS = {".png", ".jpg", ".jpeg", ".webp", ".gif"}
@@ -28,6 +29,7 @@ def parse_args() -> argparse.Namespace:
         description="Build a standalone TOEIC study page with embedded images."
     )
     parser.add_argument("--data", type=Path, default=DEFAULT_DATA_DIR)
+    parser.add_argument("--marked", type=Path, default=DEFAULT_MARKED_DIR)
     parser.add_argument("--template", type=Path, default=DEFAULT_TEMPLATE)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     return parser.parse_args()
@@ -61,10 +63,13 @@ def discover_images(data_dir: Path) -> tuple[list[Path], list[str]]:
     return images, errors
 
 
-def build_items(data_dir: Path, image_paths: list[Path]) -> list[dict]:
+def build_items(
+    data_dir: Path, marked_dir: Path, image_paths: list[Path]
+) -> list[dict]:
     items = []
     for image_path in image_paths:
         relative_path = image_path.relative_to(data_dir).as_posix()
+        marked_path = marked_dir / Path(relative_path)
         match = IMAGE_NAME_PATTERN.fullmatch(image_path.name)
         assert match is not None
         start = int(match.group("start"))
@@ -95,6 +100,9 @@ def build_items(data_dir: Path, image_paths: list[Path]) -> list[dict]:
                 "title": f"{book_label} · {test_label} · Câu {start}–{end}",
                 "questions": questions,
                 "image": make_data_uri(image_path),
+                "markedImage": make_data_uri(marked_path)
+                if marked_path.is_file()
+                else make_data_uri(image_path),
             }
         )
     return items
@@ -120,6 +128,7 @@ def write_atomic(path: Path, content: str) -> None:
 def main() -> None:
     args = parse_args()
     data_dir = args.data.resolve()
+    marked_dir = args.marked.resolve()
     image_paths, errors = discover_images(data_dir)
     if errors:
         formatted = "\n".join(f"  - {error}" for error in errors)
@@ -128,7 +137,7 @@ def main() -> None:
             "index.html was not changed."
         )
 
-    items = build_items(data_dir, image_paths)
+    items = build_items(data_dir, marked_dir, image_paths)
     template = args.template.resolve().read_text(encoding="utf-8")
     payload = json.dumps(
         {"items": items}, ensure_ascii=False, separators=(",", ":")

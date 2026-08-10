@@ -248,7 +248,10 @@
         $("answerPanel").innerHTML = '<div class="empty">Chưa có câu hỏi.</div>';
         return;
       }
-      $("imagePanel").innerHTML = `<img src="${item.image}" alt="${escapeHtml(item.title)}">`;
+      const imageSource = $("mode").value === "answers"
+        ? item.markedImage || item.image
+        : item.image;
+      $("imagePanel").innerHTML = `<img src="${imageSource}" alt="${escapeHtml(item.title)}">`;
       const questions = Object.keys(item.questions).sort((a, b) =>
         a.localeCompare(b, undefined, {numeric: true})
       );
