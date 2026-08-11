@@ -27,20 +27,7 @@
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
     }
     button, select { font: inherit; }
-    .topbar {
-      display: flex;
-      align-items: center;
-      gap: 18px;
-      min-height: 70px;
-      padding: 12px clamp(18px, 4vw, 58px);
-      color: white;
-      background: linear-gradient(120deg, #087f8c, #1261a0);
-      box-shadow: 0 4px 18px rgba(8, 93, 122, .2);
-    }
-    .brand { margin-right: auto; font-size: 20px; font-weight: 800; letter-spacing: .02em; }
-    .score { display: flex; gap: 18px; font-size: 14px; }
-    .score strong { display: block; font-size: 19px; text-align: center; }
-    .shell { max-width: 1500px; margin: 0 auto; padding: 24px; }
+    .shell { max-width: 1500px; margin: 0 auto; padding: 16px 24px 24px; }
     .controls {
       display: flex;
       flex-wrap: wrap;
@@ -64,7 +51,24 @@
     }
     .button.primary { border-color: var(--blue); color: white; background: var(--blue); font-weight: 700; }
     .button:disabled { cursor: not-allowed; opacity: .45; }
-    .counter { margin-left: auto; align-self: center; color: var(--muted); font-size: 14px; }
+    .counter { align-self: center; color: var(--muted); font-size: 14px; }
+    .score {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-left: auto;
+    }
+    .score span {
+      min-width: 66px;
+      padding: 6px 9px;
+      text-align: center;
+      color: var(--muted);
+      border-radius: 9px;
+      background: #f2f6fa;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .score strong { display: block; color: var(--ink); font-size: 16px; }
     .workspace {
       display: grid;
       grid-template-columns: minmax(0, 1fr) 290px;
@@ -79,6 +83,33 @@
     }
     .image-card { padding: 16px; text-align: center; overflow: auto; }
     .image-card img { display: block; max-width: 100%; height: auto; margin: auto; }
+    .translation-actions { display: flex; justify-content: center; margin-top: 16px; }
+    .translation-panel {
+      margin-top: 12px;
+      padding: clamp(18px, 3vw, 28px);
+      text-align: left;
+      border: 1px solid #cfe3df;
+      border-radius: 12px;
+      background: linear-gradient(145deg, #f4fbf8, #f8fbff);
+    }
+    .translation-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .translation-title { margin: 0; font-size: 18px; }
+    .translation-note { color: var(--muted); font-size: 12px; }
+    .translation-text { white-space: pre-wrap; line-height: 1.7; }
+    .translation-text strong { color: #0b5e55; font-weight: 800; }
+    .translation-answers {
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px solid #cfe3df;
+      line-height: 1.6;
+    }
+    .translation-answers strong { color: var(--blue); }
     .answer-card { padding: 16px; position: sticky; top: 18px; }
     h1 { margin: 0 0 5px; font-size: 19px; }
     .question { padding: 12px 0; border-top: 1px solid var(--line); }
@@ -133,18 +164,13 @@
       .workspace { grid-template-columns: 1fr; }
       .answer-card { position: static; }
       .counter { width: 100%; margin-left: 0; }
+      .score { width: 100%; margin-left: 0; }
+      .score span { flex: 1; }
+      .shell { padding: 10px; }
     }
   </style>
 </head>
 <body>
-  <header class="topbar">
-    <div class="brand">TOEIC Study Deck</div>
-    <div class="score">
-      <span>Đúng<strong id="correctScore">0</strong></span>
-      <span>Sai<strong id="wrongScore">0</strong></span>
-      <span>Điểm<strong id="percentScore">0%</strong></span>
-    </div>
-  </header>
   <main class="shell">
     <section class="controls">
       <label class="small">Chế độ
@@ -163,6 +189,11 @@
       </label>
       <button class="button primary" id="startButton">Bắt đầu lượt mới</button>
       <button class="button" id="resetButton">Xóa điểm</button>
+      <div class="score" aria-label="Kết quả hiện tại">
+        <span>Đúng<strong id="correctScore">0</strong></span>
+        <span>Sai<strong id="wrongScore">0</strong></span>
+        <span>Điểm<strong id="percentScore">0%</strong></span>
+      </div>
       <span class="counter" id="counter"></span>
     </section>
     <section class="workspace">
@@ -174,7 +205,7 @@
     const DATA = __TOEIC_DATA__;
     const state = {
       deck: [], index: 0, checked: false,
-      correct: 0, wrong: 0, wrongIds: new Set()
+      correct: 0, wrong: 0, wrongIds: new Set(), translationVisible: false
     };
     const $ = (id) => document.getElementById(id);
     const shuffle = (items) => {
@@ -238,6 +269,7 @@
       state.deck = deck;
       state.index = 0;
       state.checked = false;
+      state.translationVisible = mode === "answers";
       render();
     }
     function render() {
@@ -251,7 +283,11 @@
       const imageSource = $("mode").value === "answers"
         ? item.markedImage || item.image
         : item.image;
-      $("imagePanel").innerHTML = `<img src="${imageSource}" alt="${escapeHtml(item.title)}">`;
+      $("imagePanel").innerHTML = `
+        <img src="${imageSource}" alt="${escapeHtml(item.title)}">
+        ${renderTranslation(item)}`;
+      const translationButton = $("translationButton");
+      if (translationButton) translationButton.onclick = toggleTranslation;
       const questions = Object.keys(item.questions).sort((a, b) =>
         a.localeCompare(b, undefined, {numeric: true})
       );
@@ -289,6 +325,7 @@
     function navigate(offset) {
       state.index += offset;
       state.checked = false;
+      state.translationVisible = $("mode").value === "answers";
       render();
       window.scrollTo({top: 0, behavior: "smooth"});
     }
@@ -335,6 +372,7 @@
         return;
       }
       state.checked = true;
+      state.translationVisible = true;
       let itemHasError = false;
       let gradedCount = 0;
       let ungradedCount = 0;
@@ -378,6 +416,51 @@
         ) + suffix;
       }
       updateScore();
+      renderTranslationPanel(item);
+    }
+    function renderInlineMarkdown(value) {
+      return escapeHtml(value).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+    }
+    function renderTranslation(item) {
+      if (!item.translation) return "";
+      const visible = state.translationVisible || $("mode").value === "answers";
+      const note = item.translationStatus === "reviewed"
+        ? "Đã hiệu đính"
+        : "Bản dịch tự động · Có thể cần hiệu đính";
+      const answers = Object.entries(item.questions)
+        .map(([number, answer]) => `${escapeHtml(number)} ${escapeHtml(answer)}`)
+        .join(", ");
+      return `
+        <div class="translation-actions">
+          <button class="button" id="translationButton" type="button">
+            ${visible ? "Ẩn bản dịch" : "Xem bản dịch tiếng Việt"}
+          </button>
+        </div>
+        <section class="translation-panel" id="translationPanel" ${visible ? "" : "hidden"}>
+          <div class="translation-head">
+            <h2 class="translation-title">Bản dịch tiếng Việt</h2>
+            <span class="translation-note">${escapeHtml(note)}</span>
+          </div>
+          <div class="translation-text">${renderInlineMarkdown(item.translation)}</div>
+          <div class="translation-answers">Đáp án: <strong>${answers}</strong>.</div>
+        </section>`;
+    }
+    function toggleTranslation() {
+      state.translationVisible = !state.translationVisible;
+      const panel = $("translationPanel");
+      const button = $("translationButton");
+      if (!panel || !button) return;
+      panel.hidden = !state.translationVisible;
+      button.textContent = state.translationVisible
+        ? "Ẩn bản dịch"
+        : "Xem bản dịch tiếng Việt";
+    }
+    function renderTranslationPanel(item) {
+      const panel = $("translationPanel");
+      const button = $("translationButton");
+      if (!item.translation || !panel || !button) return;
+      panel.hidden = false;
+      button.textContent = "Ẩn bản dịch";
     }
     function updateScore() {
       const total = state.correct + state.wrong;

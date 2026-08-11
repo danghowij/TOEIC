@@ -13,6 +13,7 @@ from pathlib import Path
 PROJECT_DIR = Path(__file__).resolve().parent.parent
 DEFAULT_DATA_DIR = PROJECT_DIR / "data"
 DEFAULT_MARKED_DIR = PROJECT_DIR / "marked"
+DEFAULT_TRANSLATIONS = PROJECT_DIR / "translations.json"
 DEFAULT_TEMPLATE = Path(__file__).resolve().parent / "template.html"
 DEFAULT_OUTPUT = PROJECT_DIR / "index.html"
 SUPPORTED_EXTENSIONS = {".png", ".jpg", ".jpeg", ".webp", ".gif"}
@@ -30,6 +31,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--data", type=Path, default=DEFAULT_DATA_DIR)
     parser.add_argument("--marked", type=Path, default=DEFAULT_MARKED_DIR)
+    parser.add_argument("--translations", type=Path, default=DEFAULT_TRANSLATIONS)
     parser.add_argument("--template", type=Path, default=DEFAULT_TEMPLATE)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     return parser.parse_args()
@@ -63,8 +65,21 @@ def discover_images(data_dir: Path) -> tuple[list[Path], list[str]]:
     return images, errors
 
 
+def load_translations(path: Path) -> dict[str, dict]:
+    if not path.exists():
+        return {}
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    translations = payload.get("translations", {})
+    if not isinstance(translations, dict):
+        raise SystemExit(f"{path}: 'translations' must be an object")
+    return translations
+
+
 def build_items(
-    data_dir: Path, marked_dir: Path, image_paths: list[Path]
+    data_dir: Path,
+    marked_dir: Path,
+    image_paths: list[Path],
+    translations: dict[str, dict],
 ) -> list[dict]:
     items = []
     for image_path in image_paths:
@@ -89,6 +104,7 @@ def build_items(
         else:
             test_label = f"Test {test_match.group(1)}" if test_match else test
         end = start + len(answer_string) - 1
+        translation = translations.get(relative_path, {})
         items.append(
             {
                 "id": relative_path,
@@ -103,6 +119,8 @@ def build_items(
                 "markedImage": make_data_uri(marked_path)
                 if marked_path.is_file()
                 else make_data_uri(image_path),
+                "translation": translation.get("translation", ""),
+                "translationStatus": translation.get("status", ""),
             }
         )
     return items
@@ -129,6 +147,7 @@ def main() -> None:
     args = parse_args()
     data_dir = args.data.resolve()
     marked_dir = args.marked.resolve()
+    translations = load_translations(args.translations.resolve())
     image_paths, errors = discover_images(data_dir)
     if errors:
         formatted = "\n".join(f"  - {error}" for error in errors)
@@ -137,7 +156,7 @@ def main() -> None:
             "index.html was not changed."
         )
 
-    items = build_items(data_dir, marked_dir, image_paths)
+    items = build_items(data_dir, marked_dir, image_paths, translations)
     template = args.template.resolve().read_text(encoding="utf-8")
     payload = json.dumps(
         {"items": items}, ensure_ascii=False, separators=(",", ":")
