@@ -530,14 +530,7 @@
       return {number, text, choices};
     }
     function renderStudyContent(item) {
-      const hasText = Boolean(item.sourceContent?.status === "reviewed");
-      const selected = hasText ? state.sourceView : "image";
-      return `
-        <div class="view-switcher" aria-label="Kiểu hiển thị đề">
-          <button class="button view-button ${selected === "text" ? "active" : ""}" data-source-view="text" ${hasText ? "" : "disabled"}>${hasText ? "Đề dạng chữ" : "Đề chữ đang hiệu đính"}</button>
-          <button class="button view-button ${selected === "image" ? "active" : ""}" data-source-view="image">Ảnh gốc</button>
-        </div>
-        ${selected === "text" ? renderSourceText(item) : renderSourceImage(item)}`;
+      return renderSourceImage(item);
     }
     function renderSourceImage(item) {
       const source = $("mode").value === "answers" ? item.markedImage || item.image : item.image;
