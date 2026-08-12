@@ -470,7 +470,8 @@
         ) + suffix;
       }
       updateScore();
-      render();
+      revealSourceAnswers(item);
+      renderTranslationPanel(item);
     }
     function splitSourceText(value, expectedNumbers) {
       const normalized = String(value || "").replace(/\r/g, "").trim();
@@ -568,10 +569,19 @@
         <div class="source-question-title"><span>${escapeHtml(number)}.</span> ${escapeHtml(text)}</div>
         <div class="source-choice-list">
           ${["A","B","C","D"].map(letter => choices[letter]
-            ? `<div class="source-choice ${reveal && answer === letter ? "correct" : ""}"><strong>(${letter})</strong> ${escapeHtml(choices[letter])}</div>`
+            ? `<div class="source-choice ${reveal && answer === letter ? "correct" : ""}" data-source-question="${escapeHtml(number)}" data-source-choice="${letter}"><strong>(${letter})</strong> ${escapeHtml(choices[letter])}</div>`
             : "").join("")}
         </div>
       </article>`;
+    }
+    function revealSourceAnswers(item) {
+      for (const [number, answer] of Object.entries(item.questions)) {
+        if (answer === "X") continue;
+        const choice = document.querySelector(
+          `[data-source-question="${CSS.escape(number)}"][data-source-choice="${answer}"]`
+        );
+        choice?.classList.add("correct");
+      }
     }
     function renderInlineMarkdown(value) {
       return escapeHtml(value).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
