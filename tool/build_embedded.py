@@ -119,6 +119,7 @@ def build_items(
                 "markedImage": make_data_uri(marked_path)
                 if marked_path.is_file()
                 else make_data_uri(image_path),
+                "sourceText": translation.get("sourceText", ""),
                 "translation": translation.get("translation", ""),
                 "translationStatus": translation.get("status", ""),
             }
