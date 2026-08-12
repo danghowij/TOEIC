@@ -1155,6 +1155,57 @@
         "132": "C",
         "133": "C",
         "134": "B"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "The next time you're in downtown Houston and would like a taste of Asia, visit Sensasia on the second floor of Cheviston Center. Sensasia offers authentic [131] from China, Japan, India, Thailand, Korea, and Vietnam.\n\n[132] From Monday to Friday, enjoy handmade sushi prepared with fresh seafood, delicious Korean bibimbap, and tasty Vietnamese pho. On weekends, Hong Kong style dim sum, consisting of various bite-size portions of food, [133] along with our regular menu items. And once a month, our chefs introduce something new for diners to try. [134], only Sensasia can give you such a wide variety of meals in one location.\n\nFor group reservations, please call 555-4272. To view our menu, please visit our Web site at www.sensasia.com."
+          }
+        ],
+        "questions": [
+          {
+            "number": 131,
+            "text": "Choose the best option for blank 131.",
+            "choices": {
+              "A": "dishes",
+              "B": "materials",
+              "C": "components",
+              "D": "directions"
+            }
+          },
+          {
+            "number": 132,
+            "text": "Choose the best option for blank 132.",
+            "choices": {
+              "A": "Our chefs use exotic seasonings in all of our grilled food.",
+              "B": "Some parts of our restaurant are now being refurbished.",
+              "C": "We serve a wide range of popular Asian cuisine every day.",
+              "D": "Our food is delicious but limited to seafood selections."
+            }
+          },
+          {
+            "number": 133,
+            "text": "Choose the best option for blank 133.",
+            "choices": {
+              "A": "prepares Kn j°",
+              "B": "prepared fij>; rid",
+              "C": "is prepared o o o ->2",
+              "D": "preparing 7D ft) DJ CL"
+            }
+          },
+          {
+            "number": 134,
+            "text": "Choose the best option for blank 134.",
+            "choices": {
+              "A": "Conversely =)'",
+              "B": "In short",
+              "C": "To that end",
+              "D": "Not to mention"
+            }
+          }
+        ]
       }
     },
     "h2/test02/135_BDBA.png": {
@@ -1166,6 +1217,57 @@
         "136": "D",
         "137": "B",
         "138": "A"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "To: Scott Douglas <sdouglas@evergladeprints.com>\nFrom: Edward Kovac <edward.k@collinsconsulting.com>\nSubject: Brochure alterations\nDate: 8 May\n\nDear Mr. Douglas,\n\nPlease find attached a copy of the brochure you designed with our comments. Our team has reviewed the draft, and we are [135] with the quality of the pamphlet thus far. Despite this, we do require a few changes.\n\nIn particular, there were minor layout and color errors and some important information was [136] as well. We left notes in the brochure regarding where the omitted details should go. [137] Please send us a revised draft when it is ready. We will, of course, be happy to [138] the extra cost.\n\nBest wishes,\nEdward"
+          }
+        ],
+        "questions": [
+          {
+            "number": 135,
+            "text": "Choose the best option for blank 135.",
+            "choices": {
+              "A": "concerned",
+              "B": "satisfied",
+              "C": "credited",
+              "D": "troubled"
+            }
+          },
+          {
+            "number": 136,
+            "text": "Choose the best option for blank 136.",
+            "choices": {
+              "A": "allowed",
+              "B": "asserted",
+              "C": "moving",
+              "D": "missing"
+            }
+          },
+          {
+            "number": 137,
+            "text": "Choose the best option for blank 137.",
+            "choices": {
+              "A": "We are not sure why these details",
+              "B": "We need each correction to be reflected precisely.",
+              "C": "We would like you to change the entire layout.",
+              "D": "We ask that you send the invoice for the design we chose."
+            }
+          },
+          {
+            "number": 138,
+            "text": "Choose the best option for blank 138.",
+            "choices": {
+              "A": "cover",
+              "B": "covered",
+              "C": "covering",
+              "D": "covers"
+            }
+          }
+        ]
       }
     },
     "h2/test02/139_BCDB.png": {
@@ -1177,6 +1279,57 @@
         "140": "C",
         "141": "D",
         "142": "B"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "June 21\n\nMagnum Insurance\n337 Deerborne Avenue\nBanff, Alberta, T2N 4S5\nCanada\n\nDear Mr. Clayburn,\n\nThis letter is to inform you that we have received your insurance claim for hail damage to your home, and we are [139] processing it. As you know, the powerful storm last week affected the entire city. As a result, an overwhelming number of homeowners [140] assistance. Nevertheless, we are working as speedily as we can to handle these applications.\n\nAn adjustor can inspect your property in a few days. [141] You can speed up the process by presenting documentary evidence ahead of time. Still, it may take some weeks to complete all the necessary forms and prepare a compensation [142]. We hope you understand. The funds you'll need to carry out the necessary repairs will be transmitted to you as quickly as possible.\n\nThank you for your cooperation.\n\nJudith Underwood\nClaims coordinator"
+          }
+        ],
+        "questions": [
+          {
+            "number": 139,
+            "text": "Choose the best option for blank 139.",
+            "choices": {
+              "A": "previously",
+              "B": "currently",
+              "C": "surprisingly",
+              "D": "typically (A) requests (B) were requested (C) have requested (D) had requested"
+            }
+          },
+          {
+            "number": 140,
+            "text": "Choose the best option for blank 140.",
+            "choices": {
+              "A": "claim as soon as possible. W",
+              "B": "He has provided you with the assistance you require. Making this investment will rai:",
+              "C": "home's market value.",
+              "D": "If possible, start photographinc damaged areas of your home."
+            }
+          },
+          {
+            "number": 141,
+            "text": "Choose the best option for blank 141.",
+            "choices": {
+              "A": "claim as soon as possible. W",
+              "B": "He has provided you with the assistance you require. Making this investment will rai:",
+              "C": "home's market value.",
+              "D": "If possible, start photographinc damaged areas of your home."
+            }
+          },
+          {
+            "number": 142,
+            "text": "Choose the best option for blank 142.",
+            "choices": {
+              "A": "score",
+              "B": "estimate",
+              "C": "history",
+              "D": "receipt"
+            }
+          }
+        ]
       }
     },
     "h2/test02/143_CABB.png": {
@@ -1188,6 +1341,57 @@
         "144": "A",
         "145": "B",
         "146": "B"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "To: All staff\nFrom: Susan Ward\nSubject: Employee handbook\nDate: April 15\n\nThank you to everyone who participated in the discussions with company management. Your comments about some employees being unaware of the procedures for day-to-day operations have been heard. We are now working to [143] the situation.\n\nFor starters, we will be publishing the company's standard operating procedures as soon as possible. A printed guide will give management and staff an official reference on the performance of daily tasks. [144] Hopefully, it will help move us closer to our goal of having firmly [145] policies.\n\nIf any revisions are required, these will be incorporated into a later version of the manual. The final version will also be [146] through the company's internal network. If you have any questions, please direct them to your departmental supervisors."
+          }
+        ],
+        "questions": [
+          {
+            "number": 143,
+            "text": "Choose the best option for blank 143.",
+            "choices": {
+              "A": "maintain",
+              "B": "inspect",
+              "C": "address",
+              "D": "ignore"
+            }
+          },
+          {
+            "number": 144,
+            "text": "Choose the best option for blank 144.",
+            "choices": {
+              "A": "A provisional copy of this handbook v.r»y.- IT will be distributed at the next meeting. w",
+              "B": "Your comments on the revised manual were very much appreciated. A copy of the article may be found",
+              "C": "last month's company newsletter.",
+              "D": "We are glad that everyone is now up-to-date on our meeting schedule."
+            }
+          },
+          {
+            "number": 145,
+            "text": "Choose the best option for blank 145.",
+            "choices": {
+              "A": "establish",
+              "B": "established",
+              "C": "establishing",
+              "D": "establishment"
+            }
+          },
+          {
+            "number": 146,
+            "text": "Choose the best option for blank 146.",
+            "choices": {
+              "A": "access",
+              "B": "accessible",
+              "C": "accesses",
+              "D": "accessing"
+            }
+          }
+        ]
       }
     },
     "h2/test02/147_DB.png": {
@@ -1197,6 +1401,37 @@
       "answers": {
         "147": "D",
         "148": "B"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "Fit Body Monthly Subscription Cancellation\nWe are sorry to hear that you would like to cancel your\nsubscription.\nTo complete the process, please supply the required\ninformation below and mail this card back to us. Thank you.\nName: Frederick Davis\nAddress: 321 Oak Hill Avenue, Fremont, CaliforniQ 94536\nE-mail: f.davis@urmQil.com\nTelephone: (650) 555-0646\nReasons for canceling (optional). Please select all that apply:\n_ Price X Content Service\nOther comments: I received the subscription to your\nmagazine as a gift one year ago. I already have a\nsubscription to a similar publication, so I am not interested\nin a renewal.\nPlease note that should you choose to renew, you may be\neligible to receive a 20 percent discount by calling 555-4276.\nUJ\n4>\nun\n01\n-d\nCD °\no"
+          }
+        ],
+        "questions": [
+          {
+            "number": 147,
+            "text": "What must Mr. Davis do to stop receiving the publication?",
+            "choices": {
+              "A": "Send an e-mail",
+              "B": "Call the customer service department",
+              "C": "Visit a regional office",
+              "D": "Mail a document"
+            }
+          },
+          {
+            "number": 148,
+            "text": "Why does Mr. Davis want to end his subscription to Fit Body Monthly?",
+            "choices": {
+              "A": "He finds the magazine too expensive.",
+              "B": "He has a subscription with a similar magazine.",
+              "C": "He is moving out of the country.",
+              "D": "He can read the same articles online."
+            }
+          }
+        ]
       }
     },
     "h2/test02/149_CB.png": {
@@ -1206,6 +1441,37 @@
       "answers": {
         "149": "C",
         "150": "B"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "MEMORANDUM\nTO: All staff\nWe have come to the end of another successful year and would like to\nthank all our staff members for their hard work. As usual; we are\norganizing a special holiday evening for you all. This year; it will be held\nat the Cranfield Hotel on Lakeview Avenue on Dec. 22 at 7:00 p.m. Staff\nare free to bring their husbands^ wives^ or partners.\nReservations need to be made in advance^ so please contact Lionel\nGrimm of the personnel department at ligrimm(S)austel.com and let\nhim know if you are coming and if you plan to bring a guest.\nThank you!"
+          }
+        ],
+        "questions": [
+          {
+            "number": 149,
+            "text": "What is the memo mainly about?",
+            "choices": {
+              "A": "Work schedules for the upcoming year",
+              "B": "Taking time off for holidays",
+              "C": "An annual company gathering",
+              "D": "Completing a project by a deadline"
+            }
+          },
+          {
+            "number": 150,
+            "text": "What are staff members asked to do?",
+            "choices": {
+              "A": "Come to a client meeting",
+              "B": "Send an e-mail to a colleague",
+              "C": "Inform the company of vacation plans",
+              "D": "Confirm a room reservation"
+            }
+          }
+        ]
       }
     },
     "h2/test02/151_CB.png": {
@@ -1215,6 +1481,37 @@
       "answers": {
         "151": "C",
         "152": "B"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "Questions 151=152 refer to the following text-message chain.\nDrake Hartford 10:38\nI'm at the reception area for Dandridge & Associates to check up on the\npainting crew's progress. I'm not sure about the paint color being used on\nthe rear wall. It's that deep green tone Ms. Bryant wanted, but it doesn't\nmatch well with the flooring or front desk.\nDolly O'Hare 10:42\nI was afraid that might be the case as it seemed too dark. Could you drop\nby her office and ask her to come have a look at it? Maybe you can\nsuggest a few colors that are more suitable.\nDrake Hartford 10:45\nOK. I'll see if she is available and let you know what she wants to do. I'll\nrecommend some colors as well. I think light brown, ivory, or even beige\nwould look nice.\nDrake Hartford 10:58\nShe came and had a look and completely agrees with us. So, I've told the\ncrew members not to continue painting that wall today. She will go with\nthe first option I proposed.\nDolly O'Hare 11:00\nPerfect. OK, go ahead and have Triple A Hardware mix up the paint the\ncrew will need. You can get it delivered to the site and have the store bill\nmy account.\nDrake Hartford 11:09\nI just asked Triple A about the paint, but they are backlogged with other\norders and deliveries. The soonest the new paint can be here is at 1 P.M.\non Wednesday.\nDolly O'Hare 11:11\nNo worries. The crew is ahead of schedule anyway, so they can work on\nother tasks in the meantime.\nC )\nOO"
+          }
+        ],
+        "questions": [
+          {
+            "number": 151,
+            "text": "At 10:42, what does Ms. O'Hare mean when she writes, \"that might be the case\"?",
+            "choices": {
+              "A": "She anticipated a client would be unsatisfied.",
+              "B": "She knew that a colleague was visiting a worksite.",
+              "C": "She thought the paint would not match.",
+              "D": "She realized Ms. Bryant might not be in her office."
+            }
+          },
+          {
+            "number": 152,
+            "text": "What color of paint will be delivered to Dandridge & Associates?",
+            "choices": {
+              "A": "Deep green",
+              "B": "Light brown",
+              "C": "Ivory",
+              "D": "Beige"
+            }
+          }
+        ]
       }
     },
     "h2/test02/153_BBA.png": {
@@ -1225,6 +1522,47 @@
         "153": "B",
         "154": "B",
         "155": "A"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "Dear participants,\nWelcome to the Fifth Spatial Computing Conference (SCC). Once you\nhave finished registering and received your name badge and program,\nplease head downstairs to the Granville Room for coffee, tea, and a light\nbreakfast. Today's schedule is as follows:\n* 9:30 a.m. — Welcome reception, Granville Room. Meet other participants\nand discuss ideas about computing trends, industry innovations, and your\nhopes for the conference. We ask that 57ou please sit at the table with the\nnumber indicated on your name badge. We will seat guests from different\nspecializations together to offer visitors a chance to interact with people\nworking in a variety of fields.\n*11 a.m. - Opening explanatory discussion, Gladstone Room. Join Patrizio\nVincente, Michelle Bealieu, and Mark Blackwell to discuss developments\nin spatial computing since last year's conference.\n* 12:30 p.m. — Lunch break, Granville Room\n* 1:30 p.m. - Seminars on database technology, image processing, and\nmobile applications. These will be held in the Gladstone, Halifax, and\nJohnstone Rooms.\n* 3:30 p.m. — Seminars on location data, forest mapping, and space analysis.\nThese will be held in the Gladstone, Halifax, and Johnstone Rooms.\n* 5:30 p.m. - SCC will conclude for the day. But for those who want to stay\nbehind for the next hour to speak with each other and die facilitators\nabout what they've learned, you may head to the Granville Room, where\nrefreshments will continue to be served."
+          }
+        ],
+        "questions": [
+          {
+            "number": 153,
+            "text": "What is the purpose of the announcement?",
+            "choices": {
+              "A": "To provide a list of meal times",
+              "B": "To tell participants about events",
+              "C": "To inform attendees of timetable changes",
+              "D": "To propose a tentative conference schedule"
+            }
+          },
+          {
+            "number": 154,
+            "text": "What is NOT indicated about the welcome reception?",
+            "choices": {
+              "A": "Seating will be assigned by organizers.",
+              "B": "It will begin with an introductory speech.",
+              "C": "It will involve people from different fields.",
+              "D": "Food and beverages will be offered."
+            }
+          },
+          {
+            "number": 155,
+            "text": "Which venue will be available to attendees after the seminars end?",
+            "choices": {
+              "A": "The Granville Room",
+              "B": "The Halifax Room",
+              "C": "The Johnstone Room",
+              "D": "The Gladstone Room"
+            }
+          }
+        ]
       }
     },
     "h2/test02/156_BB.png": {
@@ -1234,6 +1572,37 @@
       "answers": {
         "156": "B",
         "157": "B"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "NOTICE\nEffective September 2, the National Postal Service (NPS) will introduce a new pricing structure\nthat better reflects the cost of serving various customer segments. The NPS consistently strives\nto operate as efficiently as possible. However, recent changes mandated by the government have\neliminated previous subsidies, and as a result, we are required to source all of our funding from\nthe sale of products and services. The new pricing system is therefore necessary in allowing us to\ncontinue providing essential services to our customers. Any future price adjustments will be\nbased on national inflation.\nProduct Old Price New Price % Increase\nDomestic letter mail $1.00 $1.20 20%\nCommercial mail* $0.70 $0.85 21%\nInternational mail $1.90 $2.20 16%\nMetered mail** $0.50 $0.75 50%\n* Up to 30 grams by weight\n** Available only by special agreement with the National Postal Service\nu~\\\n00\nUO"
+          }
+        ],
+        "questions": [
+          {
+            "number": 156,
+            "text": "What is mentioned about the National Postal Service?",
+            "choices": {
+              "A": "Its charges for domestic mail increased the most.",
+              "B": "It recently lost its financial aid.",
+              "C": "It is closing some of its branches.",
+              "D": "It plans to offer a metered mail service."
+            }
+          },
+          {
+            "number": 157,
+            "text": "Why might rates be raised by the postal service in the future?",
+            "choices": {
+              "A": "To cover expenses related to an expansion",
+              "B": "To adjust for changes in inflation",
+              "C": "To pay for additional staff members",
+              "D": "To allow for mail heavier than 30 grams"
+            }
+          }
+        ]
       }
     },
     "h2/test02/158_ABC.png": {
@@ -1244,6 +1613,47 @@
         "158": "A",
         "159": "B",
         "160": "C"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "Questions 158=160 refer to the following notice.\nOeean Breeie Resort\nKostiak Islands, Seychelles\nWelcome to Ocean Breeze Resort!\nThe Kostiak Islands are known for their rich marine life and unique tourist attractions. To\nenjoy the best of the islands, we recommend that you try these activities:\nIsland Hopping\nBoard one of our boats for a day tour, which will include stops at some of Kostiak's\nmany famous beaches, lagoons, and exotic jungles. Snorkeling gear is provided for\nthose who want to explore Kostiak's extensive coral reefs, which are home to\nthousands of underwater creatures.\nMiligan Tour\nLocated south of Kostiak is Miligan, a wildlife preserve where you can interact with\nmonkeys and exotic birds in their natural habitats. Miligan is a 30-minute boat ride from\nOcean Breeze Resort.\nTrekking\nJoin a guided tour of Mt. Amitan and enjoy splendid views of Engle Bay. Our tour\nguides will accompany you on this adventure.\nTo book any of the above activities, please coordinate with the receptionists at the\nfront desk. Discounts will be given to groups of 10 or more."
+          }
+        ],
+        "questions": [
+          {
+            "number": 158,
+            "text": "What is the purpose of the notice?",
+            "choices": {
+              "A": "To describe options for activities",
+              "B": "To provide a travel schedule",
+              "C": "To promote special discounts",
+              "D": "To highlight a natural attraction"
+            }
+          },
+          {
+            "number": 159,
+            "text": "What is indicated in the notice?",
+            "choices": {
+              "A": "All tours need at least two participants.",
+              "B": "Boats will be used on some tours.",
+              "C": "Tourists must pay in advance.",
+              "D": "Reduced rates are not available."
+            }
+          },
+          {
+            "number": 160,
+            "text": "According to the notice, what will NOT be seen during an Island Hopping trip?",
+            "choices": {
+              "A": "A tropical forest",
+              "B": "Underwater wildlife",
+              "C": "An animal park",
+              "D": "Sandy shores"
+            }
+          }
+        ]
       }
     },
     "h2/test02/161_CBBC.png": {
@@ -1255,6 +1665,57 @@
         "162": "B",
         "163": "B",
         "164": "C"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "Questions 161 -164 refer to the following online chat discussion.\nO Corrine Dealba 4:32 p.m. Hi everyone. So, it sounds like Osment Industrial is interested in hearing a presentation from our firm about an indoor garden. We need to visit\ntheir offices and do an assessment next Tuesday afternoon at 3 o'clock. It\nshouldn't take more than two hours. I think it would be best if three of us\nvisit, as this is potentially a large-scale project.\nJanYates 4:34 p.m. I've got to be at Yeltsin Enterprises to supervise a team installing a\nrooftop garden on Tuesday. But if it's necessary, I can ask Ellen Pearson\nto cover for me.\nAveryWong 4:35 p.m.\nKipVillegas 4:35 p.m.\n(Q) Corrine Dealba 4:36 p.m.\nKip Villegas 4:36 p.m.\no Corrine Dealba 4:37 p.m.\nAveryWong 4:38 p.m.\no Corrine Dealba 4:40 p.m.\nI'm free to go. Do you need us to do anything in regard to the\npresentation?\nI can probably manage it, too.\nPlease ask Ellen to take your place, Jan. I really need your expertise. Aveiy,\nI'll take care of the presentation. I will need you and Kip to take\nmeasurements of the space and find out about particular needs, the budget,\nand other details.\nShall we leave from the office together?\nYes, let's meet in the parking garage at 2:30, and we can drive over\ntogether in my car. Is that OK for those who are coming?\nThat works perfectly for me. I'll see you then.\nThanks everyone. See you on Tuesday.\nJl,\nSend"
+          }
+        ],
+        "questions": [
+          {
+            "number": 161,
+            "text": "What is inferred about Osment Industrial?",
+            "choices": {
+              "A": "It has a relatively small budget for the work.",
+              "B": "It is constructing a new office space.",
+              "C": "It has asked a firm for a project presentation.",
+              "D": "It rejected several indoor gardening proposals."
+            }
+          },
+          {
+            "number": 162,
+            "text": "What is Mr. Wong most likely going to do next week?",
+            "choices": {
+              "A": "Modify the terms of a contract",
+              "B": "Measure a potential project space",
+              "C": "Inspect a new rooftop garden",
+              "D": "Oversee a work crew doing an installation"
+            }
+          },
+          {
+            "number": 163,
+            "text": "At 4:38 p.m., what does Mr. Wong mean when he writes, \"That works perfectly for me\"?",
+            "choices": {
+              "A": "He has no problems with his vehicle.",
+              "B": "He accepts the offer of a ride to an office.",
+              "C": "He is confident he can meet a deadline.",
+              "D": "He feels a presentation needs to be shortened."
+            }
+          },
+          {
+            "number": 164,
+            "text": "What might Ms. Pearson do on Tuesday afternoon?",
+            "choices": {
+              "A": "Assist Ms. Dealba with a presentation",
+              "B": "Take charge of a gardening firm's office",
+              "C": "Do a job in her coworker's absence",
+              "D": "Pick a colleague up from Bleeker Street"
+            }
+          }
+        ]
       }
     },
     "h2/test02/165_DDA.png": {
@@ -1265,6 +1726,47 @@
         "165": "D",
         "166": "D",
         "167": "A"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "Sampat Labs\nCosmetic Testing\n525 Hilltop Road, New Brunswick, NJ 08901\nApril 14\nBethany Fulton\nLittle Miss Makeup\n255 Greystone Avenue\nCharlotte, NC 28201\nDear Ms. Fulton,\nFor over 30 years, Sampat Labs has helped both large and small manufacturers secure reliable test\ndata on their cosmetic, beauty, and personal care products. Our fully equipped laboratories are\nstaffed by experienced technicians and researchers who understand the issues that most concern\nconsumers, researchers, and manufacturing companies like yours. — [1] —.\nIn addition to testing products tor its effects on skin, we are able to guide you through the proper\nmethods for mixing chemical ingredients as well as storing and transporting finished goods. — [2] —.\nWe also test how long your products last under a variety of environmental conditions. Moreover, our\naccess to an extensive database of test results from other providers allows us to completely avoid\nconducting tests on animals. — [3] —.\nPlease review the enclosed documentation for complete descriptions of each of our services as well as\ndetailed information on how to submit a product sample for testing. — [4] —. To obtain estimates of\nspecific costs and processing times, you may call me at 555-9476 or e-mail me at j.west@sampatlabs.\ncom.\nThank you.\nSincerely,\nJacob West\nClient relations, Sampat Labs"
+          }
+        ],
+        "questions": [
+          {
+            "number": 165,
+            "text": "Who most likely is Ms. Fulton?",
+            "choices": {
+              "A": "A laboratory assistant",
+              "B": "A store branch manager",
+              "C": "A client relations representative",
+              "D": "A makeup manufacturer employee"
+            }
+          },
+          {
+            "number": 166,
+            "text": "What is NOT indicated about Sampat Labs?",
+            "choices": {
+              "A": "It has decades of experience in the industry.",
+              "B": "It can determine how long a product will last.",
+              "C": "It will not perform tests on animals.",
+              "D": "It makes its research data available online."
+            }
+          },
+          {
+            "number": 167,
+            "text": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong? \"In this regard, you can be assured that they will be able to provide you with expert service.\"",
+            "choices": {
+              "A": "[1]",
+              "B": "[2]",
+              "C": "[3]",
+              "D": "[4]"
+            }
+          }
+        ]
       }
     },
     "h2/test02/168_DDDB.png": {
@@ -1276,6 +1778,57 @@
         "169": "D",
         "170": "D",
         "171": "B"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "Shopping for Free?\nVirtual Mall is the creation of programmer Pat Gustin, who launched the free mobile game just nine\nmonths ago. To date, more than 300 thousand people have downloaded the application, of which\nroughly 60 percent are active at any given time. Such numbers are very appealing for companies who\nadvertise through mobile applications.\n\"The idea of the game is simple,\" says Gustin. \"People rent spaces in a virtual shopping mall and\nselect products to sell from a catalog we provide.\" — [1] —. He explained that if the virtual vendors\nare able to manage their stores correctly, they make a profit in virtual money. — [2] —.\nThe game offers a level of detail and customization that is appreciated by users. It has even proven to\nbe popular among women, a difficult target to reach in the world of mobile gaming. — [3] —.\nGustin says he is also working on another game called Virtual Farm, to which he will apply the same\nconcepts but in an agricultural setting. — [4] —. He hopes to launch the game by early next year.\nThose interested in learning more about Virtual Mall are encouraged to download the application for\nfree. For details about Gustin's other games, go to www.virtualgamesco.com.\nUJ\n00"
+          }
+        ],
+        "questions": [
+          {
+            "number": 168,
+            "text": "What is the main topic of the article?",
+            "choices": {
+              "A": "A new shopping center",
+              "B": "A study about online advertising",
+              "C": "A software manufacturing company",
+              "D": "A simulation game for mobile devices"
+            }
+          },
+          {
+            "number": 169,
+            "text": "What is NOT mentioned about Virtual Mall?",
+            "choices": {
+              "A": "It has a significant number of players.",
+              "B": "It does not charge its members for downloading.",
+              "C": "It helps to promote the products of real companies.",
+              "D": "It allows user to create multiple characters."
+            }
+          },
+          {
+            "number": 170,
+            "text": "What is indicated about Pat Gustin?",
+            "choices": {
+              "A": "He left his former job nine months ago.",
+              "B": "He profits from the sale of merchandise.",
+              "C": "He has a background in advertising.",
+              "D": "He is developing a new game."
+            }
+          },
+          {
+            "number": 171,
+            "text": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong? \"They can then use these earnings to improve their stores or purchase items from other sellers.\"",
+            "choices": {
+              "A": "[1]",
+              "B": "[2]",
+              "C": "[3]",
+              "D": "[4]"
+            }
+          }
+        ]
       }
     },
     "h2/test02/172_CBCD.png": {
@@ -1287,6 +1840,57 @@
         "173": "B",
         "174": "C",
         "175": "D"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "Business Insider\nBy Tony Litzmark\nA 24-hour convenience store franchise has been named the Best\nCompany of the Year by the Midwestern Retailers Federation (MRF).\nStop Avenue won the prestigious prize for successfully introducing\nsandwich bars in its branches, the first of their kind in any regional\nconvenience store. The company emphasized organic and healthy\ningredients in a televised advertising campaign a year ago. Since then,\nthe sandwich bar has become increasingly popular among consumers,\nresulting in a sales boost of 40 percent compared to the previous year.\nStop Avenue's general director Aaron Patel says the person behind the\nsuccess of the venture is Felix Richardson, the youngest son of Stop\nAvenue founder Francis Richardson. Felix took the position of marketing\ndirector two years ago, during a time when company sales were\ndeclining by 20 percent every quarter. Felix realized he needed to change\nthe way Stop Avenue marketed its products. He gave the stores a new\nlook, offered selective discounts, and introduced the sandwich bars,\nwhich ultimately allowed the store to gain a larger consumer share. \"It\nwas a risky venture for Stop Avenue, but Felix proved that the key to\nstaying competitive is change,\" Patel said in an interview with\nBusinessmate Magazine.\nAnd now the company plans to start targeting female clients between the\nages of 20 and 30. \"We will launch a selection of fruit shakes starting\nnext month,\" Patel added, \"using natural ingredients, of course.\" The\nimprovement of Stop Avenue has led to greater franchise numbers. This\npast month alone, 18 new stores have opened, more than in any other\nyear since the franchise launched. At its present rate of growth, Stop\nAvenue is expected to include 500 stores within the next two years."
+          }
+        ],
+        "questions": [
+          {
+            "number": 172,
+            "text": "Why was the article published?",
+            "choices": {
+              "A": "To introduce a new trend in healthy eating",
+              "B": "To provide product dietary information",
+              "C": "To describe how a business became successful",
+              "D": "To encourage people to start a franchise"
+            }
+          },
+          {
+            "number": 173,
+            "text": "What is indicated about Felix Richardson?",
+            "choices": {
+              "A": "He was a cofounder of the Stop Avenue stores.",
+              "B": "He made significant changes to increase revenues.",
+              "C": "He works under Mr. Patel's supervision.",
+              "D": "He appeared in a televised promotion."
+            }
+          },
+          {
+            "number": 174,
+            "text": "What was NOT a method used by Felix Richardson?",
+            "choices": {
+              "A": "Redecorating store interiors",
+              "B": "Adjusting marketing strategies",
+              "C": "Advertising on social network sites",
+              "D": "Offering product discounts"
+            }
+          },
+          {
+            "number": 175,
+            "text": "According to the article, what is expected to happen over the next two years?",
+            "choices": {
+              "A": "The franchise's management structure will be reorganized.",
+              "B": "Store branches will be linked by a computer network.",
+              "C": "Stop Avenue will hire additional executives.",
+              "D": "A retail company will increase in size."
+            }
+          }
+        ]
       }
     },
     "h2/test02/176_DCDCA.png": {
@@ -1299,6 +1903,71 @@
         "178": "D",
         "179": "C",
         "180": "A"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "To: Samantha Larson <s.larson@gentrydrivers.com>\nFrom: Edwin Matthews <ematthews1965@plainsrealty.com>\nSubject: April work schedule\nDate: April 11\nDear Ms. Larson,\nI was informed by your supervisor, Dale Blackburn, that you will be assigned to be Ms. Linda Atkins'\nnew driver. I am Ms. Atkins' personal assistant, so I will be providing you with a regular schedule of\nappointments that you will be required to transport her to and from. Attached to this e-mail you will\nfind her calendar of appointments for April. Keep in mind that you can expect changes, but I will do\nmy best to notify you of any modifications at least 24 hours in advance.\nPlease read through the calendar to find details of each appointment, including the name of the\nperson she is meeting, the time and date of the engagement, and the address or location of the\nmeeting. Also, the individual scheduled to meet with Ms. Atkins on April 16 has yet to reply to the\nmeeting invitation. I will notify you as soon as I know if the client is available for the appointment on\nthat date.\nShould you have any questions, please do not hesitate to reply to this e-mail.\nRegards,\nEdwin Matthews"
+          },
+          {
+            "type": "text",
+            "content": "Schedule For: Linda Atkins\nPLAINS REALTY\nFrom the desk of: Edwin Matthews\nAPRIL\nMonday Tuesday Wednesday Thursday Friday\n1 2\n1 1 A.M.\nMs. Amundsen:\n32 Tucson\nAvenue\n3 4\n4 P.M.\nMs. Harrow:\n22-A North 33rd\nStreet\n7 8\n12:30 P.M.\nLunch meeting\nwith Mr. and Mrs.\nRobinson, Prairie\nCafe\n9\n4 P.M.\nMr. Abraham,\n433 Murray Street\n(contract signing)\n10\n3 P.M.\nOpening of Blue\nStar building,\n285 Greenwich\nStreet\n11\n14\n2 P.M.\nMr. Mendez:\n441 Poplar\nAvenue\n15 16\n10 A.M.\nMr. Choi:\n907 Broadway\n17\nLeave of absence\n18\nPublic holiday\n21 22 23 24 25\n9:30 A.M. 9 A.M. 7 P.M.\nSales seminar Property Retirement party\n(full-day), inspection, for Gordon,\n4102 Larch Drive 312 Poplar Rebecca's Grill\nAvenue 82 Third Street\n28\n1 P.M.\nTurn keys over to\nMr. Abraham,\n433 Murray Street\n29\n10 A.M.\nAnnual Realtors\nConvention,\nCole Conference\nCenter, 12 Dodd\nAvenue\n30 uu\n-O\nLn\noo\nUD"
+          }
+        ],
+        "questions": [
+          {
+            "number": 176,
+            "text": "Why did Mr. Matthews write the e-mail?",
+            "choices": {
+              "A": "To inquire about hiring a driving service",
+              "B": "To share ideas for a business venture",
+              "C": "To recommend a mode of transportation",
+              "D": "To inform a new employee of some job details"
+            }
+          },
+          {
+            "number": 177,
+            "text": "What is indicated about Mr. Matthews?",
+            "choices": {
+              "A": "He is looking to purchase a new home.",
+              "B": "He prefers traveling by car over flying.",
+              "C": "He prepares Ms. Atkins' appointment schedule.",
+              "D": "He wants to meet with Mr. Blackburn."
+            }
+          },
+          {
+            "number": 178,
+            "text": "Who has not yet confirmed a meeting with Ms. Atkins?",
+            "choices": {
+              "A": "Ms. Harrow",
+              "B": "Mrs. Robinson",
+              "C": "Mr. Abraham",
+              "D": "Mr. Choi"
+            }
+          },
+          {
+            "number": 179,
+            "text": "On which date will Ms. Larson probably not be required to work?",
+            "choices": {
+              "A": "April 14",
+              "B": "April 16",
+              "C": "April 18",
+              "D": "April 25"
+            }
+          },
+          {
+            "number": 180,
+            "text": "What is NOT indicated about Ms. Atkins?",
+            "choices": {
+              "A": "She will speak at a convention.",
+              "B": "She will meet with one client twice in April.",
+              "C": "She plans to attend a retirement celebration.",
+              "D": "She plans to take a day off."
+            }
+          }
+        ]
       }
     },
     "h2/test02/181_CCBCC.png": {
@@ -1311,6 +1980,71 @@
         "183": "B",
         "184": "C",
         "185": "C"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "Q _ O\nCelelbrate the First Edge Festival in Toronto: July ^=14\nJoin thousands of participants for a week of performances at over 100 different venues in\nCanada's most populous city! The world-famous Edge Festival is coming to Toronto.\nFollowing the event's long-time success in Edinburgh, Scotland, organizers have added a\nsecond city to the annual celebration of arts and culture.\nTo make the most of what's on offer, pick up a copy of our official brochure, which is\navailable at major bookstores, online, or through a free mobile application. In addition to\nshow listings, the application includes an interactive map of Toronto to help you find your\nway to every event.\nFor assistance with accommodations and transport options, go to our Web site at www.\nedgefest.com/toronto. Please note that tickets are required for all events and must be\npurchased from authorized Edge Festival representatives. This event is organized by the\nEdge Society, a nonprofit organization devoted to the promotion of culture and the arts. All\nproceeds from the festival go toward developing future events."
+          },
+          {
+            "type": "text",
+            "content": "Toronto Tribune July 8\nGood Times to Be Had at Toronto's Edge Festival\nBy Tim Cosgrove\nIf you have never been to an Edge Festival, I strongly encourage you to board the next bus,\nplane, or train for Toronto while there is still time left. With hundreds of shows to choose from,\nyou're guaranteed to find something you will like.\nWhat began as a small event in Scotland that provided amateur artists and performers with an\noutlet to showcase their talents, now attracts thousands of enthusiastic fans from around the\nworld. The festival grew to become such a success that organizers decided to export their idea to\nother countries, starting this year with Canada.\nSome of my favorite performances so far have been Toronto local Eric Robeson's play Kalinda, a\nballet by Argentine dance troupe Danza Volar, and a violin-and-accordion duet by Wendy\nKaufmann and Noah Rossi. Also noteworthy was a stand-up act by Irish comedian Elsa Ball, a\nreturning performer I saw at a sold-out show during last year's festival. In addition to a host of\nartistic shows and performances, the festival offers other forms of fun, including a variety of\nexotic food stands and family-centered entertainment.\nThere have also been reports that festival organizers are planning to take the event to Dublin next\nyear and then to Sydney the year after that. Artists or fans who would like to see this happen can\nmake themselves heard by adding their comments on the Edge Festival's Web site.\nd"
+          }
+        ],
+        "questions": [
+          {
+            "number": 181,
+            "text": "What is stated about the Edge Festival?",
+            "choices": {
+              "A": "It is held on the same month each year.",
+              "B": "It allows performers to compete for a prize.",
+              "C": "It consists of events at several different venues.",
+              "D": "It is free for members of an art organization."
+            }
+          },
+          {
+            "number": 182,
+            "text": "What can visitors do with the mobile application?",
+            "choices": {
+              "A": "Purchase tickets at a discount",
+              "B": "Book room accommodations",
+              "C": "Obtain directions to performances",
+              "D": "Read reviews of each show"
+            }
+          },
+          {
+            "number": 183,
+            "text": "What is indicated about Mr. Cosgrove?",
+            "choices": {
+              "A": "He used to be an amateur performer.",
+              "B": "He was in Scotland the year before.",
+              "C": "He did not have to pay for his tickets.",
+              "D": "He was involved in organizing the Toronto event."
+            }
+          },
+          {
+            "number": 184,
+            "text": "In the article, the word \"host\" in paragraph 3, line 4, is closest in meaning to",
+            "choices": {
+              "A": "sponsor",
+              "B": "introduction",
+              "C": "variety",
+              "D": "announcement"
+            }
+          },
+          {
+            "number": 185,
+            "text": "What are the festival's organizers planning to do in the future?",
+            "choices": {
+              "A": "Add a comments feature to their Web site",
+              "B": "Make tickets more readily available",
+              "C": "Hold a similar event in Sydney",
+              "D": "Include more comedians in the schedule"
+            }
+          }
+        ]
       }
     },
     "h2/test02/186_DCCBA.png": {
@@ -1323,6 +2057,75 @@
         "188": "C",
         "189": "B",
         "190": "A"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "Piedmont Limousine Company: Ride in Style!\nServing Manhattan for more than 20 years, Piedmont Limousine Company continues to provide the very best\nin rental vehicles as well as the most experienced and professional drivers. Whether you need a stretch\nlimousine that can seat up to 12 passengers, a luxury minivan that holds 8, or a regular-sized sedan with a\ncapacity of 4, Piedmont Limousine can help! We provide clean and modern vehicles for any occasion, including\nbusiness functions and weddings. We can even pick up important visitors from stations or airports and offer\nweekly or daily rental rates for those requiring the full-time services of a driver and vehicle. And for the month\nof April only, any booking for three days or more will entitle you to receive a voucher worth $50 to use for any\nfuture service from Piedmont Limousine Company!\nFor more information on our rates, location, hours of operation, and the types of vehicles we have available,\nvisit us online atwww.piedmontlimousine.com.\nIffii ilMI"
+          },
+          {
+            "type": "text",
+            "content": "http://www.piedmontlimousine.com/bookings\nSERVICES RATES VEHICLES HOURS/LOCATION BOOKINGS\nNAME Benjamin Lopez PHONE 555-0495\nE-MAIL blop@neurotech.com COMPANY Neuro-Tech, Inc.\nDATE/TIME OF SERVICE 10 a.m. April 18 -10 a.m. April 21\nPICK-UP LOCATION Central Station\nTYPE OF VEHICLE Regular sedan\nPLEASE INCLUDE ANY ADDITIONAL DETAILS. IF PASSENGER BEING PICKED UP IS\nDIFFERENT FROM THE PERSON MAKING THE BOOKING, PLEASE INCLUDE THE NAME\nBELOW.\n*1 would like to book a car and driver to pick up a visiting investor. His name is William Bail. He will\nneed your company's services daily during his stay.\nOnce you have checked and confirmed that the information you have provided is correct, click \"submit\"\nbelow.\nSUBMIT\nEb"
+          },
+          {
+            "type": "text",
+            "content": "TO: Benjamin Lopez <blop@neurotech.com>\nFROM: Fatima Khan <fkhan@piedmontlimousine.com>\nDATE: April 6\nSUBJECT: Re: Booking inquiry\nDear Mr. Lopez,\nThank you for considering Piedmont Limousine Company! We do have drivers and the type of\nvehicle you want for the dates and times you requested. Below is the fee breakdown.\nCar Rental $180.00\nDriver Services* $340.00\nSUBTOTAL $520.00\nTAX $52.00\nDEPOSIT $50.00\nTOTAL $622.00\n*Driver will be at your disposal from 8 a.m. until 8 p.m. for daily sen/ice.\nIf you accept the fees, please reply to this e-mail to confirm your booking. Cancellations are\nallowed up to 24 hours prior to the service, but deposits will be forfeited under all circumstances.\nCustomers canceling less than a full day in advance will not be refunded.\nWe also request that you provide us with the train information for your arriving guest. That way our\ndriver, Solomon Nyongo, can be waiting for him with a sign at the platform.\nThank you, and I hope to hear from you soon.\nFatima Khan\nUU\nT>\nor\n-d\n00"
+          }
+        ],
+        "questions": [
+          {
+            "number": 186,
+            "text": "What is NOT mentioned about Piedmont Limousine Company?",
+            "choices": {
+              "A": "It offers vehicles for up to 12 people.",
+              "B": "It provides services for different types of events.",
+              "C": "It is still in business after two decades.",
+              "D": "It has service desks at airports and stations."
+            }
+          },
+          {
+            "number": 187,
+            "text": "What will Mr. Lopez be given?",
+            "choices": {
+              "A": "A vehicle upgrade",
+              "B": "A complete refund",
+              "C": "A cash voucher",
+              "D": "A train ticket"
+            }
+          },
+          {
+            "number": 188,
+            "text": "What is true about Benjamin Lopez?",
+            "choices": {
+              "A": "He is planning to borrow money from a bank.",
+              "B": "He is using a discount coupon for a service.",
+              "C": "He is making a booking for a guest.",
+              "D": "He is meeting a visitor at Central Station."
+            }
+          },
+          {
+            "number": 189,
+            "text": "What happens if a booking is canceled one day before a rental date?",
+            "choices": {
+              "A": "Customers can receive a coupon.",
+              "B": "A deposit payment must be given up.",
+              "C": "Credit cards are charged the total amount.",
+              "D": "A cancellation fee must be paid."
+            }
+          },
+          {
+            "number": 190,
+            "text": "What is true about Solomon Nyongo?",
+            "choices": {
+              "A": "He will wait for William Bail on a station platform.",
+              "B": "He will drive a stretch limousine on April 18.",
+              "C": "He will meet some investors at Neuro-Tech.",
+              "D": "He will provide a passenger with a billing statement."
+            }
+          }
+        ]
       }
     },
     "h2/test02/191_CCDCD.png": {
@@ -1335,6 +2138,75 @@
         "193": "D",
         "194": "C",
         "195": "D"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "3-D Printer Workshops\nWarner City Library, Lafayette branch\nSeptember 27\nWorkshop 1: 1:00 p.m. - 3:00 p.m.\nWorkshop 2: 4:00 p.m. - 6:00 p.m.\nMany businesses use 3-D printers to create small customized products to sell on the Internet. 3-D\nprinting also has applications for dentistry, automotive design, architecture, and more. Imagine\nwhat you could do! The Warner City Library is now offering you the chance to learn about this\namazing technology!\nOur $30 workshop includes:\n» A free demonstration of the 3-D printer\n® A short video on innovations in 3-D technology\no A group discussion on the potential applications and uses of 3-D printing technology led by\nWarner City Library director Ryan Jefferson\n«> Hands-on practice, guided by our technical expert\n- Each participant will get to choose among five keychain designs to print and take home.\nDue to space restrictions, each workshop will be limited to 12 people. To register, visit the library's\nfront desk or go to www.warnerlibrary.com/3-DPrinter. For inquiries, call Sarah Andrews at 555-9796 or\ne-mail s.andrews@warnerlibrary.com."
+          },
+          {
+            "type": "text",
+            "content": "To: Sarah Andrews <s.andrews@warnerIibrary.com>\nFrom: Sam Jackson <samjackson@warnerartcommiinitycom>\nDate: September 5\nSubject: 3-D Printer Workshops\nDear Ms. Andrews,\nI am the president of the Warner Art Community and a sculptor by profession. I recently read your\nflyer about the 3-D printer workshops. Our group is interested in taking advantage of this\nopportunity However, we'd like the focus to be on art rather than general 3-D printing. So, we hope\nthat we can develop a custom workshop.\nOur members have some specific interests surrounding how we can use 3-D printing in art. We would\nlike to follow the curriculum you offer but would prefer to discuss more specific applications for our\nwork on our own. I can lead those discussions. We may also want to explore making items of our own\ndesign in addition to the items you offer. Could we meet to discuss this further? Naturally, our group\nwill pay any additional fees.\nPlease let me know when you might be available.\nSincerely,\nSam Jackson"
+          },
+          {
+            "type": "text",
+            "content": "Warner City Library\nNOVEMBER SCHEDULE OF EVENTS\nDate/Time Event Event type Location\n11/03\n3 to 5 p.m.\nCreative Writing Workshop Free with registration Warner City Library, Main Library\n11/09\n1 to 3 P.M.\nUnderstanding Contemporary\nLiterature\n$10 registration Warner City Library, Main Library\n11/16\n2 to 6 p.m.\n3-D Printing in Art By invitation only Warner City Library, Lafayette\nbranch\n11/23\n3 to 5 p.m.\nBook launch: A Lasting Legacy,\nby Meredith Brownsville\nFree Warner City Library, Concord\nStreet branch\nFor inquiries about any of the listed events or directions to specific locations of the library, please call\n555-9796, or e-mail info@warnerlibrary.com.\nUJ\n4>\nLn\nen\n00"
+          }
+        ],
+        "questions": [
+          {
+            "number": 191,
+            "text": "What is the flyer mainly about?",
+            "choices": {
+              "A": "A product launch",
+              "B": "An online seminar",
+              "C": "A learning opportunity",
+              "D": "A community club meeting"
+            }
+          },
+          {
+            "number": 192,
+            "text": "In the e-mail, the word \"surrounding\" in paragraph 2, line 1, is closest in meaning to",
+            "choices": {
+              "A": "closing",
+              "B": "encircling",
+              "C": "concerning",
+              "D": "approaching"
+            }
+          },
+          {
+            "number": 193,
+            "text": "Which activity does Mr. Jackson NOT request for his group?",
+            "choices": {
+              "A": "The complimentary demonstration",
+              "B": "The video presentation on technology",
+              "C": "The hands-on practice using a printing device",
+              "D": "The discussion led by library staff"
+            }
+          },
+          {
+            "number": 194,
+            "text": "What is indicated about the Warner City Library on the schedule?",
+            "choices": {
+              "A": "It is holding an invitation only event at its main location.",
+              "B": "It closes at noon sometimes to host special events.",
+              "C": "It has multiple locations in the same city.",
+              "D": "It operates a tutoring center for students."
+            }
+          },
+          {
+            "number": 195,
+            "text": "What is suggested about the event on November 16?",
+            "choices": {
+              "A": "It is free for members of an art group.",
+              "B": "It is the second one of a series to be held.",
+              "C": "It will coincide with an author's book launch.",
+              "D": "It can accommodate a dozen participants."
+            }
+          }
+        ]
       }
     },
     "h2/test02/196_BBDAD.png": {
@@ -1347,6 +2219,75 @@
         "198": "D",
         "199": "A",
         "200": "D"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "0 H\nTO Marian Kentley <mkentley@kentleyfarm.co.ca>\nFROM Brayden Craig <cr_brayden@peaklanddairy.co.ca>\nSUBJECT Order inquiry\nDATE May 2\nDear Ms. Kentley,\nMy name is Brayden Craig, and I work at Peakland Dairy in Surrey. Our shop will be launching a\nnew selection of ice cream this summer, and we are currently searching for ingredients. We plan to\ninclude a strawberry variety, and we would like to place a bulk order with you. This would be for\n250 kilograms. Could you let me know if your farm has the means to fulfill such a large order and,\nif so, what the cost would be? Naturally, if sales are good, we will place another order next season.\nAlso, in addition to vanilla, chocolate, and strawberry flavors, we may feature a new variety in the\nfuture. We are considering using raspberries and are wondering if your farm grows them. If so, we\nwould like to place an order for 250 kilograms of them when they are available.\nRegards,\nBrayden Craig"
+          },
+          {
+            "type": "text",
+            "content": "Kentley Farm, 5948 Coast Road, Abbotsford, B.C.\nORDER FORM:\nNAME Brayden Craig COMPANY Peakland Dairy\nPHONE (604)555-4229 E-MAIL cr_brayden@\npeaklanddairy.co.ca\nBILLING ADDRESS 443 Spruce Road, Surrey,\nB.C.\nDELIVERY ADDRESS Same as billing address\nProduct: Seasonal strawberries\nAmount required: 250 kilograms\nCost per kilogram: $12.00\nDelivery date: May 10\nInstructions: Wash well.\nSUBTOTAL: $3,000.00\nTAX: $210.60\nDELIVERY: $120.00\nTOTAL AMOUNT DUE: $3330.60 (PAID IN FULL)\nThank you for placing an order with Kentley Farm. Should there be any problems with your delivery,\ncontact Marian Kentley at mkentley@kentleyfarms.co.ca or (604)555-4059."
+          },
+          {
+            "type": "text",
+            "content": "Get $3 off Peakland Dairy's New Organic Ice Cream!\nThank you for visiting Kentley Farm today! You can now enjoy our strawberries in Peakland Dairy's\nnew organic ice cream tine, made with completely natural ingredients! Choose from vanilla,\nchocolate, strawberry, and their featured flavor of coffee all made with hormone-free milk and cream.\nSimply bring in this coupon to wherever Peakland Dairy products are sold including Softies\nSupermarkets, Wilton Groceries, and Day-and-Night Convenience Stores, and receive $3 off your\npurchase of a 500ml carton of any organic ice cream variety!\n*Offer valid for one item only and may not be combined with any other promotion.\nOffer expires September 1."
+          }
+        ],
+        "questions": [
+          {
+            "number": 196,
+            "text": "What is true about Peakland Dairy in the e-mail?",
+            "choices": {
+              "A": "It opened a facility in Abbotsford.",
+              "B": "It will release a new product line.",
+              "C": "It requires fruit to be frozen before delivery.",
+              "D": "It only sells ice cream during the summer."
+            }
+          },
+          {
+            "number": 197,
+            "text": "In the e-mail, the word \"means\" in paragraph 1, line 4, is closest in meaning to",
+            "choices": {
+              "A": "intention",
+              "B": "capacity",
+              "C": "revenue",
+              "D": "process"
+            }
+          },
+          {
+            "number": 198,
+            "text": "What has Mr. Craig most likely requested?",
+            "choices": {
+              "A": "A department's contact number",
+              "B": "A revised billing statement",
+              "C": "A discount on a bulk purchase",
+              "D": "A delivery to Spruce Road"
+            }
+          },
+          {
+            "number": 199,
+            "text": "What is suggested about Mr. Craig?",
+            "choices": {
+              "A": "He was unable to purchase raspberries from Ms. Kentley.",
+              "B": "He had to increase the quantity for his strawberry order.",
+              "C": "He is searching for a supplier of organic dairy products.",
+              "D": "He was given a complimentary ice cream coupon."
+            }
+          },
+          {
+            "number": 200,
+            "text": "What is indicated about Kentley Farm?",
+            "choices": {
+              "A": "It offers discounts to stores placing bulk orders.",
+              "B": "It supplies fresh strawberries to Wilton Groceries.",
+              "C": "It sells Peakland Dairy products to farm guests.",
+              "D": "It gives coupons to visitors at its Abbotsford facility."
+            }
+          }
+        ]
       }
     },
     "h2/test03/131_BCBC.png": {
