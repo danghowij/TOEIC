@@ -11,6 +11,57 @@
         "132": "B",
         "133": "D",
         "134": "D"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "ATTENTION ALL TENANTS\n\nWimberley Group will [131] its rent collection system to an electronic one. This change will apply to all apartments effective February 1. [132] Cash and personal checks will no longer be accepted.\n\nEvery tenant needs to create a user profile at www.wimberlygroup.com. After logging in, tenants will be able to [133] a payment. You can do this by selecting the unpaid bill and then clicking on the button at the bottom of the screen. [134] you hit \"Pay,\" the amount you designate will be deducted from your registered credit card or bank account. If you wish to arrange automatic payments, please click the button labeled \"Pay this amount every month.\"\n\nThank you for your cooperation. If you have any questions, e-mail us at help@wimberlygroup.com."
+          }
+        ],
+        "questions": [
+          {
+            "number": 131,
+            "text": "Choose the best option for blank 131.",
+            "choices": {
+              "A": "induce",
+              "B": "fluctuate",
+              "C": "convert",
+              "D": "recover"
+            }
+          },
+          {
+            "number": 132,
+            "text": "Choose the best option for blank 132.",
+            "choices": {
+              "A": "Tenants had found the new system easy to use.",
+              "B": "From that day on, tenants must pay their rental fees online.",
+              "C": "The new system allowed for a greater variety of payment options.",
+              "D": "Only certain Wimberley Group occupants will be affected."
+            }
+          },
+          {
+            "number": 133,
+            "text": "Choose the best option for blank 133.",
+            "choices": {
+              "A": "postpone",
+              "B": "cancel",
+              "C": "oppose",
+              "D": "make"
+            }
+          },
+          {
+            "number": 134,
+            "text": "Choose the best option for blank 134.",
+            "choices": {
+              "A": "Even though",
+              "B": "During",
+              "C": "Since",
+              "D": "As soon as"
+            }
+          }
+        ]
       }
     },
     "h2/test01/135_CBDB.png": {
@@ -22,6 +73,57 @@
         "136": "B",
         "137": "D",
         "138": "B"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "To: Angela Thornberry <athornberry@fastmail.com>\nFrom: Vincent Nakamura <vnakamura@traxcomputers.com>\nSubject: Your laptop\nDate: June 18\n\nDear Ms. Thornberry,\n\nI am writing about the Trax 2700 laptop you dropped off at our store on June 15 because of problems with its screen. After sending it to our [135] for examination, we discovered that it contained a faulty component. At present, your laptop is being [136]. As requested, we are also thoroughly testing the device to see if there are any other issues.\n\nAs this problem appears to have been entirely our fault, we will provide you with a $50 voucher to use at our retail store. [137], e-coupons for our Web site are also available. Just let us know which you'd prefer.\n\n[138] If you have not received it by then, please call customer service.\n\nBest wishes,\n\nVincent Nakamura\nCustomer Satisfaction Department"
+          }
+        ],
+        "questions": [
+          {
+            "number": 135,
+            "text": "Choose the best option for blank 135.",
+            "choices": {
+              "A": "technicality",
+              "B": "technical",
+              "C": "technicians",
+              "D": "technology"
+            }
+          },
+          {
+            "number": 136,
+            "text": "Choose the best option for blank 136.",
+            "choices": {
+              "A": "replaced",
+              "B": "repaired",
+              "C": "shipped",
+              "D": "recalled"
+            }
+          },
+          {
+            "number": 137,
+            "text": "Choose the best option for blank 137.",
+            "choices": {
+              "A": "Regrettably",
+              "B": "Subsequently",
+              "C": "Approximately",
+              "D": "Alternatively"
+            }
+          },
+          {
+            "number": 138,
+            "text": "Choose the best option for blank 138.",
+            "choices": {
+              "A": "The model you inquired about is no longer available at this location.",
+              "B": "We will send the computer back to you within three days.",
+              "C": "You are not covered under the warranty as it has expired.",
+              "D": "We have been receiving a number of complaints about our service."
+            }
+          }
+        ]
       }
     },
     "h2/test01/139_DCBA.png": {
@@ -33,6 +135,57 @@
         "140": "C",
         "141": "B",
         "142": "A"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "Notice for All Staff\n\nThe shopping mall our store is located in will be closed from December 24 to 26. [139], some of you will be coming in on December 24 to set up for our post-holiday sale. The guard who usually opens the mall doors in the morning is off duty during this time. [140] Daniel Monahan is the most senior staff member, so I will give it to him, and he will let everyone inside.\n\nIt is vital that you [141] Daniel at the entrance at exactly 10 A.M. We don't want to waste time making him go back and forth to open the doors, so please be considerate and arrive as [142] as you can.\n\nThank you for your understanding.\n\nAlison Culpepper\nStore manager"
+          }
+        ],
+        "questions": [
+          {
+            "number": 139,
+            "text": "Choose the best option for blank 139.",
+            "choices": {
+              "A": "Besides",
+              "B": "Otherwise",
+              "C": "Accordingly",
+              "D": "However"
+            }
+          },
+          {
+            "number": 140,
+            "text": "Choose the best option for blank 140.",
+            "choices": {
+              "A": "Making sure we answer customer inquiries in a timely manner is our priority.",
+              "B": "You should be able to use your employee pass to access the mall.",
+              "C": "A security code will therefore be required to enter the building.",
+              "D": "You will need to handle backorders caused by his absence."
+            }
+          },
+          {
+            "number": 141,
+            "text": "Choose the best option for blank 141.",
+            "choices": {
+              "A": "are meeting",
+              "B": "meet",
+              "C": "had met",
+              "D": "met"
+            }
+          },
+          {
+            "number": 142,
+            "text": "Choose the best option for blank 142.",
+            "choices": {
+              "A": "punctually",
+              "B": "regularly",
+              "C": "politely",
+              "D": "impressively"
+            }
+          }
+        ]
       }
     },
     "h2/test01/143_DCAB.png": {
@@ -44,6 +197,57 @@
         "144": "C",
         "145": "A",
         "146": "B"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "To: Rajesh Singh <rajesh.singh@indiaclothing.in>\nFrom: Faria Deveraj <f.deveraj@mumbai.gov.in>\nSubject: Scheduled Inspection\nDate: October 12\n\nDear Mr. Singh,\n\nOn October 17, your clothing factory will face its yearly government inspection. This annual [143] will verify that all labor laws are being followed. Your factory passed the [144] evaluation with no major problems, so our inspectors hope to see a similar level of compliance this time around.\n\nYou are [145] obliged to provide access to any part of the factory that the inspectors may wish to see. Failure to comply in this regard may result in fines and further investigation. Also, the inspectors need to confirm that workers are being properly compensated. [146]\n\nThank you for your attention to this matter.\n\nFaria Deveraj\nInspection Team Leader\nCity Government of Mumbai"
+          }
+        ],
+        "questions": [
+          {
+            "number": 143,
+            "text": "Choose the best option for blank 143.",
+            "choices": {
+              "A": "decided documents.",
+              "B": "forthcoming (C) Consequently, the company wishes to",
+              "C": "previous avoid paying any such penalties.",
+              "D": "ultimate (D) We are interested in hearing about certain products that were recalled."
+            }
+          },
+          {
+            "number": 144,
+            "text": "Choose the best option for blank 144.",
+            "choices": {
+              "A": "decided",
+              "B": "forthcoming",
+              "C": "previous",
+              "D": "ultimate"
+            }
+          },
+          {
+            "number": 145,
+            "text": "Choose the best option for blank 145.",
+            "choices": {
+              "A": "meeting",
+              "B": "investment",
+              "C": "commemoration",
+              "D": "assessment (A) decided (B) forthcoming (C) previous (D) ultimate (A) legally (B) legality (C) legal (D) legitimate"
+            }
+          },
+          {
+            "number": 146,
+            "text": "Choose the best option for blank 146.",
+            "choices": {
+              "A": "A copy of the receipt for your recent payment has been sent to you in the mail.",
+              "B": "The human resources department will need to prepare the relevant documents.",
+              "C": "Consequently, the company wishes to avoid paying any such penalties.",
+              "D": "We are interested in hearing about certain products that were recalled."
+            }
+          }
+        ]
       }
     },
     "h2/test01/147_CA.png": {
@@ -53,6 +257,37 @@
       "answers": {
         "147": "C",
         "148": "A"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "Cardigan Bay General Hospital Fundraising Dinner\nYou are cordially invited to attend a dinner fundraiser in aid of\nCardigan Bay General Hospital on April 25 at 7:30 p.m. in the\nIris Room at the Beaufort Hotel.\nThe hospital was first built in 1960, and while much of it has\nbeen completely renovated, the east wing has barely changed\nsince the opening day. In order to make improvements to it, the\nhospital needs about £300,000, which this dinner will raise\nfunds for.\nTickets can be purchased for £100 at the hospital's main\nreception desk. Those purchasing four tickets or more at one\ntime will receive a copy of Dr. Dianne Larsen's book on\nnutrition, Food Fit, valued at £25, as a gift.\nWe sincerely hope you will attend so that the hospital can\nmake some necessary upgrades that will improve the level of\ncare we provide."
+          }
+        ],
+        "questions": [
+          {
+            "number": 147,
+            "text": "Why does the hospital need funding?",
+            "choices": {
+              "A": "It needs to pay for extra research into diseases.",
+              "B": "It has to hire more medical personnel.",
+              "C": "It would like to refurbish a section of the building.",
+              "D": "It requires the purchase of new medical equipment."
+            }
+          },
+          {
+            "number": 148,
+            "text": "How can guests obtain a complimentary item?",
+            "choices": {
+              "A": "By paying for at least four guests",
+              "B": "By presenting an invitation from a previous event",
+              "C": "By making reservations for an event online",
+              "D": "By volunteering to help at the hospital"
+            }
+          }
+        ]
       }
     },
     "h2/test01/149_DD.png": {
@@ -62,6 +297,37 @@
       "answers": {
         "149": "D",
         "150": "D"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "WALLACE TRANSPORTATION: TICKET\n*PLEASE PRINT THIS OUT*\nPASSENGER: William Singer\nPHONE NUMBER: (212) 555-3201\nHOME ADDRESS: 21 West 74th St., New York, NY 10023\nTICKET NUMBER: 41249101ABKOA\nCLASS: Regular\nFARE: $52.00\nDATE OF DEPARTURE: August 11\nITINERARY:\nDepart: New York City 5:10 a.M.\nArrive: Pittsburgh 12:12 p.m.\nDepart: Pittsburgh 1:20 P.M.\nArrive: Columbus 4:50 P.M.\nDepart: Columbus 5:30 P.M.\nArrive: Chicago 10:05 P.M.\nYour bus will leave the Park Avenue Coach Terminal in New York\nCity at 5:10 a.m. Please have your ticket ready to present to the\ndriver when you arrive. Passengers are permitted to bring two\npieces of luggage on board, one for carry-on and one that can be\nstored away. No refunds will be provided to passengers who miss\ntheir departure. If you would like to cancel your ticket, please\ncall (212) 555-8843."
+          }
+        ],
+        "questions": [
+          {
+            "number": 149,
+            "text": "What is indicated about Mr. Singer?",
+            "choices": {
+              "A": "He bought a return ticket.",
+              "B": "He was charged a reduced fare.",
+              "C": "He plans on staying the night in Columbus.",
+              "D": "He is a resident of New York."
+            }
+          },
+          {
+            "number": 150,
+            "text": "What information is NOT included on the ticket?",
+            "choices": {
+              "A": "The company's refund policy",
+              "B": "The estimated arrival time in Pittsburgh",
+              "C": "The baggage allowance",
+              "D": "The time of departure from Chicago"
+            }
+          }
+        ]
       }
     },
     "h2/test01/151_BC.png": {
@@ -71,6 +337,37 @@
       "answers": {
         "151": "B",
         "152": "C"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "r Nisa Miskin\nInman Pharmaceuticals\n92450 Interstate 164\nBoise, ID 83714\nAugust 12\nDear Ms. Miskin,\nI am a representative from Well Time Benefits, and we would be very interested in meeting with you to\ndiscuss what we can offer your firm. At Well Time Benefits, we understand your role as a company's\nbenefits manager and can offer plans that make your job easier, as well as suit the needs of your\ncompany. That's why our employee benefits packages rate number one with many businesses and\norganizations.\nWell Time Benefits offers a variety of packages covering every type of insurance need, such as medical,\nmental health, dental, life, and more. Popular packages include \"Health Plus\" and the comprehensive\n\"Choice Care.\" You can customize either of these to suit your organization's needs. Disability and\nparental leave benefits are inclusive with the Choice Care package.\nI will contact your office within the next two weeks to find out if you'd like to set up an appointment. If\nyou would like to speak with me sooner, please call 555-4433.\nSincerely,\nLucas Moreland\nWell Time Benefits Client Services"
+          }
+        ],
+        "questions": [
+          {
+            "number": 151,
+            "text": "What is the purpose of the letter?",
+            "choices": {
+              "A": "To introduce an employee training program",
+              "B": "To describe a company's products",
+              "C": "To invite a participant to a human resources seminar",
+              "D": "To compare a variety of insurance packages"
+            }
+          },
+          {
+            "number": 152,
+            "text": "How can companies receive insurance for parental absence?",
+            "choices": {
+              "A": "By renewing membership in a benefits program",
+              "B": "By sending a document within the next two weeks",
+              "C": "By registering employees for comprehensive coverage",
+              "D": "By paying an additional monthly charge"
+            }
+          }
+        ]
       }
     },
     "h2/test01/153_CD.png": {
@@ -80,6 +377,37 @@
       "answers": {
         "153": "C",
         "154": "D"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "Sonya Meadows 1:45 p.m.\nBrian, sorry to bother you, but I need to ask a favor. I\nhave to deliver the final rental contract for an office\nspace, but my last appointment ran long. I don't think I\ncan make it there on time.\nBrian Hull 1:46 p.m.\nI can probably deliver it for you. Send me the details.\nSonya Meadows 1:48 p.m.\nThanks! The client is Coventry Financial, and they're renting\na space at State Tower on Market Street. It's Unit 1804.\nBrian Hull\nOK, What time is the appointment?\n1:49 p.m.\nSonya Meadows 1:49 p.m.\n2:40. You should be able to make it if you leave in the\nnext 10-15 minutes. v\nBrian Hull 1:50 p.m.\nI'll take a cab so I get there faster. It'd take me twice as\nlong if I had to look for parking in that area. What about\nthe contract?\nSonya Meadows 1:51p.m.\nIt should be sitting on my desk. I asked our receptionist to\nmake copies of it earlier and leave it in my office."
+          }
+        ],
+        "questions": [
+          {
+            "number": 153,
+            "text": "What is suggested about Market Street?",
+            "choices": {
+              "A": "It is half an hour away from Ms. Meadows' office.",
+              "B": "It is located in a shopping district.",
+              "C": "It is difficult to find parking there.",
+              "D": "It is near a major transit stop."
+            }
+          },
+          {
+            "number": 154,
+            "text": "At 1:51 p.m., what does Ms. Meadows mean when she writes, \"It should be sitting on my desk\"?",
+            "choices": {
+              "A": "She put a message from a customer on a counter.",
+              "B": "She misplaced a client's business card.",
+              "C": "She could not access her appointment schedule.",
+              "D": "She believes that a document is in her workspace."
+            }
+          }
+        ]
       }
     },
     "h2/test01/155_CCD.png": {
@@ -90,6 +418,47 @@
         "155": "C",
         "156": "C",
         "157": "D"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "TO: Steven Joyce <sjoyce@fastmail.com>\nFROM: Fast Track Records <information@fasttrackrecords.com>\nDATE: May 20\nSUBJECT: Information\nDear Mr. Joyce,\nEvery year on the third Saturday of May, we celebrate Record Store Day as a way to honor the independent\nspirit of record stores. That means Fast Track Records will once again be partnering with all the other major\nstores in the city for a day of music celebration. As you are a member of our Music Fans Club, we are\nforwarding you some of the planned highlights of the day;\n11 a.m.-12 p.m. John Kher, Sarah Feinstein, Ernest Yates, and other local music critics will be reading\nselections from their work at Gold Sounds Records.\n12 p.m.-5 p.m. Marshalltown Records will be offering a special discount on all jazz and blues records. Stop\nby their store and receive up to 50% off on your favorite albums.\n1 p.m..-5 p.m. Duke Records will stage a raffle for a variety of merchandise, including vinyl cases, T-shirts,\nand other memorabilia.\n2:30 p.m.-3:30 p.m. Local rock band The Chimney Sweeps will be performing an in-store concert at Desert\nIsland Records.\n4 p.m.-5 p.m. Gold Sounds Records will be holding a music-themed trivia competition. Winners will\nreceive special prizes including autographed CDs and posters.\n5 p.m. A small after-party will be held at Marshalltown Records.\nIf you have questions about the events and activities, call Fast Track Records at 555-3009 or send a reply to\nthis e-mail. A detailed schedule with further festivities can be found at www.fasttrackrecords.com/\nrecordstoreday.\nLU\n-O\nen\nOD\no\nl>- Hn jo mi ri!\nru XI"
+          }
+        ],
+        "questions": [
+          {
+            "number": 155,
+            "text": "What is the main purpose of the e-mail?",
+            "choices": {
+              "A": "To announce a record store's grand opening",
+              "B": "To list music-related events for the summer months",
+              "C": "To provide a schedule for a special celebration",
+              "D": "To keep members informed of local concerts"
+            }
+          },
+          {
+            "number": 156,
+            "text": "What is NOT mentioned as an activity planned for Record Store Day?",
+            "choices": {
+              "A": "A store-sponsored contest",
+              "B": "A musical performance",
+              "C": "A speech by a musician",
+              "D": "A reading from local reviewers"
+            }
+          },
+          {
+            "number": 157,
+            "text": "What is stated about Marshalltown Records?",
+            "choices": {
+              "A": "It specializes in jazz and blues records.",
+              "B": "It has two branches in the city.",
+              "C": "It is giving away a selection of merchandise.",
+              "D": "It will be the venue for the final event."
+            }
+          }
+        ]
       }
     },
     "h2/test01/158_DBDD.png": {
@@ -101,6 +470,57 @@
         "159": "B",
         "160": "D",
         "161": "D"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "Eagle Canyon City Park\nOver the past month, there has been a sharp increase in reported sightings of raccoons in\nthe open spaces of the park. The park rangers suspect the creatures are attracted by food\nscraps that are left—whether on purpose or accidentally—by visitors to the park. — [i] —.\nThe city's public health department does not want to encourage the raccoons to leave the\nwooded areas of the park as they can be carriers of disease and pose a risk to visitors and\ntheir pets. — [2] —. With that in mind:\n• Please do not leave any garbage in the park—either take it with you when you leave, or\nplace it in the closed garbage bins that are provided throughout the park.\n• If you see raccoons, do not approach them or give them food as they are wild animals\nwith sharp claws and can be dangerous when they feel frightened.\n— [3] —• Along with this, we will be holding volunteer park cleanups on the last Saturday of\neach month. Our next one is scheduled for June 27. Anyone interested in taking part should\nreport to the park visitor center to register. — [4] —. All participants will be provided with\nprotective gloves and vests, water, and a light lunch."
+          }
+        ],
+        "questions": [
+          {
+            "number": 158,
+            "text": "Why was the announcement written?",
+            "choices": {
+              "A": "To declare a public meeting",
+              "B": "To announce the opening of a wildlife park",
+              "C": "To provide directions to a visitor center",
+              "D": "To alert visitors of a problem"
+            }
+          },
+          {
+            "number": 159,
+            "text": "What is NOT stated about raccoons?",
+            "choices": {
+              "A": "They are potential threats to other animals.",
+              "B": "They should only be approached under staff supervision.",
+              "C": "They are drawn toward food left by humans.",
+              "D": "They pose a hazard when feeling scared."
+            }
+          },
+          {
+            "number": 160,
+            "text": "What will volunteers be given?",
+            "choices": {
+              "A": "A map of the park",
+              "B": "Some food to distribute to animals",
+              "C": "A certificate of accomplishment",
+              "D": "Some protective gear"
+            }
+          },
+          {
+            "number": 161,
+            "text": "In which of the positions marked [1], [2] [3], and [4] does the following sentence best belong? \"We will accept registration forms up to two days prior to the event.\"",
+            "choices": {
+              "A": "[1]",
+              "B": "[2]",
+              "C": "[3]",
+              "D": "[4]"
+            }
+          }
+        ]
       }
     },
     "h2/test01/162_BCBC.png": {
@@ -112,6 +532,57 @@
         "163": "C",
         "164": "B",
         "165": "C"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "O Michelle Hanson\nBarry Carr\nDustin Rodriguez\nMichelle Hanson\nWilla Hopkins\nDustin Rodriguez\nBarry Carr\nDustin Rodriguez\nO Michelle Hanson\nDustin Rodriguez\nWilla Hopkins\n11:40| Can I get an update from everyone on the promotion project for N-Genz\nAuto? Our next presentation's been moved up to Tuesday, August 10.\n11 ;42| The script changes for the TV commercial will be done this afternoon. Other\nthan that, I'm just waiting for production to give me permission to proceed.\n11:45j Barry, our first choice for the lead actor backed out, so I'm waiting to hear\nback from the talent agency about a replacement. But still, we can proceed\nwith our shoot on July 18 at Snappy Studios.\n11:47| Thank you both. What about the online campaign? My contact at N-Genz\nAuto is eager to see what's been done.\n11:50| Well, I'm in the final stages of developing the Web site. I need about a week\nmore to do the finishing touches, but I'm quite confident we'll be done in\ntime.\n11:54| Good news. I called the agency and was told that my second choice for a\nperformer can do the job.\n11:55| Great, Dustin. I'll send you a copy of the finished script tonight. By the way, I\ncan't make it on the 18th as I need to be at a client meeting, so I'll send\nBrianna Johns in my place.\n11:571 No problem, Barry. I'll get in touch with her shortly to make further\narrangements.\n11:58) It looks like we are on the right track. Dustin, keep me posted on your\nschedule. Willa, could you send me a link to the site so I can see the\nprogress so far?\n11:59) Understood. I'll send you the most current schedule I have right now.\n11:59) OK, Michelle. 1 can send you the link now. Just bear in mind there are some\nissues to work out.\nSend\n<>"
+          }
+        ],
+        "questions": [
+          {
+            "number": 162,
+            "text": "What type of business does Ms. Hanson most likely work for?",
+            "choices": {
+              "A": "A television studio",
+              "B": "An advertising firm",
+              "C": "A Web design company",
+              "D": "An automobile manufacturer"
+            }
+          },
+          {
+            "number": 163,
+            "text": "At 11:58, what does Ms. Hanson mean when she writes, \"on the right track\"?",
+            "choices": {
+              "A": "She has agreed to some script modifications.",
+              "B": "She is pleased with the progress for a site design.",
+              "C": "She thinks the project is going according to plan.",
+              "D": "She is satisfied with a casting decision."
+            }
+          },
+          {
+            "number": 164,
+            "text": "What is true about Mr. Rodriguez?",
+            "choices": {
+              "A": "He only recently started working at the company.",
+              "B": "He plans to get in contact with Ms. Johns.",
+              "C": "He will send someone in his place to a meeting.",
+              "D": "He will deliver an upcoming client presentation."
+            }
+          },
+          {
+            "number": 165,
+            "text": "What has Ms. Hopkins been asked to do?",
+            "choices": {
+              "A": "Send a progress report",
+              "B": "Forward a detailed calendar",
+              "C": "Provide a Web site address",
+              "D": "E-mail a performer's resume"
+            }
+          }
+        ]
       }
     },
     "h2/test01/166_DBD.png": {
@@ -122,6 +593,47 @@
         "166": "D",
         "167": "B",
         "168": "D"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "Hanlan's Coffee Company — Ethical Purchasing Policy\nAt Hanlan's, we know that our customers like to drink only the finest coffee from around the\nworld. We also recognize that they want to be sure that the people who grow that coffee are\ntreated fairly. Many coffee producers provide their employees with poor working conditions\nand low pay, which are practices that Hanlan's does not support. — [I] —.\nCoffee companies that buy fheir stock on the open market never know exactly where it\ncomes from. But at Hanlan's, we take a different approach. We have exclusive contracts\nwith farms in Guatemala, Ethiopia, and Vietnam. — [2] —. Because of this, we know exactly\nwho is producing our coffee and the conditions in which it is being grown. We appreciate all\nthe hard work of our farmers and ensure that they have acceptable working conditions and\nwages. But our commitment doesn't end there. — [3] —. Hanlan's pays them an additional I0\npercent above current market prices as our way of saying \"thanks.\"\nFurthermore, to give even more back to these communities, we have started the Hanlan's\nDevelopment Foundation. Each year through this organization, we put five percent of our\ntotal corporate profits into building schools, water pumps and purification plants, and health\ncare facilities in the towns and villages near where our coffee is grown. The main goal is to\nmake certain that all our workers' children are safe, healthy, and have the chance to go to\nschool and receive a full education. — [4] —.\nFind out more about Hanlan's development projects, our coffee producers, and what you\ncan do to support our cause at www.hanlancoffee.com/foundation."
+          }
+        ],
+        "questions": [
+          {
+            "number": 166,
+            "text": "What is indicated about Hanlan's Coffee Company's partner farms?",
+            "choices": {
+              "A": "They sell their products on the open market.",
+              "B": "They are subsidized by local governments.",
+              "C": "They grow a number of different crops.",
+              "D": "They are situated in several countries."
+            }
+          },
+          {
+            "number": 167,
+            "text": "Who does the Hanlan's Development Foundation mostly benefit?",
+            "choices": {
+              "A": "International agriculture researchers",
+              "B": "Coffee farmers' children",
+              "C": "Employees working abroad",
+              "D": "Members of a coffee growers' association"
+            }
+          },
+          {
+            "number": 168,
+            "text": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong? \"By achieving this worthwhile objective, we'll be able to continue our efforts.\"",
+            "choices": {
+              "A": "[1]",
+              "B": "[2]",
+              "C": "[3]",
+              "D": "[4]"
+            }
+          }
+        ]
       }
     },
     "h2/test01/169_DBC.png": {
@@ -132,6 +644,47 @@
         "169": "D",
         "170": "B",
         "171": "C"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "Plug Software's Head Honored as Tech Woman of the Year\nBy Carmen Marshall\nRebecca Curtis, CEO of software company Ping, lias been named the most successful woman in the tech\nworld by Gadget Lover magazine. Ms. Curtis, who took over the company five years ago and transformed it\ninto a thriving multi-platform enterprise, is expected to deliver an acceptance speech at the Gadget Lover\nannual conference on December 2.\nMs. Curtis's achievements as CEO have been widely celebrated. When she replaced the previous CEO,\nMark Spalding, Ping was mainly known for its word processing software. Due to the influx of new word-\nprocessing products, Ping's software was not selling as well as it once had. Ms. Curtis quickly reversed that\nsituation by developing a wide range of high-quality software including photo-editing and spreadsheet\nprograms. Now the name \"Ping\" is notable for its cutting-edge, dependable technology.\nOver the next several years, Ms. Curtis says Ping will create a membership plan for its frequent users.\nThose who sign up will be able to download new Ping products at a reduced rate. Ms. Curtis says the\ncompany also plans to redevelop its Web site. With all these plans ahead. Ping is expected to grow even\nmore. Most experts agree that Ms. Curtis has been the primary reason behind the company's success.\n■"
+          }
+        ],
+        "questions": [
+          {
+            "number": 169,
+            "text": "What is stated about Ping?",
+            "choices": {
+              "A": "It recently hired new systems programmers.",
+              "B": "It was founded five years ago.",
+              "C": "It offers free downloads to members.",
+              "D": "It was associated with a particular software type."
+            }
+          },
+          {
+            "number": 170,
+            "text": "What is NOT mentioned about Rebecca Curtis?",
+            "choices": {
+              "A": "She could be speaking at an upcoming conference.",
+              "B": "She was Ping's first female CEO.",
+              "C": "She was recognized by a magazine.",
+              "D": "She helped Ping expand its product line."
+            }
+          },
+          {
+            "number": 171,
+            "text": "According to the article, what is expected to happen at Ping Software?",
+            "choices": {
+              "A": "It will develop a hardware product.",
+              "B": "Its Web site will be closed down permanently.",
+              "C": "It will offer programs at lower prices.",
+              "D": "It will merge with another company."
+            }
+          }
+        ]
       }
     },
     "h2/test01/172_DBCC.png": {
@@ -143,6 +696,57 @@
         "173": "B",
         "174": "C",
         "175": "C"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "City Trends Report — Valencia\nTourism numbers in Valencia have been increasing for three years\nrunning as people are beginning to discover this often underrated\ncity on the eastern coast of Spain. At the beginning of the survey\nperiod, the city received just under a million visitors a year, but the\nlatest figures show this has jumped to over 1.4 million.\nThere are a number of factors that can account for this change. The\nnew Sanchez Museum of Iberian Art and its nearby conference\nfacilities have proven to be a big draw since opening last year. And\nupdates to rail services from Valencia to Madrid and Barcelona have\nreduced travel time significantly. With a major airport expansion due\nto be completed before the end of the year, things are expected to\nget even better for Valencia.\nIn addition, the city government's launch of an international\nadvertising campaign two years ago has also proved beneficial. The\ncity was marketed by television, print, and social media as a tourism\ndestination. Reaction to the campaign continues to be positive.\nFinally, as well as its attraction to tourists and business visitors,\nValencia is increasingly being recognized as an excellent place to live.\nThe consultancy Apollo and Company recently put the city in third\nplace in a report measuring the quality of life in small European\ncities. They cited its lovely waterfront location, low housing costs,\nand modern infrastructure as reasons for its high place."
+          }
+        ],
+        "questions": [
+          {
+            "number": 172,
+            "text": "What is the report mainly about?",
+            "choices": {
+              "A": "Campaigns to make a city more liveable",
+              "B": "Upgrades to an international conference facility",
+              "C": "Changes to a government's building codes",
+              "D": "Improvements to a city's tourism industry"
+            }
+          },
+          {
+            "number": 173,
+            "text": "What is NOT mentioned as a reason for the figure increase?",
+            "choices": {
+              "A": "A new museum facility",
+              "B": "An updated tax system",
+              "C": "A marketing campaign",
+              "D": "A shorter transit time"
+            }
+          },
+          {
+            "number": 174,
+            "text": "What is indicated about Madrid?",
+            "choices": {
+              "A": "It was selected by a consultancy as having a high quality of life.",
+              "B": "It was less popular with tourists than Barcelona for three years.",
+              "C": "Its transportation time from Valencia has been shortened.",
+              "D": "Its city council hired a firm to develop a marketing strategy."
+            }
+          },
+          {
+            "number": 175,
+            "text": "Why was Valencia ranked in third place?",
+            "choices": {
+              "A": "It is popular with business travelers.",
+              "B": "It recently updated its waterfront location.",
+              "C": "It offers residents affordable homes.",
+              "D": "It schedules a lot of outdoor activities."
+            }
+          }
+        ]
       }
     },
     "h2/test01/176_BCCDD.png": {
@@ -155,6 +759,71 @@
         "178": "C",
         "179": "D",
         "180": "D"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "Maxfield Financial Group\n\nMay 10\n\nBethany Aldridge\n18 Juniper Road\nWestport, CT 06880\n\nDear Ms. Aldridge,\n\nThis letter is in response to your request to sign up for paperless statements. Your statements will now be sent via e-mail on the 25th of each month. All such statements will also be accessible from your online account, and you will be able to print them at your convenience. They will contain all of the same information that is included in your paper statements. In order to protect your account details, please ensure that the device you use to download and save your paperless statements is secure.\n\nIf you would like a paper statement mailed to your primary address in addition to the paperless one, log on to your account and check the \"Mail my Statement\" box under \"Delivery Preferences.\" Keep in mind that Maxfield Financial Group does charge an annual fee of $24 to clients who choose to receive paper statements. If you would like to stop receiving paperless statements and revert back to mailed paper statements only, return to your account and uncheck \"E-mail my Statement.\"\n\nBest regards,\nCustomer Service\nMaxfield Financial Group"
+          },
+          {
+            "type": "text",
+            "content": "To: Bethany Aldridge <bethanyal22@totalmail.net>\nFrom: Customer Service <cs@maxfieldfin.com>\nDate: May 25\nSubject: Your May Statement\nAttachment: May_Statement\n\nDear Ms. Aldridge,\n\nPlease find your Maxfield Financial Group electronic account statement for the month of May attached. As this is the first electronic statement that has been sent to you, please review it carefully and contact our service center if you have any questions or concerns. We have received your payment, and your copy will arrive via mail within the next five to seven days.\n\nTo ensure that you receive monthly statement notifications, make sure to keep a current e-mail and postal address on file with us. If you are planning to change them, simply update them in the \"Personal Information\" section of our Web site. If you use a work e-mail address, keep in mind that some companies may block the receipt of employees' personal e-mail.\n\nSincerely,\nCustomer Service\nMaxfield Financial Group"
+          }
+        ],
+        "questions": [
+          {
+            "number": 176,
+            "text": "Why was the letter written?",
+            "choices": {
+              "A": "To describe the steps necessary to obtain a card",
+              "B": "To inform a customer of a change in correspondence",
+              "C": "To alert an online banking user of unusual transactions",
+              "D": "To offer receipt recycling policy details to an account holder"
+            }
+          },
+          {
+            "number": 177,
+            "text": "What is stated about paperless statements in the letter?",
+            "choices": {
+              "A": "They must be retained by recipients for tax purposes.",
+              "B": "They require an assigned password to open.",
+              "C": "They can be accessed from an online account at anytime.",
+              "D": "They contain less detail than the paper documents that are mailed."
+            }
+          },
+          {
+            "number": 178,
+            "text": "According to the letter, how can print copies of statements be requested?",
+            "choices": {
+              "A": "By e-mailing the service center",
+              "B": "By calling the accounts department",
+              "C": "By selecting an option online",
+              "D": "By faxing a request form"
+            }
+          },
+          {
+            "number": 179,
+            "text": "Why has Ms. Aldridge been asked to check her digital statement?",
+            "choices": {
+              "A": "It includes an important notification.",
+              "B": "It has the incorrect contact information.",
+              "C": "It shows some additional charges for services.",
+              "D": "It is the first one she has received."
+            }
+          },
+          {
+            "number": 180,
+            "text": "What can be inferred about Ms. Aldridge?",
+            "choices": {
+              "A": "She notified a financial provider of an address change.",
+              "B": "She must submit a complete payment within seven days.",
+              "C": "She reported an error found on a monthly statement.",
+              "D": "She paid a yearly charge to Maxfield Financial Group."
+            }
+          }
+        ]
       }
     },
     "h2/test01/181_DBCAD.png": {
@@ -167,6 +836,71 @@
         "183": "C",
         "184": "A",
         "185": "D"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "Announcement for Woodlands Business Owners:\nThe Woodlands Merchants Association is planning to host Thursday evening concerts on the Center\nSquare lawn from May 28 through July 2, from 6 P.M. until 9 p.m. We have held die concerts over the\npast few years and have had a good turnout every dme. However, these events do entail a significant\nexpense for the association, as we most pay our performers. As a result, we are offering local\nbusinesses the opportunity to sponsor a concert. This will help the associadon to control costs while\npromoting your stores or shops to the public.\nA sponsorship includes a banner with your business name on it that will be attached to the\nperformance stage. You have the option of setting up a promotional booth on the lawn and are\nallowed to hand out flyers or give away coupons and product samples. Those sponsoring a concert for\nS500 or more will also have their business's name, logo, and contact information printed with event\nadvertisements in T/je Woodlands Times newspaper.\nThe Woodlands Merchants Association aims to bring together the business community and local\nresidents, and the sponsored concerts will be an enjoyable way to achieve that goal. If you would like to\nparticipate, contact the event coordinator, Dan Perry, at DanPerry@woodlandsmerchantsassn.com to\nfinalize the sponsorship arrangements."
+          },
+          {
+            "type": "text",
+            "content": "Woodlands Merchants Association Summer Concert Schedule\nBelow is the concert schedule. Sponsorship rates were determined by the cost of the performer or\nband. Each sponsorship package includes a banner and one promotional booth if desired.\nCo-sponsorship by two companies is also permissible. Any distributed items are not part of the listed\ncost and must be paid for by the sponsor. Sponsors must be current members of the Woodlands\nMerchants Association.\nDate Performer or Band Style of Music Sponsorship Cost\nMay 28 Pearson Trio Jazz $450\nJune 4 Amy Evans Children's Folk $150\nJune 11 Throwback 1950's Pop $500\nJune 18 University Chorus* Broadway Tunes $550\nJune 25 Treble Trouble Dance and Pop $550\nJuly 2 Joe Thomas* Blues $150\n*Contract not yet signed. Performers subject to change."
+          }
+        ],
+        "questions": [
+          {
+            "number": 181,
+            "text": "What is the announcement mainly about?",
+            "choices": {
+              "A": "A request for performers for a concert series",
+              "B": "A revised policy regarding advertising materials",
+              "C": "A campaign to increase membership in a group",
+              "D": "A promotional opportunity for local establishments"
+            }
+          },
+          {
+            "number": 182,
+            "text": "According to the announcement, what is a goal of the event?",
+            "choices": {
+              "A": "Increasing economic activity in a town",
+              "B": "Fostering interaction between businesses and citizens",
+              "C": "Recognizing the creative talents of local performers",
+              "D": "Raising money for a charity program"
+            }
+          },
+          {
+            "number": 183,
+            "text": "What is suggested about the evening concerts?",
+            "choices": {
+              "A": "Poor weather conditions may cause them to be held indoors.",
+              "B": "They are paid for partly by donations gathered from the audiences.",
+              "C": "Cosponsors can distribute flyers and samples at them.",
+              "D": "They will take place for the first time at Center Square this year."
+            }
+          },
+          {
+            "number": 184,
+            "text": "What are sponsors required to do?",
+            "choices": {
+              "A": "Cover the cost of handouts",
+              "B": "Finalize concert schedules",
+              "C": "Provide samples of products",
+              "D": "Sign contracts with performers"
+            }
+          },
+          {
+            "number": 185,
+            "text": "For which concert would sponsors NOT have their details printed in the local newspaper?",
+            "choices": {
+              "A": "Throwback",
+              "B": "Treble Trouble",
+              "C": "University Chorus",
+              "D": "Pearson Trio"
+            }
+          }
+        ]
       }
     },
     "h2/test01/186_BABBC.png": {
@@ -179,6 +913,75 @@
         "188": "B",
         "189": "B",
         "190": "C"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "Gunton City Council to Consider Blandfolk\nSuperstore Proposal\nAt a Gunton City Council meeting on May 2, members\nlistened to a presentation from representatives of Blandfolk\nSuperstore about building a branch locally. The retail giant\nproposed erecting an outlet measuring 9,500 square meters\njust within city limits on Medford Avenue. However, the\nchosen land has not yet been authorized for commercial\nestablishments, so Blandfolk has requested that the\nproperty be rezoned. Gunton mayor Claire O'Rourke told\nrepresentatives that the council would discuss the\nproposition this month and address it at their next meeting\nin June. A spokesperson for Blandfolk said the corporation\nhopes the proposal will pass, emphasizing that the\ndevelopment would provide employment for up to 190\nlocal residents.\nmm"
+          },
+          {
+            "type": "text",
+            "content": "Gunton Herald\nwww.guntonherald.com\ni}\nHome | News | Sports | Business | Entertainment | Lifestyle | Opinion | Contact Us\nReaders' Comments\nRonald Pinero posted on May 7:\nI am writing in regard to an article printed in your newspaper's May 3 edition about the\nconstruction proposal from Blandfolk Superstore. As a long-time business owner in Gunton, I am\nconcerned. I manage Ballas Boutique, a clothing store in the downtown area, and many of my\nfriends and business acquaintances also operate private shops in the city. Large corporate retailers\nhave forced many smaller stores out of business in other locations where they have opened, even\nwhen such establishments have been situated on the outskirts of towns. I'm not sure most\nbusinesses like mine will be able to compete without significantly dropping prices and, by\nextension, the quality of our goods. For now, Gunton is a very vibrant and diverse city, and I hope\nthe mayor and council members will reject the proposal in order to keep it that way.\nJT.\n0 <> 3"
+          },
+          {
+            "type": "text",
+            "content": "TO Ronald Pinero <rpinero@dailymaily.com>\nFROM Adeline Morris <amorris@guntoncoc.org>\nSUBJECT Request from Gunton COC\nDATE May 8\nDear Mr. Pinero,\nI came across your comments on the Gunton Herald Web site. Your concern is something the board of\nthe Gunton Chamber of Commerce has been discussing, and we agree that something must be done\nto protect stores in the downtown area, like yours. On June 3, the city council will be holding a public\nmeeting that some of us will be attending. It would be helpful if you joined us at the event. You could ^\ngive a short talk describing the concerns you mentioned in your comments. You are welcome to use\nvisual aids, bring supporting documents, and invite others who share our concerns. Please let me know\nif you would like to participate.\nSincerely yours,\nAdeline Morris ^\nSecretary, Gunton Chamber of Commerce\nOT"
+          }
+        ],
+        "questions": [
+          {
+            "number": 186,
+            "text": "What is the article mainly about?",
+            "choices": {
+              "A": "A mayor's recent proposal",
+              "B": "A corporation's plans to build a store",
+              "C": "A city's thriving downtown scene",
+              "D": "A council's efforts to reduce unemployment"
+            }
+          },
+          {
+            "number": 187,
+            "text": "What does Mr. Pinero want Ms. O'Rourke to do?",
+            "choices": {
+              "A": "Turn down a proposition from Blandfolk Superstore",
+              "B": "Meet with executives from Ballas Boutique",
+              "C": "Rezone some property to allow for construction",
+              "D": "Defer funding for private business owners"
+            }
+          },
+          {
+            "number": 188,
+            "text": "In the article, the word \"limits\" in paragraph 1, line 5, is closest in meaning to",
+            "choices": {
+              "A": "regulations",
+              "B": "borders",
+              "C": "levels",
+              "D": "obstacles"
+            }
+          },
+          {
+            "number": 189,
+            "text": "What will take place on June 3?",
+            "choices": {
+              "A": "Those on the Gunton City Council will vote on a plan.",
+              "B": "Some Chamber of Commerce members will attend a public hearing.",
+              "C": "Construction of a large retail outlet will get underway.",
+              "D": "Ms. Morris will voice some citizens' concerns at a trial."
+            }
+          },
+          {
+            "number": 190,
+            "text": "What is indicated about Ms. Morris?",
+            "choices": {
+              "A": "She is in charge of relocation for the city council.",
+              "B": "She runs a store that sells items at bargain prices.",
+              "C": "She thinks that Ballas Boutique should be preserved.",
+              "D": "She signed a petition sponsored by Gunton City Council."
+            }
+          }
+        ]
       }
     },
     "h2/test01/191_BDBCD.png": {
@@ -191,6 +994,75 @@
         "193": "B",
         "194": "C",
         "195": "D"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "Invoice Date: October 4\nFrom: Oresund Graphics and Design\n49 Rozenstraat, Arnhem, Netherlands\nTo: Kaiser Investment Services\n1 Kornmarkt, Floor 4, Frankfurt, Germany\nServices Charges\nDesign, Layout, and Photography of Annual Shareholders Report €745\nDesign and Layout of Investing with Kaiser Brochure €545\nDesign and Layout of Terms and Conditions Booklet €300\nTOTAL DUE €2,240\nPayment is due in 15 days. Requests for additional changes will incur a €100 surcharge per\ndocument. For rush printing, add €250. Please note that we no longer accept checks. All payments\nmust be made by direct bank transfer or electronically through www.friendpay.com. Thank you for\nyour cooperation."
+          },
+          {
+            "type": "text",
+            "content": "To: Alexander Svensson <alex.svensson@oresund.nl>\nFrom: Christine Kaufmann <ckaufmann@kaiserinvestment.de>\nSubject: Changes to publications\nDate: October 7\nDear Mr. Svensson,\nWe received your invoice yesterday along with the proofs. Thank you for your excellent work.\nI showed the final drafts to our managing director and, overall, he was pleased. However, he\nhas requested that we change the photograph used on the front cover. He thinks it failed to\nconvey the mood we were going for. We have commissioned a photographer to take a new\npicture, and I will send it to you by Friday. Unfortunately, we cannot move our original due\ndate as the brochures have to be shipped in time for a campaign launch event we have\nplanned for November.\nIf our request presents a problem, please let me know right away. You can reach me by phone\nat 555-2309, extension #42. Otherwise, I will wait to receive your revised invoice. Thank you!\nChristine Kaufmann\nPublications Manager\nKaiser Investment Service"
+          },
+          {
+            "type": "text",
+            "content": "Kaiser Investment Services Company Newsletter\nYear-end Message from our CEO\nAs we come to the end of another year, I want to take this opportunity to thank everyone for their\ncommitment and hard work. Once again, Kaiser Investment Services has outperformed analysts'\nexpectations and generated substantial profits for its clients and shareholders. Not only that, but we also\ncontinue to top customer satisfaction surveys on financial services companies in Germany. As we reflect on\nthese successes, let us continue to look forward with optimism. In this December issue of the newsletter,\nlearn more about our ongoing expansion into North America and see photos from last month's launch of our\nmarketing campaign in the United States, which was well attended by several potential clients. Other than\nthat, I will see you all at our annual holiday party!\nSincerely,\nMatthias Furst\nm\nnj\nUJ\n4>\nLn\nUD\no\n\\> Hn jS mi ra"
+          }
+        ],
+        "questions": [
+          {
+            "number": 191,
+            "text": "What is true about Oresund Graphics and Design?",
+            "choices": {
+              "A": "It accepts checks in the mail as payment.",
+              "B": "It did not take pictures for a booklet.",
+              "C": "It has its own finance department.",
+              "D": "It is based on the fourth floor of a building."
+            }
+          },
+          {
+            "number": 192,
+            "text": "What is suggested about Kaiser Investment Services?",
+            "choices": {
+              "A": "It is planning to hire a full-time photographer.",
+              "B": "It did not receive all of the promised documents.",
+              "C": "It may be charged for paying an invoice late.",
+              "D": "It will have to pay a fee of €100 for a revision."
+            }
+          },
+          {
+            "number": 193,
+            "text": "What is one purpose of the message?",
+            "choices": {
+              "A": "To recognize a firm's top employees",
+              "B": "To go over a company's achievements",
+              "C": "To announce the results of a sale",
+              "D": "To invite participants to a celebration"
+            }
+          },
+          {
+            "number": 194,
+            "text": "In the message, the word \"outperformed\" in paragraph 1, line 2, is closest in cn meaning to",
+            "choices": {
+              "A": "taken part in",
+              "B": "put apart from",
+              "C": "done better than",
+              "D": "given more than UD"
+            }
+          },
+          {
+            "number": 195,
+            "text": "What most likely did Kaiser Investment Services do recently?",
+            "choices": {
+              "A": "It held a retirement party for staff members.",
+              "B": "It conducted a survey among employees.",
+              "C": "It launched a series of new products in Germany.",
+              "D": "It distributed brochures to potential US clients."
+            }
+          }
+        ]
       }
     },
     "h2/test01/196_BCCAB.png": {
@@ -203,6 +1075,75 @@
         "198": "C",
         "199": "A",
         "200": "B"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "text",
+            "content": "TO: El Paso Center for the Digital Arts <questions@elpasodigital.com>\nFROM: Raymond Hardy <rayhardy@goodmail.com>\nSUBJECT: Classes\nDATE: April 30\nTo Whom It May Concern:\nMy name is Raymond Hardy, and I'm the president of an amateur photography club here in El Paso. We\nheard that your center will be teaching some classes on photography this summer. I also understand you\noffer a special rate for groups. If so, we are interested in registering. Four of us want to take landscape\nphotography at beginners' level. Another three of our members want to take a more advanced class and\nwould like to know whether you offer any. Could you send me some more information?\nPlease include details about where these classes are going to take place and how much they'll cost, and I\nwill pass the information on.\nBest regards,\nRaymond Hardy\nPresident\nHomestead Photo Club\nEl Paso Center for the Digital Arts: Upcoming One-Day Classes May 7-12\nMay 8 (Mon) May 9 (Tues) May 10 (Wed) May 11 (Thurs) May 12 (Fri)\n7:30 P.M. 8:00 P.M. 8:00 P.M. 8:30 P.M. 7:00 p.M.\nProfessional Marketing your Photographing With Landscape Wedding\nPhotography Photos Natural Light Photography Photography\nSoftware Instructor: Carrie Instructor: Ben Instructor: Sue Instructor: Finley\nInstructor: Lindsay Felix Greenwood Adler Kolwalski\nArias Cost: $48 Cost: $52 Cost: $54 Cost: $47\nCost: $50\n*Friday's class is for advanced participants only.\nEl Paso Center for the Digital Arts: Class Registration Form\nPlease fill in the following details:\nName Raymond Hardy Address 2094 Firebird Drive, El Paso, TX 79901\nPhone 555-3004 E-mail rayhardy@goodmail.com\nDo you have any professional photography experience? Yes □ No ■"
+          },
+          {
+            "type": "text",
+            "content": "Course Landscape Photography\nPayment method Cash\nThe El Paso Center for the Digital Arts is a nonprofit organization focused on advancing people's\nknowledge of film, photography, and graphic design. Please note that the center does not provide any\ncameras or accessories, and participants must supply their own. Those signing up as a group of three\nor more pay $30 each except for weekend classes. We will confirm your registration within 24 hours of\nreceiving payment. Tuition fees are nonrefundable and must be paid one week prior to the start of any\ncourse.\nDJ\nLU\n-O\nKn j° ni>; r.2\nr\\j 3D"
+          },
+          {
+            "type": "text",
+            "content": "Self *113 a|3E\no|Jll c^oi Se|f nEL E|ae« E1|AM T!«H LH§# SSOH *77^?\n2. Lfe 7om aa^i awi\n□ Oil □ 0fL|2\n3. Lfe 70M 100^111 #2jch\n□ on □ oma\n4. Lfi= Part 52| Part 6119g °K)|| snio^c|-.\n□ 011 no ma\n5. Part7#l[[H5gO|-y^a| j|oo|oj$Jc:K\n□ oil □ oma\n6. 7HtlsH0f 1 g ab I_m ?l^ §Jif sjoiaAiis,\n• 5J go^ iof7fA4 jfgo| gg =5 §fio| q|p sjiig cfxj^i a^qct. THti^of ^ gg\nysA| qg Efl A60| aswf 9M^. ^2!0| 7fg g asjoi, aeHo® g ji|t ^ oi^gq."
+          }
+        ],
+        "questions": [
+          {
+            "number": 196,
+            "text": "What is the main purpose of the e-mail?",
+            "choices": {
+              "A": "To recruit people to a photography club",
+              "B": "To request information on some courses",
+              "C": "To register for an upcoming contest",
+              "D": "To give feedback on a recent lecture"
+            }
+          },
+          {
+            "number": 197,
+            "text": "What is true about the Homestead Photo Club?",
+            "choices": {
+              "A": "All of its members work as professional photographers.",
+              "B": "Most of its members have attended classes before.",
+              "C": "Some of its members can take a class in wedding photography.",
+              "D": "A few of its members want to sign up for three or more classes."
+            }
+          },
+          {
+            "number": 198,
+            "text": "In the form, the phrase \"focused on\" in paragraph 1, line 1, is closest in meaning to",
+            "choices": {
+              "A": "partnered with",
+              "B": "looked over",
+              "C": "dedicated to",
+              "D": "marketed for This is the end of the test. You may review p.324 • qg"
+            }
+          },
+          {
+            "number": 199,
+            "text": "How much will Mr. Hardy probably have to pay for his class?",
+            "choices": {
+              "A": "$30",
+              "B": "$47",
+              "C": "$52",
+              "D": "$54"
+            }
+          },
+          {
+            "number": 200,
+            "text": "What will Mr. Hardy be required to do?",
+            "choices": {
+              "A": "Speak with an instructor prior to the start of a course",
+              "B": "Bring his personal photography equipment",
+              "C": "Provide a piece of identification",
+              "D": "Submit proof of previous experience"
+            }
+          }
+        ]
       }
     },
     "h2/test02/131_ACCB.png": {
@@ -1026,6 +1967,57 @@
         "132": "B",
         "133": "B",
         "134": "C"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "passage",
+            "content": "You are Cordially Invited\n\nDogorail would like to invite its business associates to the 25th Dogorail Transport and Logistics Exhibition scheduled for November 9 to 11 in Prague. Dogorail will be displaying its products and services on the main floor of the Zidenic Convention Center [131] the three-day event. And there will be a special presentation by Dogorail CEO Miroslav Sergeyev on the final night. [132]. Representatives from Dogorail will be in attendance to assist visitors with their queries. Private [133] on any of our offerings are welcome if you wish to obtain advice about your particular requirements.\n\nTo confirm your attendance to this event, please return the enclosed form, [134] filled out and with your signature appended, on or before April 30."
+          }
+        ],
+        "questions": [
+          {
+            "number": 131,
+            "text": "[131]",
+            "choices": {
+              "A": "onto",
+              "B": "upon",
+              "C": "throughout",
+              "D": "outside"
+            }
+          },
+          {
+            "number": 132,
+            "text": "[132]",
+            "choices": {
+              "A": "Dogorail products will be unveiled to event invitees once he has finished.",
+              "B": "He will be discussing the recent rail projects in Moldova, Bulgaria, and Greece.",
+              "C": "Requests to use a meeting room at the event must be submitted in advance.",
+              "D": "His special address has been arranged to begin at 9:00 a.m."
+            }
+          },
+          {
+            "number": 133,
+            "text": "[133]",
+            "choices": {
+              "A": "occupations",
+              "B": "consultations",
+              "C": "dominions",
+              "D": "possessions"
+            }
+          },
+          {
+            "number": 134,
+            "text": "[134]",
+            "choices": {
+              "A": "primarily",
+              "B": "fluently",
+              "C": "fully",
+              "D": "temporarily"
+            }
+          }
+        ]
       }
     },
     "h2/test06/135_ADBC.png": {
@@ -1037,6 +2029,57 @@
         "136": "D",
         "137": "B",
         "138": "C"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "passage",
+            "content": "April 28\n\nThe Missourian\n438 East St. Louis Street\nSpringfield, MO 65806\n\nTo the Editor:\n\nI wish to point out an error in a recent article in your newspaper. Last week, it [135] that over a thousand workers could lose their jobs if Liberty Medical Group merges with Midland Health Services. This is untrue.\n\nI would like to emphasize that [136] have not been completed. I can say this because I am involved in the talks on behalf of Liberty Medical Group. In addition, if these two organizations merge, they would be in a better position to create new employment opportunities. This is because a consolidated firm can [137] jobs that each of the companies would have been unable to offer on their own.\n\nIt is our expectation that you will print a retraction. [138]. I am hoping for your immediate response.\n\nSincerely,\nAndrew Sweet\nCompany spokesperson"
+          }
+        ],
+        "questions": [
+          {
+            "number": 135,
+            "text": "[135]",
+            "choices": {
+              "A": "was reported",
+              "B": "is reported",
+              "C": "will report",
+              "D": "will be reported"
+            }
+          },
+          {
+            "number": 136,
+            "text": "[136]",
+            "choices": {
+              "A": "evaluations",
+              "B": "acquisitions",
+              "C": "assignments",
+              "D": "negotiations"
+            }
+          },
+          {
+            "number": 137,
+            "text": "[137]",
+            "choices": {
+              "A": "review",
+              "B": "generate",
+              "C": "perfect",
+              "D": "monitor"
+            }
+          },
+          {
+            "number": 138,
+            "text": "[138]",
+            "choices": {
+              "A": "We will be holding a press conference regarding the recent merger.",
+              "B": "Midland Health Services will be closing its doors this month.",
+              "C": "This will correct any misunderstanding caused by your earlier article.",
+              "D": "This will reduce the number of employees in our establishment."
+            }
+          }
+        ]
       }
     },
     "h2/test06/139_DDAD.png": {
@@ -1048,6 +2091,57 @@
         "140": "D",
         "141": "A",
         "142": "D"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "passage",
+            "content": "To: Margo Sloane <msloane@bowenassociates.com>\nFrom: Jan Fitch <jfitch@bowenassociates.com>\nSubject: Equipment delivery\nDate: October 11\n\nMr. Jurgens at the new branch called to say that the office equipment we ordered from Filepros arrived on October 9. He and the technicians are now busy installing the machinery.\n\nUnfortunately, I learned that the shipment of other items from Draper [139] longer. The earliest they can guarantee delivery is after October 16, which could force us to delay our opening to October 25. If management prefers, we can [140] the order. I have asked Mr. Sampson, one of our suppliers, [141] if he can get the needed items at short notice. He understands the situation and has confirmed that he can obtain the materials immediately.\n\n[142]. I will wait for word from you regarding the Draper order and will keep sending you updates."
+          }
+        ],
+        "questions": [
+          {
+            "number": 139,
+            "text": "[139]",
+            "choices": {
+              "A": "took",
+              "B": "takes",
+              "C": "had taken",
+              "D": "will take"
+            }
+          },
+          {
+            "number": 140,
+            "text": "[140]",
+            "choices": {
+              "A": "dispatch",
+              "B": "refund",
+              "C": "process",
+              "D": "cancel"
+            }
+          },
+          {
+            "number": 141,
+            "text": "[141]",
+            "choices": {
+              "A": "to check",
+              "B": "checking",
+              "C": "checks",
+              "D": "checked"
+            }
+          },
+          {
+            "number": 142,
+            "text": "[142]",
+            "choices": {
+              "A": "Meanwhile, we will order the equipment from another supplier.",
+              "B": "As a result, we had no choice but to announce a new opening date.",
+              "C": "Unfortunately, the items from Mr. Sampson will be delayed again.",
+              "D": "In other words, we will be able to get what we need on time."
+            }
+          }
+        ]
       }
     },
     "h2/test06/143_ADAC.png": {
@@ -1059,6 +2153,57 @@
         "144": "D",
         "145": "A",
         "146": "C"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "passage",
+            "content": "Goldline Staffing is seeking payroll clerks for its rapidly expanding head office in Minneapolis. Candidates will be responsible for maintaining payroll data for up to 2,000 employees. As a result, they must be highly organized and able to perform [143] tasks at a proficient level. In addition, they must have working knowledge of word processing and accounting software [144].\n\nNewly hired employees will be placed in positions best suited to their educational background and experience. We have noted that most applicants ask if there are opportunities to gain new skills. [145]. In fact, employee development is one of our key programs. [146], appropriate training will be provided to all successful applicants.\n\nTo apply, send your r?sum? and other required documents to jobs@goldline.com."
+          }
+        ],
+        "questions": [
+          {
+            "number": 143,
+            "text": "[143]",
+            "choices": {
+              "A": "delegated",
+              "B": "devoted",
+              "C": "outdated",
+              "D": "confused"
+            }
+          },
+          {
+            "number": 144,
+            "text": "[144]",
+            "choices": {
+              "A": "just",
+              "B": "complete",
+              "C": "equal",
+              "D": "alike"
+            }
+          },
+          {
+            "number": 145,
+            "text": "[145]",
+            "choices": {
+              "A": "We appreciate this attitude and wish to provide the needed support.",
+              "B": "Pleasing our customers is just one of the company?s many goals.",
+              "C": "The number of employees on our payroll is likely to decrease.",
+              "D": "There is an increasing need for staff who have already had training."
+            }
+          },
+          {
+            "number": 146,
+            "text": "[146]",
+            "choices": {
+              "A": "In short",
+              "B": "Furthermore",
+              "C": "Consequently",
+              "D": "On the other hand"
+            }
+          }
+        ]
       }
     },
     "h2/test06/147_DC.png": {
@@ -1068,6 +2213,37 @@
       "answers": {
         "147": "D",
         "148": "C"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "passage",
+            "content": "h\n\nMEMO r\\j\n\nuu\nTo: All staff\n\nFrom: Amanda Robinson 4>\n\nSubject: New assignment\nLn\nDate: May 20\n\nen\n\nPlease be informed that effective June 1,\n\nMr. Matthew Webb will be replacing Mr. Daniel\n\nRodgers as purchasing manager for Longview CD\n\nHoldings. Please address all purchase requests for\nLO\noffice supplies and equipment to Mr. Webb from\nthat date. As before, all request forms must be o\napproved and signed by a departmental\n\nsupervisor before submission. Those with questions i>\nKn\nJ2\nmay reach Mr. Webb at extension number 82. nit\nrid\no oCD\n>rl\nru\nTO\n(D\nQ."
+          }
+        ],
+        "questions": [
+          {
+            "number": 147,
+            "text": "Why did Ms. Robinson write the memo? 1",
+            "choices": {
+              "A": "To provide instructions about a new office policy",
+              "B": "To collect orders for office supplies",
+              "C": "To inform staff about a manager's resignation",
+              "D": "To notify employees about a change in personnel"
+            }
+          },
+          {
+            "number": 148,
+            "text": "How should employees at Longview 5 Holdings request new office supplies?",
+            "choices": {
+              "A": "By filling out an online form",
+              "B": "By calling an office extension",
+              "C": "By submitting a signed document",
+              "D": "By going to a supplier's Web site"
+            }
+          }
+        ]
       }
     },
     "h2/test06/149_DB.png": {
@@ -1077,6 +2253,37 @@
       "answers": {
         "149": "D",
         "150": "B"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "passage",
+            "content": "registered students assistance with editing their writing\n\nassignments for classes. Assignment proofreading services\n\nare available Mondays through Saturdays from 8:30 a.m. to\n\n8:00 P.m.\n\nAs an additional offering for those of you looking to\n\nbetter develop your writing skills, we arrange tutoring\n\nsessions via appointment at our main desk. Writing tutors\n\nare current graduate students in the colleges of education\n\nand liberal arts and are dedicated to guiding you through\n\nthe writing process for any class assignment.\n\nSo, don't waste another minute worrying about that term\n\npaper! Stop by the West University Writing Center at 450\n\nErnestine Hall for more information."
+          }
+        ],
+        "questions": [
+          {
+            "number": 149,
+            "text": "What is the purpose of the announcement?",
+            "choices": {
+              "A": "To invite professional writers to a workshop",
+              "B": "To publicize the opening of an educational center",
+              "C": "To explain the importance of written assignments",
+              "D": "To promote various services offered at a facility"
+            }
+          },
+          {
+            "number": 150,
+            "text": "What is NOT mentioned about the writing center?",
+            "choices": {
+              "A": "It employs graduate students as tutors.",
+              "B": "It is open seven days a week.",
+              "C": "It is available for anyone enrolled at the school.",
+              "D": "It can arrange private instructional sessions."
+            }
+          }
+        ]
       }
     },
     "h2/test06/151_CD.png": {
@@ -1086,6 +2293,37 @@
       "answers": {
         "151": "C",
         "152": "D"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "passage",
+            "content": "Lafayette County Park\n\nWe wish everyone a safe and pleasant visit to Lafayette County Park. To\n\nensure that the park is kept fun and inviting for all, please observe the\n\nfollowing rules:\n\n® The park gates close at 10 p.m. every night and reopen at 6 a.m. Please\n\nrespect these hours and do not enter the park when it is closed.\nr\\J\no Children should be supervised at all times. We accept no responsibility\n\nfor any accidents occurring in the play area or elsewhere in the park. uu\n• Dogs must be kept on a leash, except in the designated off-leash area\nin the north end of the park. -l>\n\ne A basketball court and a soccer field are located on the west side of the\ni_n\npark. Please limit any ball games to these areas in order to avoid\n\ndamaging the rose garden located on the park's east side.\no The speed limit is 20 miles per hour for all vehicles. On multiuse paths,\n-d\ncyclists are asked to avoid riding at high speeds for the safety of\n\npedestrians. CO\n• All visitors are advised to cross only at designated points and be aware\nof cars. UD\n\nShould a problem arise, contact the park administration at 555-6103, which o\nis located in the park's northeast corner, off Greenwood Drive."
+          }
+        ],
+        "questions": [
+          {
+            "number": 151,
+            "text": "What is NOT mentioned as a facility in the 1 park?",
+            "choices": {
+              "A": "A rose garden",
+              "B": "An off-leash area",
+              "C": "A bike rental stand",
+              "D": "A section for ball games"
+            }
+          },
+          {
+            "number": 152,
+            "text": "According to the information, what are visitors urged to do?",
+            "choices": {
+              "A": "Clean up after their pets",
+              "B": "Return rented equipment",
+              "C": "Dispose of trash properly",
+              "D": "Take care when crossing a road"
+            }
+          }
+        ]
       }
     },
     "h2/test06/153_CDCC.png": {
@@ -1097,6 +2335,57 @@
         "154": "D",
         "155": "C",
         "156": "C"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "passage",
+            "content": "Hilda Jacobsen [9:37 a.m.]\nLarry, how's your schedule looking for the week? Anything major going on?\n\nLarry Boyd [9:39 a.m.]\nNot really. I was planning to spend most of my time working on the Hanifan\nproject, but there's no rush. They don't need my designs for their office\ninterior for another two weeks.\n\nLarry Boyd [9:40 a.m.]\nSomething I can help you with?\n\nHilda Jacobsen [9:42 a.m.]\nI was wondering if you would be free to join me in the city on Wednesday to\nmeet some representatives from Digitek. I'll be pitching a lobby renovation\nidea to them. I really want their company as a client, so I think it would be\ngreat if you were there for support. You could help direct the conversation\nto my proposal's selling points just in case I forget something.\n\nLarry Boyd [9:42 a.m.]\nI hear you. What time on Wednesday is this meeting?\n\nHilda Jacobsen [9:43 a.m.]\nIt's at 10:30 a.m. We can take my car from here. I'll buy you lunch when\nwe're done.\n\nLarry Boyd [9:44 a.m.]\nIt's a deal. I'll see you on Wednesday. We'll be coming back to the office,\nright?\n\nHilda Jacobsen [9:45 a.m.]\nYes. I will e-mail you more details about the project in a moment. Thanks!"
+          }
+        ],
+        "questions": [
+          {
+            "number": 153,
+            "text": "What is suggested about Mr. Boyd?",
+            "choices": {
+              "A": "He needs to reschedule a client meeting.",
+              "B": "He asked for an extension on a deadline.",
+              "C": "He is working on plans for an interior.",
+              "D": "He will be reassigned to a new project."
+            }
+          },
+          {
+            "number": 154,
+            "text": "What is true about Ms. Jacobsen?",
+            "choices": {
+              "A": "She has finalized details on an office interior design.",
+              "B": "She plans to meet with a Hanifan representative.",
+              "C": "Her schedule was changed at the last minute.",
+              "D": "She hopes to acquire Digitek as a new client."
+            }
+          },
+          {
+            "number": 155,
+            "text": "At 9:44 a.m., what does Mr. Boyd mean when he writes, \"It's a deal\"?",
+            "choices": {
+              "A": "He is satisfied with the outcome of a business negotiation.",
+              "B": "He knows a restaurant that serves food at low prices.",
+              "C": "He consents to accompanying his colleague to a meeting.",
+              "D": "He thinks that a client will benefit from a project's low cost."
+            }
+          },
+          {
+            "number": 156,
+            "text": "What will Mr, Boyd do after lunch on Wednesday?",
+            "choices": {
+              "A": "Go home to research a project",
+              "B": "Send an e-mail with project details",
+              "C": "Return to his workplace",
+              "D": "Suggest changes to a lobby"
+            }
+          }
+        ]
       }
     },
     "h2/test06/157_CAB.png": {
@@ -1107,6 +2396,47 @@
         "157": "C",
         "158": "A",
         "159": "B"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "passage",
+            "content": "ID! mt\n\nMyPost.com\n\nHome I Business I Products and Services | About us | Help | Register | Log in\n\nYou are here: MyPost > Help\n\nWhat is MyPost and how does it work?\nMyPost provides a US-based delivery address for customers living overseas. Since not all\nonline retailers in the US will ship internationally, MyPost allows you to use its physical address\nlocated in the US as a shipment transfer point to temporarily store ordered items. So, the\nno next time you shop with an online US retailer, simply enter your MyPost address on the\nshipping form, and we will take care of the rest. MyPost uses an advanced tracking system\nand can also provide additional services, such as temporary storage and item repacking. UJ\nCurrently, we ship to over 64 countries around the world.\n4> How do I register with MyPost?\nTo use MyPost, register for an online account by clicking here. There are no registration or\nsubscription fees. Pay only for the services you need. lh\n\nHow much does it cost to ship an item?\nPostage is based both on the weight and dimensions of your parcel.\n\nAre there weight and size restrictions for items sent through MyPost? -d\nThe minimum chargeable weight is 500 grams. The maximum parcel weight is 30 kilograms.\nMaximum parcel dimensions are 3 meters(length x width). 00\nHow long will it take to receive my shipment?\nOnce your parcel has been shipped from our overseas warehouse, we estimate it should ID\ntake approximately 7-10 working days for delivery to the address you specify.\n\nO\na"
+          }
+        ],
+        "questions": [
+          {
+            "number": 157,
+            "text": "Who would most likely be interested in 1 MyPost's services?",
+            "choices": {
+              "A": "Companies relocating abroad",
+              "B": "Business owners needing domestic delivery",
+              "C": "Customers ordering items from US Web sites",
+              "D": "Clients wishing to cut their shipping costs"
+            }
+          },
+          {
+            "number": 158,
+            "text": "What is indicated about MyPost?",
+            "choices": {
+              "A": "It has storage facilities in the US.",
+              "B": "It has special arrangements with trucking companies.",
+              "C": "It does not insure items under 500 grams.",
+              "D": "It charges extra for parcels over three meters in length."
+            }
+          },
+          {
+            "number": 159,
+            "text": "What is stated about the services?",
+            "choices": {
+              "A": "They are discounted for repeat customers.",
+              "B": "They are priced according to weight and size.",
+              "C": "They include sales of packing supplies.",
+              "D": "They cost less than other companies."
+            }
+          }
+        ]
       }
     },
     "h2/test06/160_CB.png": {
@@ -1116,6 +2446,37 @@
       "answers": {
         "160": "C",
         "161": "B"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "passage",
+            "content": "They should have come in yesterday afternoon.\n\nJessica Jang 9:28\nHas anyone else gotten similar complaints from other departments?\n\nWilliam Stuttgart 9:34\nI just checked with production and they got theirs, but those in purchasing did not. Neither did the\nemployees in finance. Oh, and my salary hasn't come in either.\n\nJessica Jang 9:35\nNor mine. This is quite strange. I checked with research and development and they got theirs. I wonder\nif Erin's heard anything.\n\nErin Hinkle 9:37\nSorry, I was on the phone just now. None of us in human resources has gotten paid, apparently. I\ndiscovered this issue earlier this morning, and I just contacted Beacon Bank to find out the cause of the\nproblem. They promised a response in the next 10 minutes.\n\nErin Hinkle 9:44\nSo, the bank says they had some technical issues with a new payment software system that they recently\nstarted using. They've resolved the problem now and those who haven't been paid yet should have their\nfunds within the next hour. Let me know what happens.\n\nWilliam Stuttgart 10:34\nI just received notification from the bank that the funds have been sent.\n\nJessica Jang 10:35\nSame here. Erin, could you contact the other departments to confirm that the problem's been solved?\n\nErin Hinkle 10:36\nOK. I can do that."
+          }
+        ],
+        "questions": [
+          {
+            "number": 160,
+            "text": "What is suggested about Mr. Stuttgart?",
+            "choices": {
+              "A": "He received his salary before others in the company.",
+              "B": "He was unsuccessful in his attempts to contact a bank.",
+              "C": "He is employed in the human resources department.",
+              "D": "He has encountered the problem of late payment before."
+            }
+          },
+          {
+            "number": 161,
+            "text": "At 10:36, what does Ms. Hinkle mean when she writes, \"I can do that\"?n",
+            "choices": {
+              "A": "She will check whether a new software o system was installed.",
+              "B": "She will find out whether all the employees have been paid.",
+              "C": "She will call a bank to confirm that a deposit has been made.",
+              "D": "She will make an announcement regarding monthly salaries."
+            }
+          }
+        ]
       }
     },
     "h2/test06/162_BCD.png": {
@@ -1126,6 +2487,47 @@
         "162": "B",
         "163": "C",
         "164": "D"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "passage",
+            "content": "Report for City Council Executive SVIeeting, March 18\nOptions from the Planning Department\n\nThe Truman Expressway is now 50 years old and is no longer fit for use. The surface is\nbecoming less even, and the underside of the elevated road is crumbling, posing a potential\nm\nhazard to the pedestrian areas and smaller roads that run beneath it. There are three main LD—I\noptions for how to handle these issues with the expressway.\n\nThe first is to invest money in the repair of damaged sections. This is the cheapest possible\noption, as well as the quickest. However, some community activists have noted that people do pj\nnot like having to walk along the dark streets underneath the expressway to reach the\nwaterfront on the other side. The city has been trying to increase low visitation rates to the LU\nwaterfront area, and making road repairs only would not address this problem.\nThe second option is to rebuild the roadway underground. This would allow us to maintain the\nsame traffic capacity and provide more space aboveground for other structures or buildings. un\nHowever, it would be extremely expensive and possibly disruptive.\nen\nThe final option is to tear the expressway down and widen Elmview Road, which currently runs\nbeneath it. This could help to expand local retail, as shops at ground level would be able to tap\ninto a large customer base. However, Elmview Road would not be able to take all of the traffic\nthat currently runs on the expressway. Much of this traffic would try to bypass the city by taking CD\nsmaller roads to the north, probably through the community of Greenville. At the same time, the\nresidents of this community would most likely be against using their city as an alternative route OD\ndue to an increase in through traffic and noise on their roads.\nO"
+          }
+        ],
+        "questions": [
+          {
+            "number": 162,
+            "text": "What is NOT an option suggested in the 16 report?",
+            "choices": {
+              "A": "Rebuilding the road underground",
+              "B": "Moving the expressway farther north",
+              "C": "Repairing the damaged portions",
+              "D": "Pulling down the elevated roadway"
+            }
+          },
+          {
+            "number": 163,
+            "text": "What is suggested about the city's waterfront?",
+            "choices": {
+              "A": "It has a highway running through the middle of it.",
+              "B": "It experiences severe road congestion,",
+              "C": "It has a low number of visitors.",
+              "D": "It is being redeveloped by the city."
+            }
+          },
+          {
+            "number": 164,
+            "text": "What is mentioned about Greenville citizens?",
+            "choices": {
+              "A": "They want more shops in the area.",
+              "B": "They mostly drive to their workplaces.",
+              "C": "They are unhappy with public transportation.",
+              "D": "They may oppose a detour plan."
+            }
+          }
+        ]
       }
     },
     "h2/test06/165_BBB.png": {
@@ -1136,6 +2538,47 @@
         "165": "B",
         "166": "B",
         "167": "B"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "passage",
+            "content": "To: Marcie Camden <mcamden@dawsoninc.com>\n\nFrom: Christina Garcia <cgarcia@eshopping.com>\n\nDate: November 10\n\nSubject: Your order\n\nMs. Camden,\n\nThis is about the two Lucia Simonetti designer handbags you ordered from our Web site on\n\nNovember 8. Unfortunately, one of the handbags, Model #452, is currently unavailable. It\nhas been a popular item, and I'm sorry to say that we've just run out of stock. — [1] —. We\nplaced an order with our supplier in Italy around a week and a half ago. — [2] —. The\n\nearliest we can expect the new items to arrive would be two weeks from today.\n\nWe would like to know if you still wish to proceed with your order. — [3] —. If so, we will\n\nsend the available item, Model #450, by overnight shipping at no extra cost. Or you can\n\nwait for Model #452 to arrive, and we will ship everything together. — [4] —. Kindly send us\na reply e-mail to inform us of your decision. I will be sure to keep you posted on any new\n\ndevelopments as they occur. We apologize once more for the inconvenience.\n\nSincerely,\n\nChristina Garcia\n\nSales representative\n\nE-Shopping"
+          }
+        ],
+        "questions": [
+          {
+            "number": 165,
+            "text": "Why did Ms. Garcia send the e-mail?",
+            "choices": {
+              "A": "To apologize for a billing error",
+              "B": "To ask for a preference for an order",
+              "C": "To propose a new project",
+              "D": "To schedule a business trip"
+            }
+          },
+          {
+            "number": 166,
+            "text": "What is mentioned about Ms. Camden?",
+            "choices": {
+              "A": "She ordered the wrong product from a catalog.",
+              "B": "She purchased items on the Internet.",
+              "C": "She asked for a refund two days ago.",
+              "D": "She made a reservation by e-mail."
+            }
+          },
+          {
+            "number": 167,
+            "text": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong? \"However, they informed us there could be a delay on account of a transport strike in Milan.\"",
+            "choices": {
+              "A": "[1]",
+              "B": "[2]",
+              "C": "[3]",
+              "D": "[4]"
+            }
+          }
+        ]
       }
     },
     "h2/test06/168_ACDC.png": {
@@ -1147,6 +2590,57 @@
         "169": "C",
         "170": "D",
         "171": "C"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "passage",
+            "content": "The Armitage Comes to Fullerton\n\nThe BlackweU Maritime Museum in Fullerton will be holding an exhibition called\nThe Ocean King, which features the history of The Armitage, the first American\nluxury passenger ship to travel across the Pacific Ocean from the United States to\nJapan. The exhibition will run from July 1 to October 30 and includes a 5-meter\nreplica of The Armitage, reconstructions of the ship's interior, along with over 500\nartifacts that were recovered during private expeditions. There will also be a short\nfilm presentation which attempts to shed more light on the mystery behind the\npj\nship's unexplained sinking in 1898.\n\nUJ\n\"This will give an opportunity for everyone to see what the ship really looked like\ninside,\" says museum curator Jonathan Wiley. \"People can walk through the\nexhibits as if they were passengers on the ship and see the places where some of\n\nthe richest and most influential people stayed during their trip.\" LTl\n\nThe Ocean King exhibit aims to provide a comprehensive understanding of The\nArmitage's history, importance, and impact on the shipping industry. It will be open\n\nTuesday to Sunday from 9 A.M. to 7 p.m. General admission is $20, while students\n\nget a 50 percent discount. Children six years old and under are admitted for free.\noo\nFor ticket reservations, visit www.blackwell.org/armitage or call the museum's\n\nticketing office at 555-0391. LD\n\nO"
+          }
+        ],
+        "questions": [
+          {
+            "number": 168,
+            "text": "Why was the article written?",
+            "choices": {
+              "A": "To offer information on an upcoming museum event",
+              "B": "To provide details about a history lecture",
+              "C": "To invite people to the opening of a facility",
+              "D": "To publicize a documentary film 17"
+            }
+          },
+          {
+            "number": 169,
+            "text": "What is true about The Armitage?",
+            "choices": {
+              "A": "It was a cargo vessel that sailed in the Pacific region.",
+              "B": "It was a cruise ship built in Japan.",
+              "C": "It sank for reasons that are unknown.",
+              "D": "It underwent renovations to its facilities."
+            }
+          },
+          {
+            "number": 170,
+            "text": "The word \"comprehensive\" in paragraph 3, line 1, is closest in meaning",
+            "choices": {
+              "A": "logical",
+              "B": "interpreted",
+              "C": "legible",
+              "D": "thorough"
+            }
+          },
+          {
+            "number": 171,
+            "text": "What is mentioned about The Ocean King exhibition?",
+            "choices": {
+              "A": "It will allow visitors to meet the crew of the ship.",
+              "B": "It will include a video presentation on the ship's construction.",
+              "C": "It will admit students at a reduced price.",
+              "D": "It will be accessible to the public seven days a week."
+            }
+          }
+        ]
       }
     },
     "h2/test06/172_DDCB.png": {
@@ -1158,6 +2652,57 @@
         "173": "D",
         "174": "C",
         "175": "B"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "passage",
+            "content": "— I Davenport Accounting\n\nMEMORANDUM\n\nTO: All Staff\n\nFROM: Phillip Christensen\n\nAs most of you are already aware, we will soon be undergoing a\n\ncomplete update of our office hardware. Much of our equipment is\n\nquite old and due for replacement this year. — [1] —. We will be\n\nupgrading our server as well as providing new PCs to everyone who has\n\nnot received one in the past five years. In addition, new printer\n\nterminals will be stationed throughout the office. Many of you have also\n\nasked for new monitors. — [2] —. We regret that we were unable to\n\nauthorize all requests as funding is limited.\n\nIf you are receiving a new computer, please make sure to download all\n\nthe files you will need onto an external hard drive by Friday. This is\n\nimportant as the old equipment will be replaced over the weekend and\n\nwill be inaccessible to staff from Monday.\n\n— [3] —. The technicians hope to complete all the work on Saturday\n\nand Sunday. Should there be a delay, you will be notified. If you have\n\nany questions, call me at extension 115 or send me an e-mail at\n\nphilchristensen@davenport.com.\n\n— [4] —. Thank you for your cooperation."
+          }
+        ],
+        "questions": [
+          {
+            "number": 172,
+            "text": "What is the purpose of the memo? 174. According to Mr. Christensen, what are employees responsible for?",
+            "choices": {
+              "A": "To update workers on security procedures (A) Installing programs",
+              "B": "To explain reasons for staff (B) Scanning documents replacement (C) Saving needed files",
+              "C": "To communicate a change in work (D) Scheduling work appointments hours",
+              "D": "To remind employees about a planned 175. In which of the positions marked [1], [2], activity [3], and [4] does the following sentence best belong?"
+            }
+          },
+          {
+            "number": 173,
+            "text": "What is NOT indicated in the memo?",
+            "choices": {
+              "A": "Some computers are less than five years old.",
+              "B": "The equipment will be removed after Friday.",
+              "C": "The office will receive some new printers.",
+              "D": "Some staff will have to do overtime next week."
+            }
+          },
+          {
+            "number": 174,
+            "text": "According to Mr. Christensen, what are employees responsible for?",
+            "choices": {
+              "A": "Installing programs",
+              "B": "Scanning documents",
+              "C": "Saving needed files",
+              "D": "Scheduling work appointments"
+            }
+          },
+          {
+            "number": 175,
+            "text": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong? \"You should already have received an e-mail concerning your request if it was approved.\"",
+            "choices": {
+              "A": "[1]",
+              "B": "[2]",
+              "C": "[3]",
+              "D": "[4] o o"
+            }
+          }
+        ]
       }
     },
     "h2/test06/176_BDDBA.png": {
@@ -1170,6 +2715,72 @@
         "178": "D",
         "179": "B",
         "180": "A"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "article",
+            "title": "Generix Motors Announces Recall of Sports Vehicle",
+            "content": "Generix Motors Announces Recall of Sports Vehicle\n\nDetroit-based Generix Motors announced last Friday the recall of its GX-490 Sports Coupe for replacement of a defective safety system. All owners of the vehicle have been requested to bring them to the nearest Generix dealership for an upgrade. Generix said the company has already sent out official notification letters to those in possession of the vehicles.\n\nDue to faulty programming in the car?s computer system, front-seat passenger airbags have been found to malfunction on occasion, and Generix will be installing an update and replacing two small vehicle components. In a press statement written by Davis Martino, public relations director for Generix, the problem is described as minor. Martino also writes that Generix takes every precaution for the safety of those that drive our vehicles, and even the smallest problem should be rectified.\n\nThe recall is expected to cost the manufacturer close to $70 million, but most agree that such a responsible corporate reaction can only be beneficial for the public perception of Generix Motors.\n\nThose in possession of the recalled model may visit www.generixmotors.com/outlets to find the nearest location that can do the necessary work. Or the manufacturer can be contacted directly with regard to the recall by e-mailing recall@generixmotors.com."
+          },
+          {
+            "type": "email",
+            "content": "TO: Customer assistance <recall@generixmotors.com>\nFROM: Graham Worthington <gworth@funmail.com>\nSUBJECT: Recall\nDATE: April 22\n\nDear Madam or Sir,\n\nI purchased a GX-490 Sports Coupe six months ago. I recently read in an article from my local newspaper that your company has recalled the vehicle. I have not received a notification letter yet, so the news was surprising to me.\n\nI would like to bring in my car for the necessary work but am unsure of where to take it. Unfortunately, I could not find any dealerships listed for my region on your Web site. The nearest Generix outlet seems to be in Madison, and that is quite a long distance for me to drive.\n\nCould you please let me know where I should take my vehicle? I live in a small town in Wisconsin called Monroe, with a zip code of 53556. Naturally, the closer to my town the dealership is, the better it will be for me. I hope you will notify me as soon as possible either by e-mail or by contacting me at (608) 555-3456. This is a serious issue for me, as I have two young children that ride in the vehicle, so I would like to take care of the problem quickly.\n\nSincerely,\nGraham Worthington"
+          }
+        ],
+        "questions": [
+          {
+            "number": 176,
+            "text": "What is the article mainly about? 179. Why did Mr. Worthington contact Generix Motors?",
+            "choices": {
+              "A": "The launch of a vehicle line",
+              "B": "Technical problems with a product (A) To look into family-suitable",
+              "C": "The acquisition of an automotive automobiles factory (B) To inquire about a dealership",
+              "D": "Additional security features on cars (C) To verify some contact details (D) To point out a device error"
+            }
+          },
+          {
+            "number": 177,
+            "text": "Who would most likely visit the Generix Web site? 180. What is suggested about Mr. Worthington?",
+            "choices": {
+              "A": "Customers wanting to schedule test (A) His vehicle requires a computer drives system update.",
+              "B": "Drivers requesting further advice on (B) He has a warranty that covers repair model selection costs.",
+              "C": "Clients wishing to extend warranties (C) His car was purchased at an outlet",
+              "D": "Owners of vehicles with possible the region. -O safety issues (D) He works for a local newspaper publication."
+            }
+          },
+          {
+            "number": 178,
+            "text": "According to the article, what did Davis Martino do?",
+            "choices": {
+              "A": "Conducted an inspection",
+              "B": "Gave a public speech",
+              "C": "Worked on a vehicle design",
+              "D": "Wrote a press release"
+            }
+          },
+          {
+            "number": 179,
+            "text": "Why did Mr. Worthington contact Generix Motors?",
+            "choices": {
+              "A": "To look into family-suitable automobiles",
+              "B": "To inquire about a dealership",
+              "C": "To verify some contact details",
+              "D": "To point out a device error"
+            }
+          },
+          {
+            "number": 180,
+            "text": "What is suggested about Mr. Worthington?",
+            "choices": {
+              "A": "His vehicle requires a computer system update.",
+              "B": "He has a warranty that covers repair costs.",
+              "C": "His car was purchased at an outlet in the region. -",
+              "D": "He works for a local newspaper publication. e - C C"
+            }
+          }
+        ]
       }
     },
     "h2/test06/181_CBBDA.png": {
@@ -1182,6 +2793,72 @@
         "183": "B",
         "184": "D",
         "185": "A"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "advertisement",
+            "title": "Donnelly & Chung Publicity...Your Branding Experts!",
+            "content": "Donnelly & Chung Publicity...Your Branding Experts!\n\nAre you a new company having trouble increasing public awareness of your brand? Do you have a line of terrific products but don?t know how to promote them? Or does your business need to change its image? Whatever your marketing problem might be, Donnelly & Chung Publicity can help! Our clients vary from local businesses, including Shasta-Clear Beverages and Deerborne Stationery, to large, international corporate customers, such as Compton Clothiers and Just-Ate Dietary Supplements.\n\nOur experts at Donnelly & Chung can help you come up with a specific plan to promote your products or services. We offer development of advertising campaigns, corporate branding services, consumer targeting consultations, market research, and much more!\n\nYour first consultation is completely free! One of our associates will discuss your needs and provide you with a fee estimate. Simply call 555-4951 to arrange your complimentary appointment."
+          },
+          {
+            "type": "letter",
+            "content": "July 2\n\nPatricia Draper\nDonnelly & Chung Publicity\nUnit 405 C, Acres Center, 312 East 21st Avenue\nDenver, CO 89110\n\nDear Ms. Draper,\n\nI enjoyed meeting with you recently and appreciate being able to consult with someone about my branding needs. I?ve only just opened my business in Denver and could really use some help promoting it.\n\nI have discussed our consultation with my business partner Walter Preston, and he remembers a promotional campaign you did for Shasta-Clear that was very successful. So, we have agreed to hire your firm to help us come up with a branding plan for our bakery. We would like to get things underway as soon as possible, so please let me know when you are free to meet with Walter and me in person. Walter and I are generally free after 11 a.m. on weekdays.\n\nYou mentioned during our meeting that your firm would require complete descriptions of all products that we sell if we decide to proceed with the branding work. I have enclosed a list of all our goods, including the ingredients they are made of. Should you require any additional information before we meet, I would be happy to supply it for you.\n\nWe look forward to working together with you and hope to hear from you soon.\n\nRegards,\nKevin Swords\nCo-proprietor, PS Baked Goods"
+          }
+        ],
+        "questions": [
+          {
+            "number": 181,
+            "text": "What can Donnelly & Chung offer 184. What does Mr. Swords want Ms. Draper to assistance with? do?",
+            "choices": {
+              "A": "Setting up a new business (A) Print out a list of produce",
+              "B": "Designing entertaining Web sites (B) Schedule a complimentary consultation",
+              "C": "Promoting a corporate brand (C) Write a promotional proposal",
+              "D": "Supplying event-related services (D) Confirm her availability for a meeting m in -l"
+            }
+          },
+          {
+            "number": 182,
+            "text": "What is suggested about Kevin Swords? What is enclosed with the letter?",
+            "choices": {
+              "A": "He has worked with Ms. Draper on (A) Descriptions of items for sale previous projects. (B) An order form for supplies",
+              "B": "He was not charged a fee for his (C) Signed business contracts session with Ms. Draper. (D) A completed questionnaire",
+              "C": "He plans to open additional bakery UJ branches.",
+              "D": "He has a supply partnership with Just-Ate."
+            }
+          },
+          {
+            "number": 183,
+            "text": "Who is Walter Preston?",
+            "choices": {
+              "A": "An advertising consultant",
+              "B": "A co-owner of PS Baked Goods",
+              "C": "An ingredients supplier",
+              "D": "A Shasta-Clear executive"
+            }
+          },
+          {
+            "number": 184,
+            "text": "What does Mr. Swords want Ms. Draper to do?",
+            "choices": {
+              "A": "Print out a list of products",
+              "B": "Schedule a complimentary consultation",
+              "C": "Write a promotional proposal",
+              "D": "Confirm her availability for a meeting"
+            }
+          },
+          {
+            "number": 185,
+            "text": "What is enclosed with the letter?",
+            "choices": {
+              "A": "Descriptions of items for sale",
+              "B": "An order form for supplies",
+              "C": "Signed business contracts",
+              "D": "A completed questionnaire"
+            }
+          }
+        ]
       }
     },
     "h2/test06/186_ADBBC.png": {
@@ -1194,6 +2871,75 @@
         "188": "B",
         "189": "B",
         "190": "C"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "email",
+            "content": "To: Customer Service <cs@tailwiiidairlines.com>\nFrom: Maggie Flowers <m.flo@fastmail.com>\nDate: May 29\nSubject: Compensation\nAttachment: Rental receipt\n\nDear Customer Service,\n\nOn May 25,1 was scheduled to fly on Flight 535 from Cleveland to Pittsburgh. However, the flight was\ncanceled due to mechanical problems. While at the airport, I was promised a flight voucher as compensation\nfoi the inconvenience. 1 never claimed it and would like to follow up now. Also, I'd like reimbursement\nfor an incurred expense. I had a job interview to attend and could not wait until the following day. So, I\nrented a car and drove to my destination. I have attached a copy of the rental receipt in case you need it.\n\nI hope you can help me resolve this matter.\n\nSincerely,\nMaggie Flowers"
+          },
+          {
+            "type": "email",
+            "content": "To: Maggie Flowers <m.flo@fastmail.com>\n\nFrom: Customer service <cs@tailwindairlines.com>\n\nDate: June 8\n\nAttachment: reimbursement_form\n\nSubject: Re: Compensation\n\nDear Ms. Flowers,\n\nI am sorry to hear of your inconvenience. Let me correct the situation.\n\nFirst, our system indicates that you are entitled to the voucher. We normally tell customers that\n\nthey will get it within four weeks. I apologize if our airline staff failed to convey this information\n\nproperly at the time your flight was canceled. The voucher has been mailed and should arrive\n\nshortly. Second, all of the passengers on your flight were offered a night's stay at an airport hotel.\nOur policy states that we can reimburse a passenger with exceptional circumstances up to the\n\nprice of the hotel stay. Your situation qualifies since the car rental amount was less than this cost.\n\nTo proceed, complete the attached form and mail it to us along with your original receipt.\n\nIf I can assist you further, please contact me again. Thank you for being a loyal, valued customer.\n\nYours Truly,\n\nPaul Russell\n\nCustomer service representative"
+          },
+          {
+            "type": "form",
+            "content": "TAILWIND AIRLINES\n\nPlease allow up to 30 days for settlement.\n\nName: Maggie Flowers Membership rewards no.: 4793345\n\nAddress: 12704 Gruss Court, Cleveland, OH 44018 Tel: 555-2348\n\nE-mail: m.flo@fastmail.com\n\nType of claim: □ Damage □ Loss Kl Reimbursement\n\nAmount of claim: $135.00\n\nFlight no.: 535 Date: May 25\nlAJ\nOrigin: Cleveland, OH Destination: Pittsburgh, PA\n\nPlease explain the reason(s) for your claim:\nUJ\nMy flight was canceled, and I'd like to be reimbursed for some expenses.\n\nSupporting documents (please attach): Car rental receipt\n\nMaqqie Flowers June 10\nlti\nPlease sign your name here Date"
+          }
+        ],
+        "questions": [
+          {
+            "number": 186,
+            "text": "Why did Ms. Flowers write the e-mail?",
+            "choices": {
+              "A": "To pursue some claims",
+              "B": "To recover some items",
+              "C": "To change a reservation",
+              "D": "To complain about an attendant"
+            }
+          },
+          {
+            "number": 187,
+            "text": "What does Mr. Russell ask Ms. Flowers to provide?",
+            "choices": {
+              "A": "A copy of her passport",
+              "B": "An airline boarding pass",
+              "C": "A hotel reservation number",
+              "D": "A car rental receipt"
+            }
+          },
+          {
+            "number": 188,
+            "text": "In the second e-mail, the word \"convey\" in paragraph 2, line 2, is closest in meaning",
+            "choices": {
+              "A": "pick",
+              "B": "make known",
+              "C": "take into consideration",
+              "D": "take to another place"
+            }
+          },
+          {
+            "number": 189,
+            "text": "What is indicated about passengers on the canceled flight?",
+            "choices": {
+              "A": "They all took the next available flight.",
+              "B": "Their hotel rooms cost over $135 each.",
+              "C": "They all received their promised vouchers.",
+              "D": "Their meals were paid for by the O airline."
+            }
+          },
+          {
+            "number": 190,
+            "text": "What does the form indicate about Ms. Flowers?",
+            "choices": {
+              "A": "She received extra membership rewards for her trouble.",
+              "B": "She applied the voucher to a future flight.",
+              "C": "She may have to wait until July to be repaid.",
+              "D": "She did not provide a document as proof."
+            }
+          }
+        ]
       }
     },
     "h2/test06/191_CBBDC.png": {
@@ -1206,6 +2952,75 @@
         "193": "B",
         "194": "D",
         "195": "C"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "schedule",
+            "content": "p 12th Green Technology Conference\nThursday, June 9 | Singapore Convention Hall, Room A\nHosted by the Green Technology Association\n\nProgram Outline\n\n12:30 P.M. Registration\n\n1:00 P.M. Welcome address\nSpeaker: Ellen Matsushita, Chair, Green Technology Association\n\n1:30 P.M. Keynote address\nSpeaker: Harold Baker, President, Greentrade Technologies\n\n2:00 p.M. Industry outlook\nSpeaker: Jeremy Porter, Managing Director, Green Research Institute\n\n2:30 P.M. Wind, solar, and biomass power\nSpeaker: Nathan Chaudry, CEO, Leaftech International\n\n3:00 P.M. Coffee break\n\n3:30 P.M. New applications in green technology\nSpeaker: Thomas Keng, Chair, Environmental Research Group\n\n4:00 P.M. Panel discussion: Financing green projects\nModerator: Barbara Woodbine, CFO, Global Lending\n\n5:00 P.M. Closing remarks\nSpeaker: Sylvia Klein, President, European Green Initiative\n\n0B"
+          },
+          {
+            "type": "email",
+            "content": "To: Eduardo Ferrer <edfer@greentech.com>\n\nFrom: Ellen Matsushita <elmat@greentech.com>\n\nDate: May 14\n\nSubject: Re: Conference program\n\nThere are a few additional changes to make. As it turns out, the president of Greentrade\n\nTechnologies is unavailable. Instead, we will have Dr. Connor Aromdee from Thailand\n\nUniversity. In addition, Ms. Woodbine from Global Lending will be leaving the conference\nearly, so she cannot moderate the panel discussion. She suggested that we invite the\nminister of the Singapore Economic Development Board to take her place. I have\n\ncontacted him, and he has accepted the invitation. If there are any other changes to make,\n\nI'll let you know in the morning. After that, the program will be finalized.\n\nThanks!\n\nEllen"
+          },
+          {
+            "type": "article",
+            "content": "Business Bulletin\n\nSingapore, June 11 - The Green Technology Association (GTA)\n\nrecently held its 12th Green Technology Conference at the Singapore\n\nConvention Hall. The heads of several organizations playing a critical\n\nrole in the development of green technologies around the world were in\n\nattendance. According to speaker Jeremy Porter of the Green Research\n\nInstitute, the outlook for the industry appears stable despite politicians\n\nin some nations who are holding back the use of green technologies. r\\j\nGTA chair Ellen Matsushita was equally hopeful, citing insightful\nuu comments from the minister of the Singapore Economic Development\n\nBoard, David Mah. Download a full report on the talks and material\npresented at the conference by visiting the organization's Web site at\n\nwww.gta.org. ui"
+          }
+        ],
+        "questions": [
+          {
+            "number": 191,
+            "text": "What has NOT been scheduled for the conference?",
+            "choices": {
+              "A": "A closing speech",
+              "B": "A presentation on solar power",
+              "C": "A special luncheon",
+              "D": "A talk on the future of the industry"
+            }
+          },
+          {
+            "number": 192,
+            "text": "What time did Dr. Aromdee most likely speak?",
+            "choices": {
+              "A": "At 1:00 p.m.",
+              "B": "At 1:30 p.m.",
+              "C": "At 2:00 p.m.",
+              "D": "At 2:30 p.m."
+            }
+          },
+          {
+            "number": 193,
+            "text": "What does the article mention about green technology?",
+            "choices": {
+              "A": "Its development has been stunted by high equipment costs.",
+              "B": "Its adoption is being opposed by some people in government.",
+              "C": "Its role is particularly important in developing nations.",
+              "D": "Its supporters are pessimistic about the future."
+            }
+          },
+          {
+            "number": 194,
+            "text": "In the article, the word \"critical\" in paragraph 1, line 3, is closest in meaning",
+            "choices": {
+              "A": "analytical",
+              "B": "opinionated",
+              "C": "disapproving",
+              "D": "crucial"
+            }
+          },
+          {
+            "number": 195,
+            "text": "What is indicated about David Mah?",
+            "choices": {
+              "A": "He was contacted by a government group about a schedule.",
+              "B": "He is a member of the GTA board of directors.",
+              "C": "He led a panel discussion on funding green projects.",
+              "D": "He participated in a conference call hosted by Ms. Matsushita."
+            }
+          }
+        ]
       }
     },
     "h2/test06/196_CCBAB.png": {
@@ -1218,6 +3033,75 @@
         "198": "B",
         "199": "A",
         "200": "B"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "information",
+            "content": "Simply log in, click on the\n\"View\" menu, select \"Checked out items,\" and mark the boxes next to the titles you wish to renew. Then\npress \"Send\" at the bottom of the screen. Members are allowed to renew our material for two-week\nperiods provided there are no pending requests for them. If materials you have checked out have been\nrequested in advance by any other member, the system will indicate that they cannot be borrowed again.\n\nInterlibrary loans can also be renewed online. However, some restrictions may apply. Please check the\nsticker on the back of the book cover for the lending library's renewal policies, which may be different from\nour own."
+          },
+          {
+            "type": "webpage",
+            "content": "List of Active Loans for Westerburn Public Library Member No.\n0177634 - Melissa Terrance\n\nDate: 08/08\nRenew Title Call No. Source Due Date\n\nThe Reign of King Jordanius / Westerburn\nNon-Renewable 834.04 SCH 08/10\nHans Schoffer Public Library\n\nThe Science of Memory/ Westerburn\n0 216.94 TEM 08/10\nLaurence Templeton Public Library\n\n(Interlibrary Loan) A History of Medicinal Plants /\n0 147.09 WUD Highland Marsh 08/10 Daniel Wu\nPublic Library\n\n(Interlibrary Loan)\nTell Her: Short Stories /\n□ 924.07 TEL Greenport University 08/15 Maya Teller\nLibrary\n\nSEND\n\n*For interlibrary loans, you can return the books directly to us or to its library of origin.\n\nTo: Melissa Terrance <mellit@greatmail.com>\nFrom: Agnes Featherstone <agnesf@westerburn.com>\nDate: August 9\nSubject: Re: Inquiry\n\nDear Ms. Terrance,"
+          },
+          {
+            "type": "email",
+            "content": "To answer your question, the reason your request was rejected is that the book you wanted to renew\n(Call No. 147.09WUD) is from another library with different lending policies than our own, and our\nonline renewal system is not set up to reflect them. If you check the sticker on the back of the book,\nyou'll see that the library where the book is from only allows reference materials to be renewed a\nsingle time. Unlike the other items on your list of active loans, you have already renewed this item\nonce before. Please note that it is due tomorrow.\n\nThank you.\n\nAgnes Featherstone\nWesterburn Public Library Staff\no\na: <>s iaj"
+          }
+        ],
+        "questions": [
+          {
+            "number": 196,
+            "text": "What is the information mainly about?",
+            "choices": {
+              "A": "Requesting items from other libraries",
+              "B": "Accessing library databases online",
+              "C": "Extending loans using the Internet",
+              "D": "Returning books after their due date"
+            }
+          },
+          {
+            "number": 197,
+            "text": "What is NOT indicated about Westerburn Public Library?",
+            "choices": {
+              "A": "Its books can be renewed for 14 days at a time.",
+              "B": "It allows material to be reserved in advance.",
+              "C": "Its late fees can be paid through online accounts.",
+              "D": "Its policies may vary from those of other libraries."
+            }
+          },
+          {
+            "number": 198,
+            "text": "What is true about The Reign of King Jordaniusl",
+            "choices": {
+              "A": "It is a part of a special collection.",
+              "B": "Someone else made a request for it.",
+              "C": "Another copy of it is available at a partner library.",
+              "D": "Its sticker indicates renewal is forbidden."
+            }
+          },
+          {
+            "number": 199,
+            "text": "u199. What is indicated in the Web Page?",
+            "choices": {
+              "A": "Maya Teller's book may be returned to - Westerburn Public Library.",
+              "B": "The lending period of Highland Marsh L Public Library is two weeks.",
+              "C": "Ms. Terrance holds a special type of membership at her library.",
+              "D": "The Science of Memory has been overdue for several days now."
+            }
+          },
+          {
+            "number": 200,
+            "text": "Which book has Ms. Terrance already renewed once? ID",
+            "choices": {
+              "A": "The Science of Memory",
+              "B": "A History of Medicinal Plants",
+              "C": "Tell Her: Short Stories",
+              "D": "The Reign of King Jordanius Part 5, 6, and 7 if you finish the test early. 0 .8SS 325 / Sftfs p.327 / ofH p.370 / Part 5&6 0 JVC c WIOII ofe self EI AEI m =oi EHS# ^sh"
+            }
+          }
+        ]
       }
     },
     "h2/test07/131_DBCA.png": {
@@ -1229,6 +3113,57 @@
         "132": "B",
         "133": "C",
         "134": "A"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "passage",
+            "content": "To: All Staff\nFrom: Stephanie Johnstone\nSubject: Mr. Kaur?s retirement\n\nHello everyone,\n\nThis is just a reminder that we have organized a retirement party for Mr. Kaur next Friday from 6 p.m. [131]. I would appreciate it if you could all attend unless you have good reason not to. After everyone is seated, the program [132] at precisely 6:15 p.m. The CEO plans to give a congratulatory speech. [133]. As our longest-serving staff member, he has certainly earned this recognition.\n\nI have asked the supervisors of each department to [134] a book in which members of staff may write messages to Mr. Kaur wishing him well upon his retirement. The book will be passed around starting tomorrow morning. It will be given to him at the end of the ceremony, so please make the time to write something."
+          }
+        ],
+        "questions": [
+          {
+            "number": 131,
+            "text": "[131]",
+            "choices": {
+              "A": "around",
+              "B": "over",
+              "C": "upward",
+              "D": "onward"
+            }
+          },
+          {
+            "number": 132,
+            "text": "[132]",
+            "choices": {
+              "A": "has begun",
+              "B": "will begin",
+              "C": "will have begun",
+              "D": "began"
+            }
+          },
+          {
+            "number": 133,
+            "text": "[133]",
+            "choices": {
+              "A": "We will then ask Mr. Kaur to put off his retirement for a year.",
+              "B": "Our employees will be expected to remain loyal to the company.",
+              "C": "A board member will then present a loyalty award to Mr. Kaur.",
+              "D": "The office staff should say whether they can attend the ceremony."
+            }
+          },
+          {
+            "number": 134,
+            "text": "[134]",
+            "choices": {
+              "A": "circulate",
+              "B": "retrieve",
+              "C": "determine",
+              "D": "reveal"
+            }
+          }
+        ]
       }
     },
     "h2/test07/135_DDBD.png": {
@@ -1240,6 +3175,57 @@
         "136": "D",
         "137": "B",
         "138": "D"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "passage",
+            "content": "March 5\n\nJeanie Handa\n837 River Ridge Street\nSt. Louis, MO 63115\n\nDear Ms. Handa,\n\nI heard about the good news from one of your colleagues. Congratulations on your [135] to senior systems analyst!\n\nThe reason I am writing is to update you on your investments, which are doing satisfactorily. [136]. Now that your career is flourishing, you can invest in other funds or additional stock [137] your earnings and develop your portfolio. I?d like to set an appointment with you so that we can discuss your options in more detail. I am free to meet with you as early as next week.\n\nWe can review the [138] of your current portfolio and explore additional financial opportunities. Please contact me at 555-8343 or send an e-mail to j.clark@secureinvestments.com to set up an appointment.\n\nSincerely,\nJack Clark\nConsultant\nSecure Investments"
+          }
+        ],
+        "questions": [
+          {
+            "number": 135,
+            "text": "[135]",
+            "choices": {
+              "A": "contribution",
+              "B": "achievement",
+              "C": "development",
+              "D": "promotion"
+            }
+          },
+          {
+            "number": 136,
+            "text": "[136]",
+            "choices": {
+              "A": "You might lose more money if you don?t take action now.",
+              "B": "Accordingly, there are better jobs available in other larger companies.",
+              "C": "We may have to meet at another time as I have some obligations.",
+              "D": "It may be time to reconsider your investment strategy, however."
+            }
+          },
+          {
+            "number": 137,
+            "text": "[137]",
+            "choices": {
+              "A": "increased",
+              "B": "to increase",
+              "C": "increase",
+              "D": "increases"
+            }
+          },
+          {
+            "number": 138,
+            "text": "[138]",
+            "choices": {
+              "A": "prestige",
+              "B": "order",
+              "C": "degree",
+              "D": "status"
+            }
+          }
+        ]
       }
     },
     "h2/test07/139_CCBC.png": {
@@ -1251,6 +3237,57 @@
         "140": "C",
         "141": "B",
         "142": "C"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "passage",
+            "content": "March 31\n\nAnnika Dahl\n7898 Forest Road\nBoulder, CO 80301\n\nDear Ms. Dahl,\n\nThank you for your recent visit. [139]. We hope that you are fully satisfied with the quality of care that you received.\n\nWe would like to know more about your experience at our medical facility through our Patient Care Survey. Please fill out the questionnaire, and make sure that each of the five items [140] as directed. If you have additional comments, please [141] them in the space provided.\n\nKeep in mind that the information you provide in the survey will be analyzed and used to improve our services in the future. [142], your privacy will be protected. We will not be able to track any of your responses back to you. Thank you for your participation.\n\nStanley Waite\nHospital Consumer Assessment"
+          }
+        ],
+        "questions": [
+          {
+            "number": 139,
+            "text": "[139]",
+            "choices": {
+              "A": "Please accept our sincere apologies for the treatment you were given.",
+              "B": "We are delighted with your generous donation to the hospital.",
+              "C": "At High Point Medical, we always strive to meet the needs of each patient.",
+              "D": "Our records show that you have been missing your appointments."
+            }
+          },
+          {
+            "number": 140,
+            "text": "[140]",
+            "choices": {
+              "A": "rates",
+              "B": "rating",
+              "C": "is rated",
+              "D": "to rate"
+            }
+          },
+          {
+            "number": 141,
+            "text": "[141]",
+            "choices": {
+              "A": "to include",
+              "B": "include",
+              "C": "included",
+              "D": "inclusion"
+            }
+          },
+          {
+            "number": 142,
+            "text": "[142]",
+            "choices": {
+              "A": "Likewise",
+              "B": "In other words",
+              "C": "Nonetheless",
+              "D": "For instance"
+            }
+          }
+        ]
       }
     },
     "h2/test07/143_CDAB.png": {
@@ -1262,6 +3299,57 @@
         "144": "D",
         "145": "A",
         "146": "B"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "passage",
+            "content": "The GizmoTech Technology Showcase will be held at Somerset Hall on Friday, October 3 from 7:00 p.m. to 11:45 p.m. The most highly anticipated item, the GizPhone Gold, is expected to draw a huge crowd of people anxious to purchase the device as soon as it goes on sale at midnight [143] the event. During the showcase, GizmoTech employees will be [144] available to answer people?s questions. Attendees will also have the opportunity to try the device out for themselves after a demonstration of its functions. [145]. Given that GizmoTech inventory has been known to sell out in a matter of minutes, this is sure to provide consumers with added incentive to sign up early.\n\nAnyone interested is advised to register at www.GizmoTech.com/Showcase as soon as possible to avoid [146] shut out of the exhibit."
+          }
+        ],
+        "questions": [
+          {
+            "number": 143,
+            "text": "[143]",
+            "choices": {
+              "A": "throughout",
+              "B": "within",
+              "C": "following",
+              "D": "into"
+            }
+          },
+          {
+            "number": 144,
+            "text": "[144]",
+            "choices": {
+              "A": "daily",
+              "B": "lately",
+              "C": "normally",
+              "D": "readily"
+            }
+          },
+          {
+            "number": 145,
+            "text": "[145]",
+            "choices": {
+              "A": "Best of all, they will be given priority status to buy the phone.",
+              "B": "GizPhone Golds will likely hit shelves a month after the product launch.",
+              "C": "Their products will be sold at marked-down prices to all customers.",
+              "D": "In fact, the company?s other products sold remarkably well this year."
+            }
+          },
+          {
+            "number": 146,
+            "text": "[146]",
+            "choices": {
+              "A": "get",
+              "B": "getting",
+              "C": "gotten",
+              "D": "got"
+            }
+          }
+        ]
       }
     },
     "h2/test07/147_BA.png": {
@@ -1271,6 +3359,37 @@
       "answers": {
         "147": "B",
         "148": "A"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "passage",
+            "content": "If you have any 4>\nfurther questions, please contact our customer service representative\nRaymond Hinckley at 555-8734, extension #016. un\n\nSubscriber name: Darius Jackson\ncn Account number: MM7681WRE3\n\nReason for initial cancellation:\n□ Quality was less than expected\n□ Unsatisfied with terms and conditions\nCD\n■ Moved to a new location\n□ Not interested in receiving cable service\nCD\nAdditional comments:\n\nI had originally planned to get an extension through the account of\nO\nanother subscriber, Michael Blakeley, but he will be moving away next\nmonth. So, I'd like my old account to be reactivated under a new\naddress. I'm hoping my student discount still applies.\n\nDarius Jackson June 25\nSubscriber's signature Date\n\nApproved by:\n\nHead of Accounts"
+          }
+        ],
+        "questions": [
+          {
+            "number": 147,
+            "text": "Why did Mr. Jackson cancel his 14 subscription?",
+            "choices": {
+              "A": "He extended a trip.",
+              "B": "He changed addresses.",
+              "C": "He lost a student discount.",
+              "D": "He was dissatisfied with a service."
+            }
+          },
+          {
+            "number": 148,
+            "text": "Who will be signing the form?",
+            "choices": {
+              "A": "Wendy Shore",
+              "B": "Darius Jackson",
+              "C": "Michael Blakeley",
+              "D": "Raymond Hinckley"
+            }
+          }
+        ]
       }
     },
     "h2/test07/149_CC.png": {
@@ -1280,6 +3399,37 @@
       "answers": {
         "149": "C",
         "150": "C"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "passage",
+            "content": "Hilltop Spa and Wellness Center\n1141 Oak Street, Hillsborough, OR 97123\n\nAugust 14\n\nTheodore Cummings\nAccount Manager\n\nRevtech Systems\n5620 Prescott St.\nPortland, OR 97218\n\nDear Mr. Cummings,\n\nI picked up a brochure on your company at a recent trade fair and wanted to inquire about\npurchasing one of your point-of-sale (POS) systems. It says on your brochure that you can\ncustomize a POS system for almost any type of business. I run the above-named spa, and we sell\nproducts, including name-brand lotions and creams, and offer services such as massages and\nvarious other treatments.\n\nI appreciate the fact that your POS system can track sales of goods or services paid for with cash,\nas well as debit and credit cards. I also like that it can generate detailed sales reports. However, I\nwant to know whether it can also show items that have been sold at discounted prices or that\nhave been paid for with points. I hold occasional promotions, hand out gift cards, and maintain\na rewards program for frequent customers. For this reason, I'd like the POS system to track items\nsold under those categories and reflect them in the sales report.\n\nPlease let me know when we can meet to discuss this further. I'd like to have a new system up\nand running by October 15. You can reach me during our regular hours between 8:00 a.m. and\n7:00 p.m., Tuesday through Sunday, at 555-2306. Thank you.\n\nSincerely,\n\nShauna Gillis\nProprietor\nHilltop Spa and Wellness Center"
+          }
+        ],
+        "questions": [
+          {
+            "number": 149,
+            "text": "According to the letter, what can Revtech's POS system do?",
+            "choices": {
+              "A": "Print out gift cards",
+              "B": "Analyze inventory levels",
+              "C": "Produce sales data",
+              "D": "Create custom invoices"
+            }
+          },
+          {
+            "number": 150,
+            "text": "What is suggested about Hilltop Spa and Wellness Center?",
+            "choices": {
+              "A": "It is open seven days a week.",
+              "B": "It manufactures its own line of products.",
+              "C": "It allows people to use reward points as payment.",
+              "D": "It will be expanding to another location in October."
+            }
+          }
+        ]
       }
     },
     "h2/test07/151_ACB.png": {
@@ -1290,6 +3440,47 @@
         "151": "A",
         "152": "C",
         "153": "B"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "passage",
+            "content": "Conference Room Reservations\n\nIf any employee of Great Files Inc. wishes to reserve a meeting room, go to the conference room\nreservation schedule online at: www.greatfiles.com/employee/meetings to check for available\ntime slots. It the slot you require is not available, please send an e-mail to your respective floor\nadministration representative listed below and include the purpose of your reservation.\n\nFloor Representative\n2nd Fleather Greenstone\n3rd Roxanne Laddington\n4th Elissa Flunter m\n5th Victor Anzelo\nUU 7th Roxanne Laddington\n8th Jonathan Madison\nT>\n9th Ian Dexter\n10th Elissa Hunter\nLn\nThe representative will then follow up with you it the reservation schedule can be changed.\nPlease do not contact any party who has already reserved the room to negotiate a scheduling CD\nchange.\n\nIt the online schedule shows that your desired time is open, select the time from the drop-down\nmenu and enter the number of attendees along with the purpose of the meeting. It is strongly\nsuggested that reservations be made at least one week in advance as last minute reservations 00\ncan be difficult to accommodate. Furthermore, please note that the large meeting rooms on the\n7th and 8th floors are now available until 11 p.m. every day, including Saturday and Sunday. All CD\nothers may only be reserved during regular working hours. For any questions or concerns\nregarding the scheduling system, contact Roxanne Laddington at extension #2968. o"
+          }
+        ],
+        "questions": [
+          {
+            "number": 151,
+            "text": "What is the main purpose of the 15 information?",
+            "choices": {
+              "A": "To explain an office procedure to staff",
+              "B": "To clarify manager names by floor",
+              "C": "To announce meeting regulations",
+              "D": "To notify employees of room changes"
+            }
+          },
+          {
+            "number": 152,
+            "text": "What is NOT indicated about the floor representatives?",
+            "choices": {
+              "A": "One of them is the contact for scheduling system questions.",
+              "B": "None of them are responsible for the 6th floor.",
+              "C": "Only one of them is assigned to two floors.",
+              "D": "All of them can be contacted for room changes by floor."
+            }
+          },
+          {
+            "number": 153,
+            "text": "What is suggested about the meeting rooms?",
+            "choices": {
+              "A": "They can be reserved by calling representatives directly.",
+              "B": "The hours for some of them have been extended.",
+              "C": "The ones on the 7th and 8th floors were renovated.",
+              "D": "They may be booked with the department supervisors."
+            }
+          }
+        ]
       }
     },
     "h2/test07/154_AC.png": {
@@ -1299,6 +3490,37 @@
       "answers": {
         "154": "A",
         "155": "C"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "passage",
+            "content": "Parker's flight to Las Vegas,\nright? He asked me to tell you there's been a change, and he needs to\nleave on June 9 and return on the 14th.\n\nJames Harter [4:18]\nI haven't done it yet because I need his frequent flier number to check\nhis points balance. I was going to ask for it earlier, but he and the other\nsupervisors are still in a meeting.\n\nDorothy Lee [4:20]\nI've got that information somewhere. I'm his personal assistant, so you\ncan contact me anytime you need details like that. Let me find it.\n\nDorothy Lee [4:24]\nIt's KLJ0294SB1\n\nJames Harter [4:25]\nGot it. I'm checking now. •\n\nJames Harter [4:28]\nHe hasn't got enough points to cover a round-trip. Should we still use\nthem?\n\nDorothy Lee [4:29]\nDon't bother. We can save them for a future flight.\n\nJames Harter [4:30]\nOK. I'll go ahead and make the booking now.\n\nDorothy Lee [4:30]\nSend me the confirmation by e-mail. Thanks, James."
+          }
+        ],
+        "questions": [
+          {
+            "number": 154,
+            "text": "Why was Mr. Harter unable to complete a task?",
+            "choices": {
+              "A": "He lacked some necessary information.",
+              "B": "He received two different sets of instructions.",
+              "C": "He was busy with another assignment.",
+              "D": "He misunderstood what he was supposed to do."
+            }
+          },
+          {
+            "number": 155,
+            "text": "At 4:29, what does Ms. Lee mean when she writes, \"Don't bother\"?",
+            "choices": {
+              "A": "She wants Mr. Harter to cancel a reservation.",
+              "B": "She does not want to disturb Mr. Parker while he is busy.",
+              "C": "She prefers that Mr. Parker's flight be paid for without points.",
+              "D": "She does not think Mr. Parker will require a round-trip flight."
+            }
+          }
+        ]
       }
     },
     "h2/test07/156_CC.png": {
@@ -1308,6 +3530,37 @@
       "answers": {
         "156": "C",
         "157": "C"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "passage",
+            "content": "The Hyperbar is a Futuristic Solution to a Present-day Problem\nBy Gregory Diehl\n\nKHARTOUM, Sudan—The Chinese technology firm Chaoji International has just unveiled a\npowerful new machine that could transform the lives of millions of people around the world.\nDubbed the Hyperbar, this solar-powered computer aims to provide rural communities with access\nto clean water, electricity, and an Internet connection.\n\nIt works by capturing solar energy through panels on its surface and converting this into electricity\nusing a built-in battery. The electricity is then used to power a water treatment system that can\nyield up to 3,000 liters of clean drinking water a day. Excess electricity can also be used to charge\nmobile devices. Moreover, the system provides wireless Internet access to anyone within a\n750-kilometer radius.\n\n\"The Hyperbar will fulfill a few of the basic needs that many of us today take for granted,\" says\nChaoji spokesperson Damien Lin. \"Additionally, it will provide employment through jobs\nassociated with construction and maintenance of the machines.\" Chaoji further envisions that\nbusiness-minded individuals will be able to use the Hyperbar's Internet connection to develop new\nservices and enhance economic activity.\n\nThe Hyperbar is currently being tested in a handful of villages in Sudan, but Chaoji plans to\nexpand into Ethiopia and Chad before the year is out. If the trials are successful, the company can\nproduce thousands more machines over the coming decade. Several Western firms have already\nexpressed an interest in investing.\n\no"
+          }
+        ],
+        "questions": [
+          {
+            "number": 156,
+            "text": "What is NOT true about the Hyperbar?",
+            "choices": {
+              "A": "It uses the sun as its main source of energy.",
+              "B": "It may produce more electricity than is needed for water purification.",
+              "C": "It can charge up to 750 mobile devices at a time.",
+              "D": "It has the potential to benefit entrepreneurs."
+            }
+          },
+          {
+            "number": 157,
+            "text": "What does Chaoji International plan to do within the year?",
+            "choices": {
+              "A": "Establish partnerships with various governments",
+              "B": "Start construction of over a thousand more machines",
+              "C": "Continue testing of the Hyperbar outside of Sudan",
+              "D": "Persuade several Western firms to invest"
+            }
+          }
+        ]
       }
     },
     "h2/test07/158_DCA.png": {
@@ -1318,6 +3571,47 @@
         "158": "D",
         "159": "C",
         "160": "A"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "passage",
+            "content": "To: All Staff\nFrom: Brendan Rogerson <b.rogerson@ellisellis.com>\nSubject: Training Courses\nDate: April 12\n\nHello all Ellis and Ellis Consulting staff,\n\nAs you know, I've been trying to find a way to improve efficiency here in the office and asked you\nto complete a survey providing your suggestions. — [1] —. For instance, a number of employees\nhave expressed the desire to take more professional development classes so they can add to\ntheir skills. And at the same time, I have noticed that we have had to hire graphic designers on a\nvery regular basis. — [2] —. When it comes to very big projects, like Web site design or creating\nour annual report, this seems appropriate, but in many cases, we are hiring them to do an hour\nof work that one of our own employees could probably do with a little training. — [3] —.\n\nConsequently, I am considering organizing a short course on basic graphic design skills for any\nemployees who are interested. — [4] —. This would allow us to use in-house skills for smaller\ndesign projects in the future. If this sounds like something you would like to participate in, please\nrespond to this e-mail and let me know before April 20.\n\nBest wishes,\nBrendon Rogerson\nHuman Resources Director, Ellis and Ellis Consulting"
+          }
+        ],
+        "questions": [
+          {
+            "number": 158,
+            "text": "What is indicated about Ellis and Ellis Consulting?",
+            "choices": {
+              "A": "It provides training courses to other companies.",
+              "B": "It specializes in designing Web sites.",
+              "C": "It recently released an annual report.",
+              "D": "It has unnecessary expenditures on graphic design."
+            }
+          },
+          {
+            "number": 159,
+            "text": "What does Mr. Rogerson want to do?",
+            "choices": {
+              "A": "Hire graphic designers as permanent employees",
+              "B": "Get ideas from staff about some survey questions",
+              "C": "Reduce the company's reliance on outside help",
+              "D": "Boost employees' interest in a skill-building class"
+            }
+          },
+          {
+            "number": 160,
+            "text": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong? \"Going through them, a couple of trends",
+            "choices": {
+              "A": "[1]",
+              "B": "[2]",
+              "C": "[3]",
+              "D": "[4]"
+            }
+          }
+        ]
       }
     },
     "h2/test07/161_DAB.png": {
@@ -1328,6 +3622,47 @@
         "161": "D",
         "162": "A",
         "163": "B"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "passage",
+            "content": "Hadenfield Elementary School\nWeekly Announcements for Parents\n\nThis is a reminder that through this Friday, the school will be operating under an early release\nschedule as the holiday season is fast approaching. Please be aware that the final class of the\nday will end three hours early at 12:30 p.m. All school buses will follow their normal routes with\nthe exception of bus numbers 4 and 7. These two buses will be unable to pick up students living\non or beyond Renniford Drive. In addition, please remember that all after-school programs will be\nout of session for the remainder of the week.\nr\\j\nIn other news, a book fair will be taking place this upcoming Wednesday and Thursday between\n10 a.m. and 12 p.m. Students will bring home order forms on Tuesday that must be filled out prior UJ\nto submission if a student wishes to make a purchase, as well as a booklet containing\ninformation regarding all products to be sold at the fair. For any questions regarding the book\nfair, please contact Ms. Debbie Dreyfus, our teacher in charge, at d.dreyfus@hadenfieldelem.org.\nStudents are encouraged to purchase books that are on the winter reading list, which are Ln\nspecifically set for the year of school they are in. Keep in mind that they are required to read at\nleast two during winter vacation. For questions regarding mandatory reading and other news, CD\ncheck our Web site at www.hadenfieldelem.org."
+          }
+        ],
+        "questions": [
+          {
+            "number": 161,
+            "text": "What is NOT stated about the early 1 release schedule?",
+            "choices": {
+              "A": "Two school buses will not be running their typical routes.",
+              "B": "School for the day will be over before 1 P.M.",
+              "C": "Classes are finishing early because of the holidays.",
+              "D": "Students may stay for after-school programs all week."
+            }
+          },
+          {
+            "number": 162,
+            "text": "How can students buy books at the fair?",
+            "choices": {
+              "A": "By completing a document beforehand",
+              "B": "By contacting the teacher in charge",
+              "C": "By checking off items in a booklet",
+              "D": "By sending a list to an e-mail address"
+            }
+          },
+          {
+            "number": 163,
+            "text": "What is indicated about books on the winter reading lists? U",
+            "choices": {
+              "A": "Students will be tested on them.",
+              "B": "They vary according to grade level,",
+              "C": "All of them will be sold at the fair.",
+              "D": "They may be downloaded online."
+            }
+          }
+        ]
       }
     },
     "h2/test07/164_CBCB.png": {
@@ -1339,6 +3674,57 @@
         "165": "B",
         "166": "C",
         "167": "B"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "passage",
+            "content": "(Q) Greg Fournier 9:11 a.m. Welcome to RMP Financial Trust's live chat service. How can I help you?\n\nVivianne Gonyer 9:12 a.m. I was wondering whether an account I have with your bank still works. I stopped\nusing it when I moved overseas, but I was hoping to revive it when I return home\npermanently in a few weeks.\n\n(Q) Greg Fournier 9:12 a.m. May I have the number on your ATM card?\n\nVivianne Gonyer 9:13 a.m. That's the problem. I didn't keep my ATM card because I didn't think I'd need it.\n\nGreg Fournier 9:14 a.m. I see. For security reasons, I need to match your name with an ATM card number.\n\nVivianne Gonyer 9:14 a.m. I thought that might be the case. Could you tell me what your policy is regarding\ninactive accounts?\n0 Greg Fournier 9:15 a.m. What kind of account did you have?\nVivianne Gonyer 9:16 a.m. It was a checking account, and the last time I used it must have been over two years\nago.\n\nGreg Fournier 9:17 a.m. Oh, in that case, it's probably expired. Checking accounts are closed if they have not\nbeen used for more than two years.\n\nVivianne Gonyer 9:17 a.m. OK. Can you tell me what my options are at this point?\n\nGreg Fournier 9:18 a.m. Well, you could open a new account, one that doesn't expire for five years. Or you\ncould open another checking account. Whichever you prefer.\n\nVivianne Gonyer 9:20 a.m. I would prefer the latter. Can I do that online? Or should I call someone from my\nbranch and have them open one for me over the phone?\n© Greg Fournier 9:20 a.m. I'm sorry, but they will need to verify your identity, and you have to be there for that.\nVivianne Gonyer 9:20 a.m. OK, then. Thanks for your help.\n\nSend"
+          }
+        ],
+        "questions": [
+          {
+            "number": 164,
+            "text": "At 9:13 a.m., what does Ms. Gonyer mean ijl when she writes, \"That's the problem\"?",
+            "choices": {
+              "A": "She is unable to use an online payment system.",
+              "B": "She cannot remember her account balance.",
+              "C": "She does not have access to some information.",
+              "D": "She discovered an issue with one of her transactions."
+            }
+          },
+          {
+            "number": 165,
+            "text": "What is suggested about Ms. Gonyer?",
+            "choices": {
+              "A": "She held two accounts with RMP Financial Trust.",
+              "B": "She has been abroad for at least two years.",
+              "C": "She returned an ATM card to her bank at home.",
+              "D": "She would like to set up online banking."
+            }
+          },
+          {
+            "number": 166,
+            "text": "What does Ms. Gonyer want to do?",
+            "choices": {
+              "A": "Create an account to use overseas",
+              "B": "Apply for a five-year credit card",
+              "C": "Open a checking account",
+              "D": "Withdraw funds from abroad"
+            }
+          },
+          {
+            "number": 167,
+            "text": "According to Mr. Fournier, what must Ms. Gonyer do to open a new account?",
+            "choices": {
+              "A": "Speak to a teller over the phone",
+              "B": "Go to a financial institution personally",
+              "C": "Supply two pieces of identification",
+              "D": "Provide an ATM card number"
+            }
+          }
+        ]
       }
     },
     "h2/test07/168_CDBA.png": {
@@ -1350,6 +3736,57 @@
         "169": "D",
         "170": "B",
         "171": "A"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "passage",
+            "content": "STRYKER AlWUSEiVlEWT PARK\n\nOctober is just around the corner, and that means everyone at Stryker Amusement Park is gearing up for a month\nof spooky Halloween fun. Starting October 1 and continuing until October 31, we will be holding our annual Fright\nNights, a series of frighteningly fun activities for visitors of all ages. Below is a schedule of some of the events we\nhave planned.\n\nDate Activity Location\n\nOctober 1-31 Haunted Mansion Tour North Pavilion\n\nOctober 10-31 Evil Zombies Ride East Pavilion\n\nOctober 15-31 Corn Maze South Parking Lot\nr\\J\nOctober 25-31 Children's Zone Food Court\n\nBe sure to check out the following highlights: UU\n-The Haunted Mansion Tour returns for its third run here at Stryker Amusement Park. California Living magazine\nrecently ranked the mansion, which features three floors and over 100 actors, as \"the third scariest haunted -£>\nhouse on the West Coast.\"\n-The Children's Zone features plenty of fun activities for small children, including face painting, storytelling, and Ln\npumpkin decorating.\n- On October 31, the last day of Fright Nights, actor Kayla Draper from the movie Darkness Rises will be signing\nen\nautographs in the main pavilion.\n- Concession stands throughout the park will be serving our Fright Nights foods, including pumpkin spice coffee\nand candy apples.\n\nAdmission to Fright Nights is included with a regular ticket. For more information on these events, visit our Web 00\nsite at www.strykeramusement.com/frightnights.\n\nLD"
+          }
+        ],
+        "questions": [
+          {
+            "number": 168,
+            "text": "What is the notice mainly about?",
+            "choices": {
+              "A": "Renovations to a haunted house",
+              "B": "A special sale on tickets",
+              "C": "A month of festivities",
+              "D": "Amusement park admissions policies"
+            }
+          },
+          {
+            "number": 169,
+            "text": "Where will the pumpkin decorating take place?",
+            "choices": {
+              "A": "At the north pavilion",
+              "B": "At the east pavilion",
+              "C": "At the south parking lot",
+              "D": "At the food court"
+            }
+          },
+          {
+            "number": 170,
+            "text": "What is indicated about Fright Nights?",
+            "choices": {
+              "A": "It tours around the country.",
+              "B": "One of its features has been recognized by a publication.",
+              "C": "It is geared mainly towards adults.",
+              "D": "Those who attend it must pay an extra admission fee."
+            }
+          },
+          {
+            "number": 171,
+            "text": "What will NOT happen during the month of October?",
+            "choices": {
+              "A": "A special screening of Darkness Rises will occur.",
+              "B": "Halloween-themed rides will open to the public.",
+              "C": "A parking lot will be converted into a maze.",
+              "D": "Special refreshments will be available to purchase."
+            }
+          }
+        ]
       }
     },
     "h2/test07/172_CCAB.png": {
@@ -1361,6 +3798,57 @@
         "173": "C",
         "174": "A",
         "175": "B"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "passage",
+            "content": "Edmond Estrada Wins Albuquerojue Judged Seat\n\nMarch 18—A spokesperson for the Albuquerque District Court\n\nannounced that Attorney Edmond Estrada has won his bid for the\njudge's seat. — [1] —.He will replace current Judge Wendy Delwes,\nwho confirmed earlier this year that she is retiring at the end of March.\n\nIn his role as an attorney for the past 25 years, Mr. Estrada has been\ninvolved in thousands of legal cases. These included both civil\n\ncomplaints and landlord-tenant cases. — [2] —.\n\n\"It has been my privilege to serve the citizens of Albuquerque in my\n\ncapacity as a lawyer,\" said Estrada, \"and to have witnessed the capable\n\nleadership exhibited by Judge Delwes for many years. Through her\n\nexample, I have learned a great deal about how our courts work best\nfor the people of Albuquerque. — [3] —. Indeed, I feel honored to be\n\nsucceeding her.\"\n\nIn addition to his legal experience, Mr. Estrada is active in the local\n\ncommunity. — [4] —. According to Mr. Estrada's biography, he is a\n\nmember of the Rio Rancho Land Commission and has volunteered\n\nwith numerous local charities."
+          }
+        ],
+        "questions": [
+          {
+            "number": 172,
+            "text": "What does the article mainly discuss? 1",
+            "choices": {
+              "A": "A judge's career accomplishments",
+              "B": "The results of a mayoral election",
+              "C": "A lawyer's selection for a role",
+              "D": "The activities of an organization"
+            }
+          },
+          {
+            "number": 173,
+            "text": "What is indicated about Ms. Delwes?",
+            "choices": {
+              "A": "She is being transferred to another city.",
+              "B": "She taught law courses for many 1 years.",
+              "C": "She influenced Mr. Estrada's legal career.",
+              "D": "She is running for a seat on the senate."
+            }
+          },
+          {
+            "number": 174,
+            "text": "What is NOT mentioned about Mr. Estrada?",
+            "choices": {
+              "A": "He represents a real estate company.",
+              "B": "He sometimes engages in unpaid work.",
+              "C": "He is frequently involved in the community.",
+              "D": "He has practiced law for over two decades."
+            }
+          },
+          {
+            "number": 175,
+            "text": "In which of the positions marked [1], [2], years. r\\j [3], and [4] does the following sentence (C) She influenced Mr. Estrada's legal best belong? career. uu (D) She is running for a seat on the \"And in every legal matter he has handled, senate. he has shown a firm commitment to the -f> pursuit of justice.\" Ln",
+            "choices": {
+              "A": "[1]",
+              "B": "[2] CD",
+              "C": "[3]",
+              "D": "[4] oo LD O or l>- Kn J2 rifc r* o o a>H no jj m cua."
+            }
+          }
+        ]
       }
     },
     "h2/test07/176_DCCCA.png": {
@@ -1373,6 +3861,71 @@
         "178": "C",
         "179": "C",
         "180": "A"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "webpage",
+            "content": "www.lakegodardskiresort.com/about\n\nLAKE GODARD SKI RESORT\n\nABOUT I TICKETS & PROGRAMS I ACCOMMODATIONS I PHOTOS\n\nAttracting over 10,000 visitors and hosting numerous conventions each year, Lake Godard is one of the\nmost popular winter resort destinations in the United States.\n\nOur slopes are among the most varied in the region. We have beginners' routes and challenging hills for\nexperts. Our automatic ski lifts ensure you never have to wait long to reach your preferred slope, and our\nattendants are always on hand in case you encounter any problems.\n\nBut there's more to Lake Godard than just skiing. Our lodge offers a variety of activities. Enjoy games in\nour recreation room, massages at our spa, and guided hikes through the woods. If you are interested in\nexploring the city outside of the resort, our staff would be glad to help you reserve tickets or recommend\nlocal attractions. Single units start at $129 per night, while our popular deluxe rooms, which look out over\nthe scenic slopes of Bear Mountain, start at $149 per night. Plus, every stay of seven days or more entitles\nguests to free daily lessons from a professional skiing instructor.\n\nIf you are interested in spending your winter vacation with us, call 555-3612, or send an e-mail to\nbooking@lakegodardski.com\n\n01 10 a"
+          },
+          {
+            "type": "email",
+            "content": "TO: Lake Godard Booking <booking@lakegodardski.com>\n\nFROM: Anna Fuller <annafuller@fastmail.com>\n\nSUBJECT: Booking\n\nDATE: November 24\n\nTo Whom It May Concern,\n\n1 have visited the Lake Godard area before, but have never stayed at your establishment. 1 plan to\n\ntravel there with my husband and two daughters for the holidays. 1 understand that this season\n\nhas been particularly busy, so 1 was wondering if you still had a room available for December\n\n20-29.1 contacted several other hotels in the region, but they were fully booked.\n\nIf so, I'd like to reserve one of the deluxe rooms mentioned on your Web site. Also, my daughters\n\nhave never skied before, so I'd like them to take classes. Lastly, can you recommend any local\n\nproductions that we could catch while we are there? We would prefer something like a magic\n\nshow or a light musical play.\n\nBest regards,\na\nAnna Fuller"
+          }
+        ],
+        "questions": [
+          {
+            "number": 176,
+            "text": "What is NOT mentioned as a service 179. What can be inferred about Ms. Fuller's offered by Lake Godard? children?",
+            "choices": {
+              "A": "Tours of the nearby wilderness (A) They will reserve a guided hike through",
+              "B": "Transportation to the tops of slopes the woods.",
+              "C": "Activities in a game room (B) They will be missing a few days of",
+              "D": "Training for professional skiers school. (C) They can receive free lessons from an m"
+            }
+          },
+          {
+            "number": 177,
+            "text": "In the Web page, the phrase \"on hand\" in paragraph 2, line 3, is closest in meaning",
+            "choices": {
+              "A": "vacant",
+              "B": "possible",
+              "C": "within reach",
+              "D": "on behalf"
+            }
+          },
+          {
+            "number": 178,
+            "text": "What is suggested about Ms. Fuller?",
+            "choices": {
+              "A": "She wants to change a reservation.",
+              "B": "She will cancel a booking at another hotel.",
+              "C": "She prefers accommodations with a mountain view.",
+              "D": "She would like recommendations on which slopes to ski."
+            }
+          },
+          {
+            "number": 179,
+            "text": "What can be inferred about Ms. Fuller's children?",
+            "choices": {
+              "A": "They will reserve a guided hike through the woods.",
+              "B": "They will be missing a few days of school.",
+              "C": "They can receive free lessons from an expert instructor.",
+              "D": "They can be involved in a light musical play."
+            }
+          },
+          {
+            "number": 180,
+            "text": "What does Ms. Fuller want to do?",
+            "choices": {
+              "A": "Make time to see a performance q",
+              "B": "Book a room she has stayed in previously",
+              "C": "Obtain a list of local produce to try",
+              "D": "Receive a detailed skiing lesson plan l by e-mail c 0 L O o3 \\ Hj r2 ooo2 r\\ 3D fDDJ"
+            }
+          }
+        ]
       }
     },
     "h2/test07/181_CDBCC.png": {
@@ -1385,6 +3938,71 @@
         "183": "B",
         "184": "C",
         "185": "C"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "email",
+            "content": "To: Angela Porter <a.porter@bigbuy.com>\nFrom: Mason Daley <m.daley@bigbuy.com>\nSubject: Managers' meeting\nDate: September 21\nAttachment: meeting_notes\n\nHi Angela,\n\nI hope your discussion with the client went well yesterday. We missed you at the managers' meeting. To read\na summary of everything we covered, please check the notes attached to this e-mail. Otherwise, the main\nthing you should know concerns work schedules around the upcoming"
+          },
+          {
+            "type": "notice",
+            "content": "holidays.\n\nMr. Baker wants a notice posted for employees to remind them of their responsibilities in this regard. Too\nmany people were absent from work last year during this period, and he would like to make sure this doesn't\nhappen again. He specifically mentioned planning holiday leave in advance, so that departmental\nsupervisors can reassign work hours as needed. The final schedule will be posted on the company Intranet\nby November 25. This is one day before the start of our busy season, which generally lasts from November\n26 to January 4. Mr. Baker added that no late requests for holiday leave will be approved, except in cases\nof medical or personal emergencies. The notice should be up by the end of this month.\n\nLet me know if you have any questions.\n\nThanks,\nMason\nShift supervisor\nOperations department\n\nO\nBigBuy\n\nNotice to All Employees\n\nIn preparation for the holiday shopping season, we would like to remind you to take some time\nto review the work schedule posted on the company Intranet. Aside from checking to make sure\nthat you have been assigned the correct number of hours, please verify that your days off are\nnoted on the schedule.\n\nPlease submit requests for holiday leave no later than October 30. Any requests for time off\nmade from that date until November 25 will be approved only at the discretion of each\ndepartment's supervisor who must balance employee demands with the need to have the store\nfully staffed.\n\nThese requests will be responded to before the final schedule is posted. Requests for holiday\nleave sent from November 26 to January 4 will not be granted to anyone, management included,\nexcept in the case of a personal or medical emergency. As always, documentation proving that\nyou are eligible for an emergency leave of absence will be required in such situations.\n\nIf you have any further questions, please consult your respective departmental supervisors.\nThank you for your cooperation in this matter."
+          }
+        ],
+        "questions": [
+          {
+            "number": 181,
+            "text": "Why did Mr. Daley write to Ms. Porter?",
+            "choices": {
+              "A": "To modify plans for an upcoming holiday",
+              "B": "To update her on a previous request",
+              "C": "To fill her in on a recent discussion",
+              "D": "To discuss a scheduling conflict with her"
+            }
+          },
+          {
+            "number": 182,
+            "text": "What is stated about BigBuy?",
+            "choices": {
+              "A": "Its normal operating hours will change in the new year.",
+              "B": "It pays its employees overtime for holiday work.",
+              "C": "Its management is preparing for a restructuring.",
+              "D": "It has had issues concerning absent staff."
+            }
+          },
+          {
+            "number": 183,
+            "text": "What is NOT mentioned as something department supervisors will do for the holidays?",
+            "choices": {
+              "A": "Approve some requests for additional leave",
+              "B": "Provide training to seasonal employees",
+              "C": "Ensure there are enough workers",
+              "D": "Address inquiries from the staff"
+            }
+          },
+          {
+            "number": 184,
+            "text": "When can employees expect to receive confirmation of holiday leave?",
+            "choices": {
+              "A": "By the end of September",
+              "B": "No later than October 30",
+              "C": "Before the 25th of November",
+              "D": "Between December and January"
+            }
+          },
+          {
+            "number": 185,
+            "text": "What is Ms. Porter required to do during the upcoming busy season?",
+            "choices": {
+              "A": "Post work schedules more frequently",
+              "B": "Make requests only for short vacations",
+              "C": "Submit documentation for emergency leave",
+              "D": "Have meetings with her department supervisors"
+            }
+          }
+        ]
       }
     },
     "h2/test07/186_CBBDB.png": {
@@ -1397,6 +4015,75 @@
         "188": "B",
         "189": "D",
         "190": "B"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "article",
+            "content": "Art Vibe Magazine 11\n\nThe remodeling of Brayman Museum of Art (BMA) has finally\n\nconcluded, and the facility will reopen on Wednesday, September\n\n26. This will be commemorated by a ceremony taking place on\nthe front lawn of the museum, with a short speech by museum\n\ncurator Jane Wellington. Ms. Wellington will talk about the\nprogress BMA has made over its 50 years in the city of Auckland.\nShe will also introduce the museum's new special exhibition,\nFrance in Focus, beginning that day, which features artifacts\nfrom Europe's ancient Gallic tribes. This traveling exhibition\n\nreceived terrific reviews from French publications when it first\n\n\nSydney and then Perth. Tickets for the exhibit are $12 and may\n\nbe reserved in advance at www.braymanart.org. The museum will\nalso be offering the special"
+          },
+          {
+            "type": "receipt",
+            "content": "admission price of $5 for children\naged 10 and under instead of its regular $7 for the duration of the\nexhibit. Inquiries may be directed to BMA's public relations\n\nspecialist, Hemy Kang, at 555-1288.\n\nBrayman Museum of Art\n|l'=f Confirmation of Payment\n\nToday's Date: August 17\nGuest Name: Kerry Resales\nExhibition Description: France in Focus\nAdmission Date: September 26\n\nDescription Amount Unit Price Total Price\nRegular Ticket 1 $12 $12\n\nSpecial Ticket 2 $5 $10\n\nTOTAL $22\n\nPayment Confirmation Number: 347792R\n\nIf you've made an advance purchase, please be sure to present this receipt to the museum official\ncollecting tickets when entering the exhibition. Admission will be allowed daily between the hours of\n8 a.m. and 3 p.m."
+          },
+          {
+            "type": "email",
+            "content": "To: Henry Kang <h_kang@braymanart.org>\nFrom: Jane Wellington <j_wellington@braymanart.org>\nDate: September 10\nSubject: Important change\n\n—I\nm Hi Henry, in\n—I\nI've got an urgent request. Unfortunately, I received a call this morning, and there will be a delay with the France in\nFocus exhibition. Some of the artifacts have been held up at customs. Apparently, the agents must see further\ndocumentation before they can release the items to us. We're getting the necessary paperwork, but it won't be\nprocessed in time for the show. The items should start arriving here at the museum the day after our exhibition is m\nscheduled to open. Accordingly, the opening must be delayed by at least two weeks. I'll need you to contact those\nwho purchased exhibition tickets in advance. Assure them that they may use the same tickets to gain admission on uu\nthe new opening date but that they also have the option of getting their money back.\n\n4> Let me know if you have questions.\n\nJane Wellington LTl\nBrayman Museum of Art, Curator\n\nCD"
+          }
+        ],
+        "questions": [
+          {
+            "number": 186,
+            "text": "What is the main topic of the article? 1",
+            "choices": {
+              "A": "The appointment of a new curator",
+              "B": "An anniversary banquet celebrating a facility's opening",
+              "C": "A special event following a renovation",
+              "D": "The exhibition of work by a local artist"
+            }
+          },
+          {
+            "number": 187,
+            "text": "What is indicated about Ms. Resales?",
+            "choices": {
+              "A": "She received a discount as she is a sponsor of the facility.",
+              "B": "She plans to accompany children to an 19 opening exhibit.",
+              "C": "She intends to view the artifacts in the afternoon.",
+              "D": "She will pay the price of admission at the museum."
+            }
+          },
+          {
+            "number": 188,
+            "text": "What are those who purchase tickets in advance asked to bring to the exhibition?",
+            "choices": {
+              "A": "Official identification",
+              "B": "Proof of purchase",
+              "C": "A discount coupon",
+              "D": "An open ticket"
+            }
+          },
+          {
+            "number": 189,
+            "text": "What is suggested about the Brayman Museum of Art? *",
+            "choices": {
+              "A": "It will send artifacts to Perth immediately after the exhibit.",
+              "B": "Its curator was informed about a delay in August. ^",
+              "C": "Its new facility in Auckland will not be o built in time for a show. O",
+              "D": "It is expecting to receive some exhibit | items on September 27. J2 Kt rid"
+            }
+          },
+          {
+            "number": 190,
+            "text": "What are those who already have tickets s entitled to? ^",
+            "choices": {
+              "A": "Free admission to an upcoming lecture S",
+              "B": "A refund of a payment m",
+              "C": "Invitations to a celebration",
+              "D": "A guided tour of the displays"
+            }
+          }
+        ]
       }
     },
     "h2/test07/191_DCADC.png": {
@@ -1409,6 +4096,75 @@
         "193": "A",
         "194": "D",
         "195": "C"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "memo",
+            "content": "MEMO\n\nTo: All staff\nFrom: Tom Williams, Director\nDate: August 10\nSubject: New staff\n\nAs most of you are aware, Techno Tel officially bought out Regent Mobile on August 1. This is to\nlet you know that, because of this, five staff members from Regent Mobile will be joining our\noffices in about a week. Three of them will be working for research and development, and the\nother two will be in marketing. They will start work on Monday, August 16, and will begin their\ntraining that day after fulfilling some administrative requirements. I hope that everyone will\nprovide them with a warm welcome and answer any questions they may have so that they can\nadjust to their new work environment quickly.\n\nThank you.\n\nFrom: Neil Adams <nadams@technotel.com>"
+          },
+          {
+            "type": "email",
+            "content": "To: Maude Garcia <purchasing@technotel.com>\nDate: August 11\nSubject: Supplies for new hires\n\nHi Maude,\n\nYou may have received a memo from Tom Williams in administration on August 10. In preparation for\nthe upcoming changes, my staff and I have cubicles set up in my department that include desks, chairs,\nand dividers. But we are still missing a few items and I'm wondering if the purchasing department can\nget our regular supplier to deliver them. I want to make sure the new staff have everything they need to\nstart working. We need to order three of each of the following: filing cabinet, personal computer, and\ndesktop bookcase. They will also require some basic office supplies. Please let Office Interiors and\nSupplies know that this is a rush order. It should be delivered by August 13. The recruits start their\ntraining next week and we will need enough time to set everything up before August 16. Thanks, and\nsorry for the short notice.\n\nNeil\n\nOffice Interiors and Supplies\n800 Garnet Avenue\nChicago, Illinois 60615\n\nTel: 555-2001\nE-mail: orders@officeintsup.com"
+          },
+          {
+            "type": "online_form",
+            "content": "Home I Products I Your Shopping Cart I Customer Service\n\nAccount holder: Techno Tel, Inc.\n\nORDER #: 914579 08/12 10:45 A.M.\n\nProduct code Description Qty Price Your Shopping Cart\nOF00928 Steel filing cabinet, gray 3 $509.97\nContinue OS1544 Ballpoint pens, black and red 6 $6.60\nshopping\nOF00283 Personal computers (CPU, monitor, 3 $1,648.50\nProceed to checkout keyboard, mouse and peripherals)\n\nOS1927 Notebooks 3 $15.90\nOS1326 Desktop bookcase 3 $21.90\nr\\j\nSubtotal $2,202.87\n\nTax $220.29 UJ\nSearch\nTOTAL $2,423.16\nContact Us Refund and cancellation varies by item. Click on \"Products\" to learn more. -i>\n*For purchases of $3000 or more, shipping is free-of-charge.\n**Delivery will be made after three days' time. Ln\n\ncn"
+          }
+        ],
+        "questions": [
+          {
+            "number": 191,
+            "text": "Why have Mr. Adams and his staff been 19 making changes to the office?",
+            "choices": {
+              "A": "To update it with new equipment",
+              "B": "To prepare for a major project",
+              "C": "To conform to a policy change",
+              "D": "To accommodate incoming staff"
+            }
+          },
+          {
+            "number": 192,
+            "text": "What does Mr. Adams mention in the e-mail?",
+            "choices": {
+              "A": "A supplier has run out of some requested office furnishings.",
+              "B": "Some cubicles are missing important assembly components.",
+              "C": "Techno Tel has placed previous orders with Office Interiors and Supplies.",
+              "D": "The arriving staff members will start work on different days."
+            }
+          },
+          {
+            "number": 193,
+            "text": "In what department does Mr. Adams most likely work?",
+            "choices": {
+              "A": "Research and development",
+              "B": "Purchasing",
+              "C": "Marketing",
+              "D": "Administration"
+            }
+          },
+          {
+            "number": 194,
+            "text": "What is inferred in the online form?",
+            "choices": {
+              "A": "Office Interiors and Supplies gave the customer a discount. CD",
+              "B": "Payment will be made by credit card.",
+              "C": "The filing cabinets will be delivered separately.",
+              "D": "The order is applicable for shipping o charges."
+            }
+          },
+          {
+            "number": 195,
+            "text": "What is implied about Office Interiors and Supplies?",
+            "choices": {
+              "A": "It will allow one of the items to be canceled within two days.",
+              "B": "It will deliver more desks and chairs to Techno Tel before August 16.",
+              "C": "It will not satisfy Mr. Adams' delivery date requirement.",
+              "D": "It will send some dividers to Techno Tel by August 14."
+            }
+          }
+        ]
       }
     },
     "h2/test07/196_CDBCB.png": {
@@ -1421,6 +4177,75 @@
         "198": "B",
         "199": "C",
         "200": "B"
+      },
+      "sourceContent": {
+        "status": "reviewed",
+        "documents": [
+          {
+            "type": "article",
+            "content": "Rochester Times\nKeeping up with the times\n\nROCHESTER -Train and subway stations across within a few weeks. Should financing be secured,\nthe state now offer passengers comfortable starting on February 1, the city plans to request\nwaiting areas, spacious platforms, and better proposals from contractors with ideas for making\nsafety features. Sadly, Rochester Central Station Rochester Central Station a transport facility that\nis lagging behind. This current situation, residents can be proud of. Plans call for the\nhowever, is expected to come to an end soon. inclusion of additional retail and dining facilities,\nThe city government has been negotiating with enlarged waiting areas, two new platforms, and\nfinanciers and the federal government to procure an upgraded ticketing counter and an automated\nfunding for renovating and enlarging the payment system. Officials are positive that\nRochester railway facility, which was built back financing will be found and that Rochester will\nin the early 1950s. Local government officials have a fully upgraded station by the end of next\nhope that there will be sufficient funds to proceed year.\nwith much-needed updates and expansions\n\nFrom: Selena Gambrell <sgambrell@rochester.gov>"
+          },
+          {
+            "type": "email",
+            "content": "To: James Vaughan <jvaughan@pettuspagano.com>\nSubject: Subway station upgrade project\nDate: February 5\n\nDear Mr. Vaughan,\n\nThank you for your interest in bidding for the Rochester Central Station upgrade project. The\nmayor's office has prepared some information on this bid opportunity. It may be downloaded from\nwww.rochestergov/bidopportunities. Aside from a bid, we will need a filled-out application form, a\nfeasibility study, and a detailed proposal that includes a timetable and a budget estimate. All bids\nshould be sealed in an envelope and brought to City Hall in person along with everything else. We are\nnow in the stage of officially accepting bids, and the deadline for application is March 1. Thank you,\nand please don't hesitate to get in touch with me if you have any questions.\n\nSincerely,\n\nSelena Gambrell\n\nThe City of Rochester Bid Submission Application Form 78-C\nBid Opportunity No. 1005-2001\n\n1. Project: Rochester Central Station Improvements\n2. Bidding Firm's Mailing Address: 3050 Whitney Road, Rochester, New York 14025\nBusiness Name of Bidder: Pettus-Pagano Firm\nE-mail address of Bidder: admin@pettuspagano.com"
+          },
+          {
+            "type": "form",
+            "content": "Office Phone Number: (715) 298-5555\n3. The bidder offers to perform the work in accordance with the contract for an agreed-upon bid price in\n\nUS dollars.\n4. The bidder will commence work without delay upon written approval of the proposal.\n5. Additional comments: Included here, besides the attachments requested, is a brochure detailing\nour company's history and contractual accomplishments.\n6. Signature of the Bidder:\n\nJames Vaughan February 28\nSignature Date\n\npj"
+          }
+        ],
+        "questions": [
+          {
+            "number": 196,
+            "text": "What is the article mainly about? 1",
+            "choices": {
+              "A": "A statewide transit system improvement project",
+              "B": "A lack of funds for the operation of a station",
+              "C": "A plan for the renewal of a transportation hub",
+              "D": "A government regulation regarding project funding"
+            }
+          },
+          {
+            "number": 197,
+            "text": "What is implied about the Rochester 2 Central Station Project?",
+            "choices": {
+              "A": "Its schedule has been readjusted.",
+              "B": "Bid proposals can no longer be submitted.",
+              "C": "A cost will be higher than anticipated.",
+              "D": "It has received adequate funding."
+            }
+          },
+          {
+            "number": 198,
+            "text": "What is NOT a requirement mentioned for submitting a bid?",
+            "choices": {
+              "A": "A completed application form",
+              "B": "An approved budget",
+              "C": "A project feasibility study",
+              "D": "A comprehensive proposal"
+            }
+          },
+          {
+            "number": 199,
+            "text": "What is suggested about Mr. Vaughan?",
+            "choices": {
+              "A": "He will be sent a letter if selected for U the project.",
+              "B": "His company may be ineligible for bid 4 selection.",
+              "C": "He will personally visit a city office to L hand in some documents.",
+              "D": "His proposal was selected by the city c for further consideration."
+            }
+          },
+          {
+            "number": 200,
+            "text": "What is indicated about Pettus-Pagano?",
+            "choices": {
+              "A": "It sent the city government some 0 signed contracts.",
+              "B": "It provided a company description with L an application.",
+              "C": "It paid a fee to compete for a project CD bid.",
+              "D": "It requested a letter of approval from local officials. w Part 5, 6, and 7 if you finish the test early. mmES! m p,325 / #tt£ p,327 / oHi) p,37B / Part 5&6 ^ fcd?) a jv-: c # n)|o|j|o|| Self flia aiaat M4II fOl^i^EH^t^oHMAilo"
+            }
+          }
+        ]
       }
     },
     "h2/test08/131_CBCC.png": {
