@@ -256,7 +256,7 @@
     const state = {
       deck: [], index: 0, checked: false,
       correct: 0, wrong: 0, wrongIds: new Set(), translationVisible: false,
-      sourceView: "text"
+      sourceView: "image"
     };
     const $ = (id) => document.getElementById(id);
     const shuffle = (items) => {
@@ -529,11 +529,11 @@
       return {number, text, choices};
     }
     function renderStudyContent(item) {
-      const hasText = Boolean(item.sourceText);
+      const hasText = Boolean(item.sourceContent?.status === "reviewed");
       const selected = hasText ? state.sourceView : "image";
       return `
         <div class="view-switcher" aria-label="Kiểu hiển thị đề">
-          <button class="button view-button ${selected === "text" ? "active" : ""}" data-source-view="text" ${hasText ? "" : "disabled"}>Đề dạng chữ</button>
+          <button class="button view-button ${selected === "text" ? "active" : ""}" data-source-view="text" ${hasText ? "" : "disabled"}>${hasText ? "Đề dạng chữ" : "Đề chữ đang hiệu đính"}</button>
           <button class="button view-button ${selected === "image" ? "active" : ""}" data-source-view="image">Ảnh gốc</button>
         </div>
         ${selected === "text" ? renderSourceText(item) : renderSourceImage(item)}`;
@@ -543,21 +543,19 @@
       return `<div class="source-image"><img src="${source}" alt="${escapeHtml(item.title)}"></div>`;
     }
     function renderSourceText(item) {
-      const parsed = splitSourceText(item.sourceText, Object.keys(item.questions));
+      const content = item.sourceContent;
       const reveal = state.checked || $("mode").value === "answers";
-      const questionMap = new Map(parsed.questions.map(question => [question.number, question]));
+      const questionMap = new Map((content.questions || []).map(question => [String(question.number), question]));
       const questions = Object.keys(item.questions).sort((a, b) => Number(a) - Number(b));
       return `<div class="source-layout">
-        <article class="source-document">
-          <div class="source-kicker">${escapeHtml(parsed.intro || "Original English passage")}</div>
-          <div class="source-body">${renderSourceParagraphs(parsed.passage)}</div>
-        </article>
+        ${(content.documents || []).map((document, index) => `<article class="source-document">
+          <div class="source-kicker">${escapeHtml(document.title || `Document ${index + 1}`)}</div>
+          <div class="source-body">${renderSourceParagraphs(document.content || "")}</div>
+        </article>`).join("")}
         <section class="source-questions">
-          ${parsed.questions.length
-            ? questions.map(number => renderSourceQuestion(questionMap.get(number), number, item.questions[number], reveal)).join("")
-            : `<article class="source-question"><div class="source-question-title">Câu hỏi và lựa chọn</div><div>Trang này có bố cục nhiều cột nên phần câu hỏi chưa thể tách an toàn. Hãy dùng bảng chọn đáp án bên phải hoặc chuyển sang “Ảnh gốc” để đọc nguyên bản.</div></article>`}
+          ${questions.map(number => renderSourceQuestion(questionMap.get(number), number, item.questions[number], reveal)).join("")}
         </section>
-        <p class="source-warning">Đề dạng chữ được làm sạch từ bản gốc. Bạn có thể chuyển sang “Ảnh gốc” để đối chiếu bố cục đặc biệt.</p>
+        <p class="source-warning">Nội dung đã được hiệu đính từ ảnh/PDF gốc. Bạn vẫn có thể chuyển sang “Ảnh gốc” để đối chiếu bố cục.</p>
       </div>`;
     }
     function renderSourceParagraphs(value) {

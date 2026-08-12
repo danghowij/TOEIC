@@ -118,6 +118,7 @@ def build_items(
                 if marked_path.is_file()
                 else make_image_url(image_path, output_path),
                 "sourceText": translation.get("sourceText", ""),
+                "sourceContent": translation.get("sourceContent", {}),
                 "translation": translation.get("translation", ""),
                 "translationStatus": translation.get("status", ""),
             }
