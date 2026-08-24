@@ -228,6 +228,7 @@
           <option value="ordered">Theo thứ tự</option>
           <option value="random">Ngẫu nhiên</option>
           <option value="wrong">Ôn câu sai</option>
+          <option value="important">Câu quan trọng ★</option>
           <option value="answers">Hiện đáp án ngay</option>
         </select>
       </label>
@@ -253,6 +254,18 @@
   </main>
   <script>
     const DATA = __TOEIC_DATA__;
+    const IMPORTANT_QUESTION_GROUPS = [
+      {book: "h2", test: "test02", questions: ["168", "169", "170", "171", "181", "182", "183", "184", "185"]},
+      {book: "h2", test: "test05", questions: ["147", "148"]},
+      {book: "h2", test: "test07", questions: ["151", "152", "153"]},
+      {book: "h2", test: "test10", questions: ["153", "154"]},
+      {book: "h3", test: "test04", questions: ["147", "148"]},
+      {book: "h3", test: "test06", questions: ["158", "159", "160", "181", "182", "183", "184", "185", "186", "187", "188", "189", "190"]},
+      {book: "h3", test: "test07", questions: ["151", "152", "156", "157", "158", "159"]}
+    ];
+    const importantQuestionKeys = new Set(IMPORTANT_QUESTION_GROUPS.flatMap(({book, test, questions}) =>
+      questions.map(question => `${book}/${test}/${question}`)
+    ));
     const state = {
       deck: [], index: 0, checked: false,
       correct: 0, wrong: 0, wrongIds: new Set(), translationVisible: false,
@@ -316,6 +329,7 @@
         (test === "*" || item.test === test)
       );
       if (mode === "wrong") deck = deck.filter(item => state.wrongIds.has(item.id));
+      if (mode === "important") deck = deck.filter(item => getQuestionNumbers(item).length);
       if (mode === "random") deck = shuffle(deck);
       state.deck = deck;
       state.index = 0;
@@ -327,7 +341,10 @@
       const item = state.deck[state.index];
       $("counter").textContent = item ? `Bộ ${state.index + 1} / ${state.deck.length}` : "Không có bài phù hợp";
       if (!item) {
-        $("imagePanel").innerHTML = '<div class="empty">Hãy chọn folder hoặc làm sai một bài để dùng chế độ “Ôn câu sai”.</div>';
+        const emptyMessage = $("mode").value === "important"
+          ? "Không có câu quan trọng trong sách/test đã chọn."
+          : "Hãy chọn sách/test khác hoặc làm sai một bài để dùng chế độ “Ôn câu sai”.";
+        $("imagePanel").innerHTML = `<div class="empty">${emptyMessage}</div>`;
         $("answerPanel").innerHTML = '<div class="empty">Chưa có câu hỏi.</div>';
         return;
       }
@@ -342,7 +359,7 @@
       });
       const translationButton = $("translationButton");
       if (translationButton) translationButton.onclick = toggleTranslation;
-      const questions = Object.keys(item.questions).sort((a, b) =>
+      const questions = getQuestionNumbers(item).sort((a, b) =>
         a.localeCompare(b, undefined, {numeric: true})
       );
       $("answerPanel").innerHTML = `
@@ -351,7 +368,7 @@
           ${questions.map(number => `
             <div class="question" data-question="${escapeHtml(number)}">
               <div class="question-head">
-                <div class="question-title">Câu ${escapeHtml(number)}</div>
+                <div class="question-title">Câu ${escapeHtml(number)}${$("mode").value === "important" ? " ★" : ""}</div>
                 <div class="question-status" aria-live="polite"></div>
               </div>
               <div class="choices">
@@ -383,10 +400,16 @@
       render();
       window.scrollTo({top: 0, behavior: "smooth"});
     }
+    function getQuestionNumbers(item) {
+      const numbers = Object.keys(item.questions);
+      if ($("mode").value !== "important") return numbers;
+      return numbers.filter(number => importantQuestionKeys.has(`${item.book}/${item.test}/${number}`));
+    }
     function revealAnswers(item) {
       let gradedCount = 0;
       let ungradedCount = 0;
-      for (const [number, correctAnswer] of Object.entries(item.questions)) {
+      for (const number of getQuestionNumbers(item)) {
+        const correctAnswer = item.questions[number];
         const row = document.querySelector(`[data-question="${CSS.escape(number)}"]`);
         const status = row.querySelector(".question-status");
         if (correctAnswer === "X") {
@@ -416,7 +439,8 @@
       const item = state.deck[state.index];
       let missingGraded = 0;
       const results = [];
-      for (const [number, correctAnswer] of Object.entries(item.questions)) {
+      for (const number of getQuestionNumbers(item)) {
+        const correctAnswer = item.questions[number];
         const selected = document.querySelector(`input[name="q-${CSS.escape(number)}"]:checked`);
         if (!selected && correctAnswer !== "X") missingGraded++;
         results.push({number, selected: selected?.value, correctAnswer});
@@ -540,7 +564,7 @@
       const content = item.sourceContent;
       const reveal = state.checked || $("mode").value === "answers";
       const questionMap = new Map((content.questions || []).map(question => [String(question.number), question]));
-      const questions = Object.keys(item.questions).sort((a, b) => Number(a) - Number(b));
+      const questions = getQuestionNumbers(item).sort((a, b) => Number(a) - Number(b));
       return `<div class="source-layout">
         ${(content.documents || []).map((document, index) => `<article class="source-document">
           <div class="source-kicker">${escapeHtml(document.title || `Document ${index + 1}`)}</div>
@@ -617,8 +641,8 @@
       const note = item.translationStatus === "reviewed"
         ? "Đã hiệu đính"
         : "Bản dịch tự động · Có thể cần hiệu đính";
-      const answers = Object.entries(item.questions)
-        .map(([number, answer]) => `${escapeHtml(number)} ${escapeHtml(answer)}`)
+      const answers = getQuestionNumbers(item)
+        .map(number => `${escapeHtml(number)} ${escapeHtml(item.questions[number])}`)
         .join(", ");
       return `
         <div class="translation-actions">
