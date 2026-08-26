@@ -26,7 +26,7 @@
       background: #f3f6fa;
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
     }
-    button, select { font: inherit; }
+    button, select, input { font: inherit; }
     .shell { max-width: 1500px; margin: 0 auto; padding: 16px 24px 24px; }
     .controls {
       display: flex;
@@ -49,6 +49,7 @@
       color: var(--ink);
       cursor: pointer;
     }
+    .question-group[hidden] { display: none; }
     .button.primary { border-color: var(--blue); color: white; background: var(--blue); font-weight: 700; }
     .button:disabled { cursor: not-allowed; opacity: .45; }
     .counter { align-self: center; color: var(--muted); font-size: 14px; }
@@ -229,6 +230,7 @@
           <option value="random">Ngẫu nhiên</option>
           <option value="wrong">Ôn câu sai</option>
           <option value="important">Câu quan trọng ★</option>
+          <option value="group">Chọn vị trí ảnh</option>
           <option value="answers">Hiện đáp án ngay</option>
         </select>
       </label>
@@ -237,6 +239,9 @@
       </label>
       <label class="small">Test
         <select id="test"></select>
+      </label>
+      <label class="small question-group" id="questionGroupLabel" hidden>Ảnh số
+        <select id="questionGroup"></select>
       </label>
       <button class="button primary" id="startButton">Bắt đầu lượt mới</button>
       <button class="button" id="resetButton">Xóa điểm</button>
@@ -266,6 +271,17 @@
     const importantQuestionKeys = new Set(IMPORTANT_QUESTION_GROUPS.flatMap(({book, test, questions}) =>
       questions.map(question => `${book}/${test}/${question}`)
     ));
+    const questionGroupIndexes = new Map();
+    const itemsByTest = new Map();
+    for (const item of DATA.items) {
+      const key = `${item.book}/${item.test}`;
+      if (!itemsByTest.has(key)) itemsByTest.set(key, []);
+      itemsByTest.get(key).push(item);
+    }
+    for (const items of itemsByTest.values()) {
+      items.sort((a, b) => Number(Object.keys(a.questions)[0]) - Number(Object.keys(b.questions)[0]));
+      items.forEach((item, index) => questionGroupIndexes.set(item.id, index));
+    }
     const state = {
       deck: [], index: 0, checked: false,
       correct: 0, wrong: 0, wrongIds: new Set(), translationVisible: false,
@@ -294,6 +310,7 @@
       };
       $("test").onchange = start;
       $("mode").onchange = () => {
+        updateQuestionGroupControl();
         if ($("mode").value === "answers" && state.deck.length) {
           state.checked = false;
           render();
@@ -302,6 +319,12 @@
         start();
       };
       setupTests();
+      setupQuestionGroups();
+      updateQuestionGroupControl();
+      $("questionGroup").onchange = start;
+    }
+    function updateQuestionGroupControl() {
+      $("questionGroupLabel").hidden = $("mode").value !== "group";
     }
     function setupTests() {
       const selectedBook = $("book").value;
@@ -314,6 +337,12 @@
         tests.map(([value, label]) =>
           `<option value="${escapeHtml(value)}">${escapeHtml(label)}</option>`
         ).join("");
+    }
+    function setupQuestionGroups() {
+      $("questionGroup").innerHTML = Array.from({length: 19}, (_, index) =>
+        `<option value="${index}">${index + 1}</option>`
+      ).join("");
+      $("questionGroup").value = "18";
     }
     function escapeHtml(value) {
       return String(value).replace(/[&<>"']/g, char => (
@@ -330,6 +359,9 @@
       );
       if (mode === "wrong") deck = deck.filter(item => state.wrongIds.has(item.id));
       if (mode === "important") deck = deck.filter(item => getQuestionNumbers(item).length);
+      if (mode === "group") {
+        deck = deck.filter(item => questionGroupIndexes.get(item.id) === Number($("questionGroup").value));
+      }
       if (mode === "random") deck = shuffle(deck);
       state.deck = deck;
       state.index = 0;
@@ -343,7 +375,9 @@
       if (!item) {
         const emptyMessage = $("mode").value === "important"
           ? "Không có câu quan trọng trong sách/test đã chọn."
-          : "Hãy chọn sách/test khác hoặc làm sai một bài để dùng chế độ “Ôn câu sai”.";
+          : $("mode").value === "group"
+            ? "Không có bộ câu phù hợp với sách/test đã chọn."
+            : "Hãy chọn sách/test khác hoặc làm sai một bài để dùng chế độ “Ôn câu sai”.";
         $("imagePanel").innerHTML = `<div class="empty">${emptyMessage}</div>`;
         $("answerPanel").innerHTML = '<div class="empty">Chưa có câu hỏi.</div>';
         return;
@@ -402,8 +436,10 @@
     }
     function getQuestionNumbers(item) {
       const numbers = Object.keys(item.questions);
-      if ($("mode").value !== "important") return numbers;
-      return numbers.filter(number => importantQuestionKeys.has(`${item.book}/${item.test}/${number}`));
+      if ($("mode").value === "important") {
+        return numbers.filter(number => importantQuestionKeys.has(`${item.book}/${item.test}/${number}`));
+      }
+      return numbers;
     }
     function revealAnswers(item) {
       let gradedCount = 0;
