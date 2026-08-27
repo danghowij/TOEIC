@@ -49,7 +49,6 @@
       color: var(--ink);
       cursor: pointer;
     }
-    .question-group[hidden] { display: none; }
     .button.primary { border-color: var(--blue); color: white; background: var(--blue); font-weight: 700; }
     .button:disabled { cursor: not-allowed; opacity: .45; }
     .counter { align-self: center; color: var(--muted); font-size: 14px; }
@@ -230,7 +229,6 @@
           <option value="random">Ngẫu nhiên</option>
           <option value="wrong">Ôn câu sai</option>
           <option value="important">Câu quan trọng ★</option>
-          <option value="group">Chọn vị trí ảnh</option>
           <option value="answers">Hiện đáp án ngay</option>
         </select>
       </label>
@@ -240,7 +238,7 @@
       <label class="small">Test
         <select id="test"></select>
       </label>
-      <label class="small question-group" id="questionGroupLabel" hidden>Ảnh số
+      <label class="small">Bài đọc
         <select id="questionGroup"></select>
       </label>
       <button class="button primary" id="startButton">Bắt đầu lượt mới</button>
@@ -310,7 +308,6 @@
       };
       $("test").onchange = start;
       $("mode").onchange = () => {
-        updateQuestionGroupControl();
         if ($("mode").value === "answers" && state.deck.length) {
           state.checked = false;
           render();
@@ -320,11 +317,7 @@
       };
       setupTests();
       setupQuestionGroups();
-      updateQuestionGroupControl();
       $("questionGroup").onchange = start;
-    }
-    function updateQuestionGroupControl() {
-      $("questionGroupLabel").hidden = $("mode").value !== "group";
     }
     function setupTests() {
       const selectedBook = $("book").value;
@@ -342,7 +335,7 @@
       $("questionGroup").innerHTML = Array.from({length: 19}, (_, index) =>
         `<option value="${index}">${index + 1}</option>`
       ).join("");
-      $("questionGroup").value = "18";
+      $("questionGroup").value = "0";
     }
     function escapeHtml(value) {
       return String(value).replace(/[&<>"']/g, char => (
@@ -355,13 +348,11 @@
       const mode = $("mode").value;
       let deck = DATA.items.filter(item =>
         (book === "*" || item.book === book) &&
-        (test === "*" || item.test === test)
+        (test === "*" || item.test === test) &&
+        questionGroupIndexes.get(item.id) === Number($("questionGroup").value)
       );
       if (mode === "wrong") deck = deck.filter(item => state.wrongIds.has(item.id));
       if (mode === "important") deck = deck.filter(item => getQuestionNumbers(item).length);
-      if (mode === "group") {
-        deck = deck.filter(item => questionGroupIndexes.get(item.id) === Number($("questionGroup").value));
-      }
       if (mode === "random") deck = shuffle(deck);
       state.deck = deck;
       state.index = 0;
