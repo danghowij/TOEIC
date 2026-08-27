@@ -332,10 +332,11 @@
         ).join("");
     }
     function setupQuestionGroups() {
-      $("questionGroup").innerHTML = Array.from({length: 19}, (_, index) =>
+      $("questionGroup").innerHTML = '<option value="*">Tất cả bài đọc</option>' +
+        Array.from({length: 19}, (_, index) =>
         `<option value="${index}">${index + 1}</option>`
       ).join("");
-      $("questionGroup").value = "0";
+      $("questionGroup").value = "*";
     }
     function escapeHtml(value) {
       return String(value).replace(/[&<>"']/g, char => (
@@ -346,10 +347,11 @@
       const book = $("book").value;
       const test = $("test").value;
       const mode = $("mode").value;
+      const questionGroup = $("questionGroup").value;
       let deck = DATA.items.filter(item =>
         (book === "*" || item.book === book) &&
         (test === "*" || item.test === test) &&
-        questionGroupIndexes.get(item.id) === Number($("questionGroup").value)
+        (questionGroup === "*" || questionGroupIndexes.get(item.id) === Number(questionGroup))
       );
       if (mode === "wrong") deck = deck.filter(item => state.wrongIds.has(item.id));
       if (mode === "important") deck = deck.filter(item => getQuestionNumbers(item).length);
