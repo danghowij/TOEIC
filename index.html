@@ -260,11 +260,17 @@
     const IMPORTANT_QUESTION_GROUPS = [
       {book: "h2", test: "test02", questions: ["168", "169", "170", "171", "181", "182", "183", "184", "185"]},
       {book: "h2", test: "test05", questions: ["147", "148"]},
-      {book: "h2", test: "test07", questions: ["151", "152", "153"]},
+      {book: "h2", test: "test06", questions: ["176"]},
+      {book: "h2", test: "test07", questions: ["151", "152", "153", "156"]},
       {book: "h2", test: "test10", questions: ["153", "154"]},
-      {book: "h3", test: "test04", questions: ["147", "148"]},
-      {book: "h3", test: "test06", questions: ["158", "159", "160", "181", "182", "183", "184", "185", "186", "187", "188", "189", "190"]},
-      {book: "h3", test: "test07", questions: ["151", "152", "156", "157", "158", "159"]}
+      {book: "h3", test: "test01", questions: ["155"]},
+      {book: "h3", test: "test02", questions: ["135"]},
+      {book: "h3", test: "test03", questions: ["147", "161", "196"]},
+      {book: "h3", test: "test04", questions: ["147", "148", "153", "158", "168"]},
+      {book: "h3", test: "test05", questions: ["158"]},
+      {book: "h3", test: "test06", questions: ["139", "158", "159", "160", "168", "181", "182", "183", "184", "185", "186", "187", "188", "189", "190"]},
+      {book: "h3", test: "test07", questions: ["151", "152", "156", "157", "158", "159"]},
+      {book: "h3", test: "test10", questions: ["151", "153"]}
     ];
     const importantQuestionKeys = new Set(IMPORTANT_QUESTION_GROUPS.flatMap(({book, test, questions}) =>
       questions.map(question => `${book}/${test}/${question}`)
