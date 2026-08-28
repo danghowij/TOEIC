@@ -257,23 +257,23 @@
   </main>
   <script>
     const DATA = __TOEIC_DATA__;
-    const IMPORTANT_QUESTION_GROUPS = [
-      {book: "h2", test: "test02", questions: ["168", "169", "170", "171", "181", "182", "183", "184", "185"]},
-      {book: "h2", test: "test05", questions: ["147", "148"]},
-      {book: "h2", test: "test06", questions: ["176"]},
-      {book: "h2", test: "test07", questions: ["151", "152", "153", "156"]},
-      {book: "h2", test: "test10", questions: ["153", "154"]},
-      {book: "h3", test: "test01", questions: ["155"]},
-      {book: "h3", test: "test02", questions: ["135"]},
-      {book: "h3", test: "test03", questions: ["147", "161", "196"]},
-      {book: "h3", test: "test04", questions: ["147", "148", "153", "158", "168"]},
-      {book: "h3", test: "test05", questions: ["158"]},
-      {book: "h3", test: "test06", questions: ["139", "158", "159", "160", "168", "181", "182", "183", "184", "185", "186", "187", "188", "189", "190"]},
-      {book: "h3", test: "test07", questions: ["151", "152", "156", "157", "158", "159"]},
-      {book: "h3", test: "test10", questions: ["151", "153"]}
+    const IMPORTANT_READING_GROUPS = [
+      {book: "h2", test: "test02", starts: ["168", "181"]},
+      {book: "h2", test: "test05", starts: ["147"]},
+      {book: "h2", test: "test06", starts: ["176"]},
+      {book: "h2", test: "test07", starts: ["151", "156"]},
+      {book: "h2", test: "test10", starts: ["153"]},
+      {book: "h3", test: "test01", starts: ["155"]},
+      {book: "h3", test: "test02", starts: ["135"]},
+      {book: "h3", test: "test03", starts: ["147", "161", "196"]},
+      {book: "h3", test: "test04", starts: ["147", "153", "158", "168"]},
+      {book: "h3", test: "test05", starts: ["158"]},
+      {book: "h3", test: "test06", starts: ["139", "158", "168", "181", "186"]},
+      {book: "h3", test: "test07", starts: ["151", "156"]},
+      {book: "h3", test: "test10", starts: ["151", "153"]}
     ];
-    const importantQuestionKeys = new Set(IMPORTANT_QUESTION_GROUPS.flatMap(({book, test, questions}) =>
-      questions.map(question => `${book}/${test}/${question}`)
+    const importantReadingKeys = new Set(IMPORTANT_READING_GROUPS.flatMap(({book, test, starts}) =>
+      starts.map(start => `${book}/${test}/${start}`)
     ));
     const questionGroupIndexes = new Map();
     const itemsByTest = new Map();
@@ -360,7 +360,9 @@
         (questionGroup === "*" || questionGroupIndexes.get(item.id) === Number(questionGroup))
       );
       if (mode === "wrong") deck = deck.filter(item => state.wrongIds.has(item.id));
-      if (mode === "important") deck = deck.filter(item => getQuestionNumbers(item).length);
+      if (mode === "important") {
+        deck = deck.filter(item => importantReadingKeys.has(`${item.book}/${item.test}/${Object.keys(item.questions)[0]}`));
+      }
       if (mode === "random") deck = shuffle(deck);
       state.deck = deck;
       state.index = 0;
@@ -435,9 +437,6 @@
     }
     function getQuestionNumbers(item) {
       const numbers = Object.keys(item.questions);
-      if ($("mode").value === "important") {
-        return numbers.filter(number => importantQuestionKeys.has(`${item.book}/${item.test}/${number}`));
-      }
       return numbers;
     }
     function revealAnswers(item) {
