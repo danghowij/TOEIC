@@ -164,8 +164,13 @@
     h1 { margin: 0 0 5px; font-size: 19px; }
     .question { padding: 12px 0; border-top: 1px solid var(--line); }
     .question:first-of-type { border-top: 0; }
-    /* Each image contains at most five questions, so keep the actions aligned. */
-    .quiz-form { height: 420px; }
+    /* Listening readings can contain many questions; keep the answer list usable. */
+    .quiz-form {
+      min-height: 420px;
+      max-height: 20vh;
+      overflow-y: auto;
+      padding-right: 8px;
+    }
     .question-head {
       display: flex;
       align-items: center;
