@@ -265,18 +265,18 @@
     const IMPORTANT_READING_GROUPS = [
       {book: "h2", test: "test02", starts: ["168", "181"]},
       {book: "h2", test: "test05", starts: ["147"]},
-      {book: "h2", test: "test06", starts: ["176"]},
+      {book: "h2", test: "test06", starts: ["143", "147", "162", "176"]},
       {book: "h2", test: "test07", starts: ["151", "156", "181"]},
       {book: "h2", test: "test08", starts: ["149", "168"]},
       {book: "h2", test: "test10", starts: ["153"]},
       {book: "h3", test: "test01", starts: ["155"]},
-      {book: "h3", test: "test02", starts: ["135"]},
-      {book: "h3", test: "test03", starts: ["147", "161", "196"]},
-      {book: "h3", test: "test04", starts: ["147", "153", "158", "168"]},
+      {book: "h3", test: "test02", starts: ["131", "135", "139", "158"]},
+      {book: "h3", test: "test03", starts: ["147", "158", "161", "196"]},
+      {book: "h3", test: "test04", starts: ["147", "153", "158", "168", "176"]},
       {book: "h3", test: "test05", starts: ["158"]},
       {book: "h3", test: "test06", starts: ["139", "158", "168", "181", "186"]},
       {book: "h3", test: "test07", starts: ["151", "156"]},
-      {book: "h3", test: "test10", starts: ["151", "153"]}
+      {book: "h3", test: "test10", starts: ["139", "151", "153", "196"]}
     ];
     const importantReadingKeys = new Set(IMPORTANT_READING_GROUPS.flatMap(({book, test, starts}) =>
       starts.map(start => `${book}/${test}/${start}`)
