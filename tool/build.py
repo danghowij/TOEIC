@@ -16,7 +16,14 @@ DEFAULT_TRANSLATIONS = PROJECT_DIR / "translations.json"
 DEFAULT_TEMPLATE = Path(__file__).resolve().parent / "template.html"
 DEFAULT_OUTPUT = PROJECT_DIR / "index.html"
 SUPPORTED_EXTENSIONS = {".png", ".jpg", ".jpeg", ".webp", ".gif"}
-BOOK_NAMES = {"h2": "Hacker 2", "h3": "Hacker 3", "others": "Kh\u00e1c"}
+BOOK_NAMES = {
+    "h2": "Hacker 2",
+    "h3": "Hacker 3",
+    "h2-listening": "Hacker 2 Listening",
+    "h3-listening": "Hacker 3 Listening",
+    "ybm2-listening": "YBM 2 Listening",
+    "others": "Kh\u00e1c",
+}
 IMAGE_NAME_PATTERN = re.compile(
     r"^(?P<start>\d+)_(?P<answers>[ABCDX]+)"
     r"(?P<extension>\.png|\.jpe?g|\.webp|\.gif)$",
